@@ -1,0 +1,23 @@
+{
+  "name": "ui-forge",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "workspaces": [
+    "site",
+    "tooling"
+  ],
+  "scripts": {
+    "content:build": "npm --workspace tooling run build:content",
+    "content:validate": "npm --workspace tooling run validate",
+    "skill:validate": "npm --workspace tooling run validate:skill",
+    "validate": "npm run skill:validate && npm run content:validate",
+    "lint": "npm --workspace tooling run lint && npm --workspace site run lint",
+    "typecheck": "npm --workspace tooling run typecheck && npm --workspace site run typecheck",
+    "test": "npm --workspace tooling run test && npm --workspace site run test",
+    "build": "npm run content:build && npm --workspace site run build",
+    "dev": "npm run content:build && npm --workspace site run dev"
+  }
+}

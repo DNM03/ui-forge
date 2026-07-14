@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "pattern",
+  "items": [
+    {
+      "id": "design-read",
+      "title": "Design Read",
+      "summary": "Summarize the surface, audience, outcome, brand posture, foundation, and contextual dials before choosing an aesthetic.",
+      "intent": "Turn an underspecified UI prompt into an explicit, testable context model without forcing the same visual direction onto every product.",
+      "appliesTo": ["all"],
+      "tags": ["routing", "brief", "context"],
+      "checks": [
+        "Identify the primary user outcome and usage context.",
+        "Record variance, motion, density, and information complexity independently.",
+        "Name the existing or chosen design foundation."
+      ],
+      "warnings": ["Do not expose a long design questionnaire when repository evidence can resolve the decisions."],
+      "exceptions": ["A narrowly scoped visual fix may need only a one-line context read."],
+      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "macrostructure-first",
+      "title": "Macrostructure First",
+      "summary": "Choose the page or screen structure and reading order before selecting component recipes or detailed styling.",
+      "intent": "Prevent component-first assembly from producing repetitive card grids and weak hierarchy that do not match the user workflow.",
+      "appliesTo": ["page", "screen", "flow"],
+      "tags": ["composition", "hierarchy", "layout"],
+      "checks": [
+        "Select a macrostructure that matches the primary outcome.",
+        "Verify semantic and visual reading order before styling details.",
+        "Define how the structure recomposes at narrow widths."
+      ],
+      "warnings": ["Do not choose a structure solely because it appears in a reference gallery."],
+      "exceptions": ["A component-only task inherits the surrounding macrostructure."],
+      "sourceRefs": ["hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "structural-fingerprint",
+      "title": "Structural Fingerprint",
+      "summary": "Repeat a controlled set of composition traits so the interface feels authored without repeating identical section templates.",
+      "intent": "Create recognizable visual coherence through heading placement, dividers, action voice, media treatment, rhythm, and reveal behavior.",
+      "appliesTo": ["page", "screen", "brand"],
+      "tags": ["composition", "identity", "rhythm"],
+      "checks": [
+        "Name three to six repeated structural traits.",
+        "Use controlled variation instead of identical sections.",
+        "Confirm the fingerprint does not break content priority or semantics."
+      ],
+      "warnings": ["A fingerprint is not a license to apply decoration to every region."],
+      "exceptions": ["Strict platform-native tools may rely primarily on platform structure."],
+      "sourceRefs": ["hallmark"],
+      "level": "contextual"
+    },
+    {
+      "id": "stable-state-geometry",
+      "title": "Stable State Geometry",
+      "summary": "Reserve dimensions for controls, rows, media, and async regions so labels and state changes do not shift the layout.",
+      "intent": "Keep interactions predictable and prevent loading, validation, or long content from moving surrounding controls or obscuring information.",
+      "appliesTo": ["component", "product", "data", "form"],
+      "tags": ["states", "layout", "responsive"],
+      "checks": [
+        "Reserve media space with explicit dimensions or aspect ratios.",
+        "Test loading, error, success, and longest-label states.",
+        "Keep toolbars, rows, counters, and tiles within stable responsive constraints."
+      ],
+      "warnings": ["Fixed dimensions must still allow text reflow and zoom."],
+      "exceptions": ["Content-driven editorial blocks may grow naturally when growth does not disrupt interaction."],
+      "sourceRefs": ["taste", "ui-ux-pro-max", "wcag-2.2"],
+      "level": "recommended"
+    },
+    {
+      "id": "semantic-state-system",
+      "title": "Semantic State System",
+      "summary": "Define color, text, icon, and behavior for default, focus, disabled, loading, error, success, and empty states.",
+      "intent": "Make every reachable state legible and recoverable without relying on color alone or inventing inconsistent local treatments.",
+      "appliesTo": ["component", "form", "product", "data"],
+      "tags": ["states", "accessibility", "tokens"],
+      "checks": [
+        "Provide visible focus and keyboard behavior for every control.",
+        "Pair semantic colors with text, icon, or another non-color cue.",
+        "Give failure states a clear recovery path."
+      ],
+      "warnings": ["Do not disable actions without making the reason discoverable."],
+      "exceptions": ["Unreachable states do not need artificial examples in production UI."],
+      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "level": "recommended"
+    },
+    {
+      "id": "mobile-recomposition",
+      "title": "Mobile Recomposition",
+      "summary": "Change grouping, order, disclosure, and control layout for narrow screens instead of proportionally shrinking desktop UI.",
+      "intent": "Preserve task priority, reading order, accessible targets, and inspectable content under narrow width and limited height.",
+      "appliesTo": ["responsive", "mobile", "page", "screen"],
+      "tags": ["responsive", "mobile", "composition"],
+      "checks": [
+        "Define the narrow-screen content and action priority explicitly.",
+        "Keep DOM, focus, and visual order coherent.",
+        "Test long labels, keyboards, and short landscape height where relevant."
+      ],
+      "warnings": ["Do not hide essential context merely to remove horizontal scrolling."],
+      "exceptions": ["Inherently two-dimensional data may use a labeled horizontal scroll region."],
+      "sourceRefs": ["taste", "hallmark", "wcag-2.2"],
+      "level": "recommended"
+    },
+    {
+      "id": "evidence-backed-qa",
+      "title": "Evidence-backed QA",
+      "summary": "Tie every quality claim to an automated result, rendered browser observation, or clearly bounded static inspection.",
+      "intent": "Prevent unsupported claims that an interface passed responsive, accessibility, performance, or interaction review.",
+      "appliesTo": ["all"],
+      "tags": ["quality", "testing", "evidence"],
+      "checks": [
+        "Record which commands and viewports were actually checked.",
+        "Separate automated results from visual observations.",
+        "Report untested states and remaining risk directly."
+      ],
+      "warnings": ["A static source review cannot prove rendered layout or keyboard behavior."],
+      "exceptions": ["During early exploration, label quality conclusions as provisional."],
+      "sourceRefs": ["hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "real-workflow-first",
+      "title": "Real Workflow First",
+      "summary": "Implement the primary task or experience as the first screen instead of surrounding an incomplete feature with marketing content.",
+      "intent": "Focus implementation effort on the user outcome and make operational tools usable immediately.",
+      "appliesTo": ["product", "tool", "game", "site"],
+      "tags": ["workflow", "product", "scope"],
+      "checks": [
+        "The first screen exposes the core user action or actual subject.",
+        "The primary path works through completion or a truthful bounded state.",
+        "Promotional framing does not displace the requested tool or experience."
+      ],
+      "warnings": ["Do not omit necessary onboarding when the workflow is genuinely unfamiliar or high risk."],
+      "exceptions": ["A user explicitly requesting a campaign or marketing page may need a hero-led first screen."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    }
+  ]
+}

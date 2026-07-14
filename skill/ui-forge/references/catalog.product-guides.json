@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "product-guide",
+  "items": [
+    {
+      "id": "saas-operations",
+      "title": "SaaS and Operations",
+      "summary": "Quiet, repeatable workspaces for frequent tasks, scanning, comparison, triage, and stateful business workflows.",
+      "intent": "Prioritize speed, predictability, data clarity, and comprehensive states over decorative marketing composition.",
+      "appliesTo": ["saas", "crm", "admin", "operations"],
+      "tags": ["product", "density", "workflow"],
+      "checks": [
+        "Use stable navigation and aligned controls for repeated actions.",
+        "Expose loading, empty, permission, error, success, and stale states.",
+        "Keep headings and chrome compact enough to preserve working space."
+      ],
+      "warnings": ["Avoid oversized heroes, decorative card walls, and expressive motion that slows repeated work."],
+      "exceptions": ["Onboarding and empty states may use more editorial spacing while preserving clear actions."],
+      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "commerce-product-detail",
+      "title": "Commerce and Product Detail",
+      "summary": "Inspectable product media paired with essential configuration, trust, fulfillment, and purchase information.",
+      "intent": "Help users evaluate and act without hiding the product behind atmosphere or scattering key facts across decorative sections.",
+      "appliesTo": ["commerce", "retail", "product"],
+      "tags": ["product", "media", "conversion"],
+      "checks": [
+        "Show the real product clearly in the first viewport.",
+        "Keep price, availability, configuration, fulfillment, returns, and primary action legible.",
+        "Preserve selected variants and validation through errors."
+      ],
+      "warnings": ["Do not fabricate reviews, scarcity, ratings, or customer activity."],
+      "exceptions": ["Luxury editorial commerce may use more narrative pacing when purchase facts remain accessible."],
+      "sourceRefs": ["hallmark", "ui-ux-pro-max"],
+      "level": "contextual"
+    },
+    {
+      "id": "editorial-portfolio",
+      "title": "Editorial and Portfolio",
+      "summary": "Authored reading rhythm, distinctive composition, and high-quality media for stories, essays, work, and case studies.",
+      "intent": "Balance expressive identity with legible reading, truthful attribution, and robust narrow-screen ordering.",
+      "appliesTo": ["editorial", "portfolio", "publication"],
+      "tags": ["editorial", "typography", "media"],
+      "checks": [
+        "Keep text measure, heading hierarchy, and captions readable.",
+        "Use media crops and pacing that serve the narrative.",
+        "Retain authorship, dates, credits, and navigation context."
+      ],
+      "warnings": ["Expressive layout must not scramble DOM order or hide links and captions."],
+      "exceptions": ["Experimental art experiences may prioritize exploration when the user explicitly requests it."],
+      "sourceRefs": ["taste", "hallmark"],
+      "level": "contextual"
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data and Analytics",
+      "summary": "Decision-oriented views that preserve comparison, units, filters, freshness, provenance, and drill-down context.",
+      "intent": "Choose tables and charts from user questions instead of decorating dashboards with arbitrary metrics.",
+      "appliesTo": ["analytics", "dashboard", "data"],
+      "tags": ["data", "charts", "comparison"],
+      "checks": [
+        "State the decision or question each visualization supports.",
+        "Show units, time range, filters, freshness, and no-data states.",
+        "Provide labels and non-color distinctions with a table or text alternative where needed."
+      ],
+      "warnings": ["Do not use 3D charts, truncated axes, or metric cards without decision context."],
+      "exceptions": ["A monitoring wall may optimize distant scanning over detailed interaction."],
+      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "level": "contextual"
+    },
+    {
+      "id": "mobile-app",
+      "title": "Mobile Application",
+      "summary": "Platform-aware navigation, reachable actions, safe-area handling, keyboard resilience, and explicit gesture alternatives.",
+      "intent": "Design for touch, limited height, interruption, and platform conventions rather than compressing a desktop interface.",
+      "appliesTo": ["mobile", "ios", "android"],
+      "tags": ["mobile", "touch", "platform"],
+      "checks": [
+        "Account for safe areas, software keyboard, and short landscape height.",
+        "Keep primary controls reachable and targets appropriately sized.",
+        "Provide explicit alternatives to drag and swipe outcomes."
+      ],
+      "warnings": ["Desktop hover, dense multicolumn layouts, and browser-style chrome rarely transfer directly."],
+      "exceptions": ["Tablet layouts may introduce secondary columns when content and input mode support them."],
+      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "level": "contextual"
+    },
+    {
+      "id": "campaign-brand",
+      "title": "Campaign and Brand",
+      "summary": "Expressive first viewports that establish the literal offer or subject and reveal evidence of the next section.",
+      "intent": "Create brand impact without generic split heroes, abstract decoration, hidden subjects, or unsupported claims.",
+      "appliesTo": ["campaign", "brand", "landing", "venue"],
+      "tags": ["brand", "hero", "media"],
+      "checks": [
+        "Make the brand, offer, place, person, product, or object a first-viewport signal.",
+        "Use authentic or clearly identified media that reveals the subject.",
+        "Keep the next content band partially visible on representative screens."
+      ],
+      "warnings": ["Do not put the hero message inside a floating card or use a generic text-media split by default."],
+      "exceptions": ["A restrained institutional campaign may prioritize trust and clarity over expressive composition."],
+      "sourceRefs": ["taste", "hallmark"],
+      "level": "contextual"
+    }
+  ]
+}

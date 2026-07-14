@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "quality-gate",
+  "items": [
+    {
+      "id": "primary-workflow-complete",
+      "title": "Primary Workflow Complete",
+      "summary": "The requested core path works from its initial state through a truthful completion, recovery, or explicitly bounded endpoint.",
+      "intent": "Prevent visually polished shells from being delivered while the main user outcome remains placeholder or broken.",
+      "appliesTo": ["all"],
+      "tags": ["functionality", "workflow", "states"],
+      "checks": ["Execute the primary path and verify every reachable control has a real outcome."],
+      "warnings": ["A prototype limitation must be visible and reported rather than presented as complete."],
+      "exceptions": ["A user requesting only a static design artifact may not require runtime behavior."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "blocking"
+    },
+    {
+      "id": "semantic-keyboard-path",
+      "title": "Semantic Keyboard Path",
+      "summary": "Native semantics, programmatic names, logical focus order, and keyboard operation cover the complete core workflow.",
+      "intent": "Ensure the interface remains operable and understandable without a pointer or visual inference alone.",
+      "appliesTo": ["all"],
+      "tags": ["accessibility", "keyboard", "semantics"],
+      "checks": ["Navigate the primary path with keyboard only and inspect names, roles, values, and focus order."],
+      "warnings": ["Clickable containers and custom widgets often omit required keyboard behavior."],
+      "exceptions": ["Purely decorative noninteractive content has no keyboard path."],
+      "sourceRefs": ["wcag-2.2", "ui-ux-pro-max"],
+      "level": "blocking"
+    },
+    {
+      "id": "visible-unobscured-focus",
+      "title": "Visible and Unobscured Focus",
+      "summary": "Every keyboard-focusable element has a visible high-contrast indicator that sticky or modal UI does not hide.",
+      "intent": "Keep keyboard location evident throughout navigation, disclosures, dialogs, and dense control regions.",
+      "appliesTo": ["all"],
+      "tags": ["accessibility", "focus", "keyboard"],
+      "checks": ["Inspect focus indicators across light, dark, selected, error, and sticky-layer contexts."],
+      "warnings": ["Browser-default focus may become invisible after custom borders or overflow clipping."],
+      "exceptions": ["Noninteractive elements should not receive focus merely to satisfy this gate."],
+      "sourceRefs": ["wcag-2.2"],
+      "level": "blocking"
+    },
+    {
+      "id": "contrast-and-noncolor-cues",
+      "title": "Contrast and Non-color Cues",
+      "summary": "Text, meaningful graphics, controls, focus, and states meet relevant contrast thresholds and do not depend on color alone.",
+      "intent": "Preserve legibility and state meaning across vision differences, displays, and environmental conditions.",
+      "appliesTo": ["all"],
+      "tags": ["accessibility", "contrast", "color"],
+      "checks": [
+        "Measure every semantic color pairing used and inspect state cues without relying on hue.",
+        "Apply hover, active, focus-visible, selected, disabled, error, and success states in a browser, then scan or measure each rendered composite."
+      ],
+      "warnings": [
+        "Token names do not prove the actual foreground and background pairing passes.",
+        "A foreground that passes on the default surface may fail when a state changes only the background."
+      ],
+      "exceptions": ["Logotypes and incidental disabled content follow the specific WCAG exceptions."],
+      "sourceRefs": ["wcag-2.2"],
+      "level": "blocking"
+    },
+    {
+      "id": "responsive-no-loss",
+      "title": "Responsive Without Loss",
+      "summary": "Supported widths and text zoom preserve content, controls, reading order, and recovery without clipping or incoherent overlap.",
+      "intent": "Make narrow screens and zoomed text first-class operating conditions rather than screenshots checked after implementation.",
+      "appliesTo": ["responsive", "web"],
+      "tags": ["responsive", "reflow", "zoom"],
+      "checks": ["Inspect at 320 CSS pixels, representative mobile and desktop widths, and 200 percent text zoom."],
+      "warnings": ["Hiding overflow can conceal a defect instead of fixing it."],
+      "exceptions": ["Inherently two-dimensional canvases and tables may use bounded scrolling with accessible controls."],
+      "sourceRefs": ["wcag-2.2", "taste", "hallmark"],
+      "level": "blocking"
+    },
+    {
+      "id": "honest-content",
+      "title": "Honest Content",
+      "summary": "People, data, customer evidence, metrics, integrations, awards, and product claims are source-backed or clearly labeled as samples.",
+      "intent": "Prevent generated UI content from misrepresenting product facts or creating false trust evidence.",
+      "appliesTo": ["all"],
+      "tags": ["content", "trust", "provenance"],
+      "checks": ["Trace each factual claim and evidence-like asset to a source or sample label."],
+      "warnings": ["Plausible placeholder content can be mistaken for real data during release."],
+      "exceptions": ["Clearly labeled fictional fixtures are valid in demos and automated tests."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "blocking"
+    },
+    {
+      "id": "recoverable-errors",
+      "title": "Recoverable Errors",
+      "summary": "Real failure paths explain what happened, preserve useful input, and provide a clear retry, correction, undo, or escape route.",
+      "intent": "Keep users in control when validation, network, permission, or destructive actions fail.",
+      "appliesTo": ["form", "product", "data", "async"],
+      "tags": ["errors", "recovery", "states"],
+      "checks": ["Trigger each material failure state and complete its recovery path."],
+      "warnings": ["Generic error toasts without context or next action do not satisfy recovery."],
+      "exceptions": ["A purely static page with no failure path does not need artificial error UI."],
+      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "level": "blocking"
+    },
+    {
+      "id": "reduced-motion-functional",
+      "title": "Reduced Motion Remains Functional",
+      "summary": "Reduced-motion preference removes nonessential travel and autoplay while preserving state feedback and every user outcome.",
+      "intent": "Avoid vestibular triggers and ensure motion is never required to understand or operate the interface.",
+      "appliesTo": ["motion", "web", "mobile"],
+      "tags": ["accessibility", "motion", "preferences"],
+      "checks": ["Enable reduced motion, execute the primary path, and verify feedback remains visible."],
+      "warnings": ["Disabling all transitions without replacement can hide state changes."],
+      "exceptions": ["Motion essential to the information requires a documented accessible alternative where possible."],
+      "sourceRefs": ["wcag-2.2", "taste"],
+      "level": "blocking"
+    },
+    {
+      "id": "stable-layout",
+      "title": "Stable Layout",
+      "summary": "Media, loading, validation, long labels, and async results reserve space and do not unexpectedly move controls or content.",
+      "intent": "Prevent layout shifts, missed actions, and overlapping UI across normal state transitions.",
+      "appliesTo": ["all"],
+      "tags": ["layout", "states", "performance"],
+      "checks": ["Compare geometry across loading, longest-content, error, success, and empty states."],
+      "warnings": ["Rigid heights can trade layout shift for clipping; use responsive constraints."],
+      "exceptions": ["Content regions may grow naturally when growth does not displace an active control unexpectedly."],
+      "sourceRefs": ["taste", "ui-ux-pro-max"],
+      "level": "recommended"
+    },
+    {
+      "id": "readable-measure-and-wrap",
+      "title": "Readable Measure and Wrap",
+      "summary": "Headings, body copy, metadata, and actions retain intentional line lengths without brittle hard breaks or accidental one-word columns.",
+      "intent": "Prevent responsive typography from looking cut apart when display type, side padding, or a narrow max-width consumes the available measure.",
+      "appliesTo": ["web", "responsive", "editorial", "marketing", "product"],
+      "tags": ["typography", "responsive", "content"],
+      "checks": [
+        "Inspect the longest real heading, paragraph, label, and action immediately before and after every layout breakpoint.",
+        "Remove ordinary-copy hard breaks and reject measures that repeatedly produce one- or two-word body lines when more width is available."
+      ],
+      "warnings": ["A layout can avoid overflow and still be unreadable because padding or type scale leaves an unusably narrow text column."],
+      "exceptions": ["A short editorial phrase may use a deliberate fixed break when it remains coherent at every supported width and zoom level."],
+      "sourceRefs": ["ui-forge-synthesis", "wcag-2.2"],
+      "level": "recommended"
+    },
+    {
+      "id": "container-bleed-separation",
+      "title": "Container and Bleed Separation",
+      "summary": "Viewport-wide backgrounds and media extend independently while text, controls, and repeated panels remain aligned to the shared content grid.",
+      "intent": "Prevent wide-screen whitespace, double-applied gutters, and misaligned sections caused by mixing viewport calculations with constrained child panels.",
+      "appliesTo": ["web", "responsive", "marketing", "editorial", "product"],
+      "tags": ["layout", "containers", "responsive"],
+      "checks": [
+        "Compare the computed x position and width of adjacent constrained sections at wide desktop, compact desktop, tablet, and mobile sizes.",
+        "Verify full-bleed paint reaches the intended viewport edges while document scroll width remains equal to viewport width."
+      ],
+      "warnings": ["Using a viewport gutter formula inside an already centered max-width child applies the outside spacing twice."],
+      "exceptions": ["A deliberate offset or asymmetric editorial field is valid when its misalignment is specified and remains responsive."],
+      "sourceRefs": ["ui-forge-synthesis", "taste"],
+      "level": "recommended"
+    },
+    {
+      "id": "reference-transformation",
+      "title": "Reference Transformation",
+      "summary": "Studied references inform principles and craft without reproducing one source's recognizable shell, navigation, typography, and accent composition.",
+      "intent": "Keep reference-led work specific to the target product and prevent a redesign from reading as another product with substituted copy.",
+      "appliesTo": ["redesign", "marketing", "brand", "editorial", "product"],
+      "tags": ["authenticity", "composition", "references"],
+      "checks": [
+        "Name the traits retained from each reference and identify at least two structural decisions derived from the target product.",
+        "Compare thumbnail silhouettes and redesign when the shell, navigation geometry, hero structure, and accent placement still match one source as a set."
+      ],
+      "warnings": ["Changing colors and copy does not create a distinct system when the page silhouette and chrome remain recognizable."],
+      "exceptions": ["Direct reproduction is valid only when the user owns the source and explicitly requests faithful implementation."],
+      "sourceRefs": ["ui-forge-synthesis", "taste", "hallmark"],
+      "level": "recommended"
+    },
+    {
+      "id": "design-system-coherence",
+      "title": "Design-system Coherence",
+      "summary": "Typography, spacing, color, icons, shape, surfaces, and interaction states follow one deliberate foundation.",
+      "intent": "Prevent visual and behavioral drift caused by arbitrary values and mixed component systems.",
+      "appliesTo": ["all"],
+      "tags": ["systems", "consistency", "tokens"],
+      "checks": [
+        "Scan the implementation for duplicate roles, arbitrary tokens, and mixed icon or component systems.",
+        "For repeated metrics, labels, icons, and controls, declare the intended center, edge, baseline, or decimal alignment and inspect rendered geometry."
+      ],
+      "warnings": ["Consistency should not erase necessary hierarchy or state differences."],
+      "exceptions": ["A migration boundary may temporarily host two systems with explicit isolation."],
+      "sourceRefs": ["ui-ux-pro-max", "hallmark"],
+      "level": "recommended"
+    },
+    {
+      "id": "authentic-primary-media",
+      "title": "Authentic Primary Media",
+      "summary": "Primary imagery reveals the actual subject users need to inspect and includes correct crop, dimensions, loading, and alternative text.",
+      "intent": "Make media useful evidence rather than generic atmosphere or an unstable decorative layer.",
+      "appliesTo": ["commerce", "portfolio", "venue", "brand", "product"],
+      "tags": ["assets", "media", "authenticity"],
+      "checks": ["Inspect the subject, crop, loading behavior, reserved space, and text alternative at representative widths."],
+      "warnings": ["Dark overlays and aggressive crops often hide the subject and reduce contrast."],
+      "exceptions": ["Abstract or atmospheric imagery is valid when detailed inspection is not a user need."],
+      "sourceRefs": ["hallmark", "taste", "wcag-2.2"],
+      "level": "recommended"
+    },
+    {
+      "id": "verified-delivery-report",
+      "title": "Verified Delivery Report",
+      "summary": "The final report names executed checks, inspected viewports and states, material fixes, and any remaining limitations.",
+      "intent": "Give reviewers a factual account of confidence instead of a generic claim that quality checks passed.",
+      "appliesTo": ["all"],
+      "tags": ["quality", "evidence", "delivery"],
+      "checks": ["Separate automated evidence, rendered observations, static review, and untested risk."],
+      "warnings": ["Do not imply that a command ran or a viewport was inspected when it was not."],
+      "exceptions": ["A conceptual-only response should state that no implementation checks apply."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "recommended"
+    }
+  ]
+}

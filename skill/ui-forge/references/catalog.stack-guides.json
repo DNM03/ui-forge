@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "stack-guide",
+  "items": [
+    {
+      "id": "nextjs-app-router",
+      "title": "Next.js App Router",
+      "summary": "Use Server Components by default, narrow client boundaries, framework routing and metadata, and explicit static-generation contracts.",
+      "intent": "Keep UI implementations aligned with current Next.js architecture while avoiding hydration, rendering, and deployment mistakes.",
+      "appliesTo": ["nextjs", "react", "web"],
+      "tags": ["stack", "nextjs", "react"],
+      "checks": [
+        "Keep interactive Client Components small and pass serializable data into them.",
+        "Use framework layouts, links, metadata, loading, error, and not-found conventions.",
+        "For static export, generate every dynamic path and avoid unsupported server features."
+      ],
+      "warnings": ["Do not access browser globals during server rendering or add client boundaries to entire route trees without need."],
+      "exceptions": ["A heavily interactive editor may justify a larger client-owned island with explicit boundaries."],
+      "sourceRefs": ["nextjs", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "react-component-system",
+      "title": "React Component System",
+      "summary": "Model state explicitly, preserve semantic elements, keep component ownership local, and avoid unsafe HTML or unnecessary effects.",
+      "intent": "Produce maintainable UI behavior without over-abstracted components, duplicated state, or unsafe rendering escape hatches.",
+      "appliesTo": ["react", "web"],
+      "tags": ["stack", "react", "components"],
+      "checks": [
+        "Use native controls and controlled state only where the workflow needs it.",
+        "Keep effects for synchronization with external systems, not derived render data.",
+        "Render untrusted content as text or sanitized data, never directly through unsafe HTML."
+      ],
+      "warnings": ["Generic components with many boolean props often hide unclear ownership and state combinations."],
+      "exceptions": ["A vetted rich-text pipeline may render sanitized HTML through a tightly controlled boundary."],
+      "sourceRefs": ["owasp", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "tailwind-utility-css",
+      "title": "Tailwind Utility CSS",
+      "summary": "Use a shared token vocabulary, stable responsive rules, and extracted components only where repetition creates real ownership.",
+      "intent": "Keep utility-first styling coherent without arbitrary-value drift, unreadable class duplication, or premature wrapper components.",
+      "appliesTo": ["tailwind", "css", "web"],
+      "tags": ["stack", "tailwind", "css"],
+      "checks": [
+        "Map recurring semantic colors, spacing, radii, and type roles to shared tokens.",
+        "Keep responsive behavior near the component and verify class ordering remains readable.",
+        "Extract repeated component structure, not one-off class lists."
+      ],
+      "warnings": ["Frequent arbitrary values and duplicated state selectors indicate a missing token or primitive."],
+      "exceptions": ["A truly unique fixed-format element may require one explicit arbitrary constraint."],
+      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "plain-html-css",
+      "title": "Plain HTML and CSS",
+      "summary": "Prefer semantic document structure, progressive enhancement, modern layout primitives, and minimal JavaScript for stateful behavior.",
+      "intent": "Build durable interfaces without recreating browser controls or adding a framework where the product does not need one.",
+      "appliesTo": ["html", "css", "javascript", "web"],
+      "tags": ["stack", "html", "css"],
+      "checks": [
+        "Use landmarks, native controls, form labels, and logical heading structure.",
+        "Use grid, flexbox, container constraints, and media queries for layout.",
+        "Make content and core navigation useful before optional JavaScript enhancements."
+      ],
+      "warnings": ["Custom select, dialog, tab, and menu implementations carry substantial accessibility requirements."],
+      "exceptions": ["A complex application may require a state framework once interaction ownership exceeds local enhancement."],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "native-mobile",
+      "title": "Native Mobile UI",
+      "summary": "Use platform components, navigation, safe-area behavior, dynamic type, accessibility APIs, and native feedback conventions.",
+      "intent": "Keep mobile interfaces familiar, reachable, and resilient across text sizes, input methods, and device geometry.",
+      "appliesTo": ["ios", "android", "mobile"],
+      "tags": ["stack", "mobile", "native"],
+      "checks": [
+        "Prefer platform controls and accessibility semantics before custom drawing.",
+        "Test dynamic text, keyboard, safe areas, rotation, and screen-reader order.",
+        "Use native navigation and feedback behavior unless the brand requirement clearly outweighs it."
+      ],
+      "warnings": ["Web hover and breakpoint assumptions do not map directly to native application layout."],
+      "exceptions": ["Games and immersive media may use custom-rendered controls with equivalent accessibility paths."],
+      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "level": "contextual"
+    },
+    {
+      "id": "threejs-interactive-3d",
+      "title": "Three.js Interactive 3D",
+      "summary": "Use a proven 3D engine, stable full-bleed canvas geometry, explicit loading and fallback states, and measured input performance.",
+      "intent": "Make 3D the actual experience rather than a decorative preview while keeping the page usable when rendering or assets fail.",
+      "appliesTo": ["threejs", "webgl", "game", "3d"],
+      "tags": ["stack", "threejs", "canvas"],
+      "checks": [
+        "Verify nonblank rendered pixels and correct framing at mobile and desktop sizes.",
+        "Provide loading, error, reduced-motion, and non-WebGL fallback behavior.",
+        "Keep keyboard, touch, pointer, resize, and visibility lifecycle behavior coherent."
+      ],
+      "warnings": ["Do not place the primary 3D experience inside a decorative card or omit real browser frame checks."],
+      "exceptions": ["A small 3D inspector within an operational tool may use a bounded functional viewport."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "contextual"
+    }
+  ]
+}
