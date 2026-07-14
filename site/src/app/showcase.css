@@ -100,27 +100,20 @@ textarea {
 
 .brand-mark {
   position: relative;
-  display: grid;
+  display: block;
   width: 40px;
   height: 40px;
   flex: 0 0 40px;
-  place-items: center;
   border-radius: 2px;
-  background: var(--action);
-  color: #ffffff;
-  font-family: var(--font-display);
-  font-weight: 750;
-  font-size: 11px;
+  background: var(--ink);
+  overflow: hidden;
 }
 
-.brand-mark::after {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 8px;
-  height: 8px;
-  background: var(--signal);
-  content: "";
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand > span:last-child {
@@ -444,33 +437,64 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  margin-top: 28px;
+  margin-top: 18px;
 }
 
-.source-path {
-  display: flex;
-  width: min(510px, 100%);
-  min-height: 48px;
+.install-command {
+  display: grid;
+  width: min(556px, 100%);
+  min-height: 54px;
   align-items: center;
-  gap: 15px;
-  margin-top: 14px;
-  padding: 0 17px;
-  border-radius: 8px;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 0 14px 0 17px;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 14px;
   background: rgb(18 19 17 / 94%);
   color: #ffffff;
   box-shadow: 0 10px 24px rgb(18 19 17 / 16%);
 }
 
-.source-path span {
-  color: #b3b8b0;
+.install-command-prompt {
+  color: #8f948c;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.install-command code {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #d8ddd6;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.install-command button {
+  display: inline-flex;
+  min-width: 82px;
+  min-height: 38px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #c1c6be;
   font-family: "SFMono-Regular", Consolas, monospace;
   font-size: 9px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.source-path code {
-  overflow-wrap: anywhere;
-  font-size: 11px;
+.install-command button:hover {
+  color: #ffffff;
+}
+
+.install-command button svg {
+  flex: 0 0 auto;
 }
 
 .material-caption {
@@ -1674,11 +1698,19 @@ textarea {
     width: 100%;
   }
 
-  .source-path {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 4px;
-    padding-block: 10px;
+  .install-command {
+    min-height: 62px;
+    gap: 8px;
+    padding: 8px 10px 8px 13px;
+  }
+
+  .install-command code {
+    font-size: 12px;
+  }
+
+  .install-command button {
+    min-width: 66px;
+    font-size: 8px;
   }
 
   .material-caption span {

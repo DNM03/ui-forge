@@ -1,4 +1,5 @@
 import { Menu, Search } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { manifest } from "@/lib/content";
@@ -11,7 +12,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <header className="site-header">
         <div className="site-header-inner">
           <Link className="brand" href="/" aria-label="UI Forge home">
-            <span className="brand-mark" aria-hidden="true">UF</span>
+            <span className="brand-mark" aria-hidden="true">
+              <Image src="/images/ui-forge-mark.png" alt="" width={40} height={40} priority />
+            </span>
             <span><strong>UI Forge</strong><small>Interface craft system</small></span>
           </Link>
 

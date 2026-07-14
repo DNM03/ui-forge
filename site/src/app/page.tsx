@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { CatalogRow } from "@/components/catalog-row";
 import { DesignReadWorkbench } from "@/components/design-read-workbench";
+import { InstallCommand } from "@/components/install-command";
 import { manifest } from "@/lib/content";
 
 const workflow = [
@@ -38,15 +39,15 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="showcase-hero-content">
-          <p className="release-line"><span /> UI Forge 1.0 / open skill</p>
+          <p className="release-line"><span /> UI Forge 1.0 / npx skill</p>
           <h1><span>UI</span> Forge</h1>
-          <p className="showcase-deck">Interface craft that feels <em>considered.</em></p>
-          <p className="showcase-intro">Context-aware composition, implementation guidance, and hard delivery gates for frontend work that should not look generated.</p>
+          <p className="showcase-deck">Install the skill.<br /><em>Forge the interface.</em></p>
+          <p className="showcase-intro">Add UI Forge to your agent and route frontend work through context-aware composition, implementation guidance, and hard delivery gates.</p>
+          <InstallCommand />
           <div className="showcase-actions">
             <Link className="button button-primary" href="/docs/routing-and-precedence/">Read the method <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link className="button" href="/catalog/">Browse the system <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
-          <div className="source-path"><span>Source</span><code>skills/ui-forge/SKILL.md</code></div>
         </div>
         <div className="material-caption"><span>Material study</span><code>UIF / 001</code></div>
       </section>
