@@ -46,7 +46,7 @@ export default function Home() {
             <Link className="button button-primary" href="/docs/routing-and-precedence/">Read the method <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link className="button" href="/catalog/">Browse the system <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
-          <div className="source-path"><span>Source</span><code>skill/ui-forge/SKILL.md</code></div>
+          <div className="source-path"><span>Source</span><code>skills/ui-forge/SKILL.md</code></div>
         </div>
         <div className="material-caption"><span>Material study</span><code>UIF / 001</code></div>
       </section>

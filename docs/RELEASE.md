@@ -8,7 +8,7 @@
 4. `npm run lint` and `npm run typecheck` pass.
 5. `npm run build` emits a static export without dynamic-server warnings.
 6. Browser checks cover 390x844 and 1440x1000 viewports, keyboard navigation, search, filters, detail routes, and no horizontal overflow.
-7. The released skill archive contains only `skill/ui-forge/` and retains no generated site or repository tooling.
+7. The released skill archive contains only `skills/ui-forge/` and retains no generated site or repository tooling.
 
 ## Known dependency note
 

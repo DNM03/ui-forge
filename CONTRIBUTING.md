@@ -2,7 +2,7 @@
 
 ## Content workflow
 
-1. Edit only canonical files in `skill/ui-forge/`.
+1. Edit only canonical files in `skills/ui-forge/`.
 2. Add provenance for any externally derived rule before adding the rule.
 3. Keep `SKILL.md` procedural and under 500 lines; put conditional detail in one-level `references/` files.
 4. Update catalog entries with stable IDs instead of renaming IDs after publication.

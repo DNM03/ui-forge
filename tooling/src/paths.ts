@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 const moduleDirectory = path.dirname(fileURLToPath(import.meta.url));
 
 export const repoRoot = path.resolve(moduleDirectory, "../..");
-export const skillRoot = path.join(repoRoot, "skill/ui-forge");
+export const skillRoot = path.join(repoRoot, "skills/ui-forge");
 export const referencesRoot = path.join(skillRoot, "references");
 export const provenanceRoot = path.join(repoRoot, "provenance");
 export const generatedRoot = path.join(repoRoot, "site/src/generated");

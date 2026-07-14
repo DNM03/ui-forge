@@ -2,10 +2,10 @@
 
 ## Source of truth
 
-`skill/ui-forge/` owns every rule displayed by the website. Prose references and structured catalogs are authored there. The site is a read-only projection and must not contain an independent copy of guidance.
+`skills/ui-forge/` owns every rule displayed by the website. Prose references and structured catalogs are authored there. The site is a read-only projection and must not contain an independent copy of guidance.
 
 ```text
-skill/ui-forge/*
+skills/ui-forge/*
       |
       v
 tooling: path checks -> schema checks -> Markdown AST checks -> sanitized HTML
@@ -44,7 +44,7 @@ All dynamic routes implement `generateStaticParams()`. Query-string state is an 
 
 1. Canonical Markdown cannot contain raw HTML.
 2. Links allow only repository-relative paths, fragments, `https:`, and `mailto:`.
-3. File resolution must remain beneath `skill/ui-forge/`.
+3. File resolution must remain beneath `skills/ui-forge/`.
 4. Catalog files reject unknown properties and duplicate IDs.
 5. `dangerouslySetInnerHTML` may receive only the generated, sanitized HTML field.
 6. Site code never shells out and never fetches content during runtime.
