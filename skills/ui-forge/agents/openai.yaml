@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Forge"
-  short_description: "Design proof-led, non-generic interfaces"
-  default_prompt: "Use $ui-forge to design and implement this interface. Start with a compact design contract, avoid generic hero/card/gradient defaults, show product-specific proof, cover real states, and verify responsive/accessibility quality."
+  short_description: "Design premium, proof-led interfaces"
+  default_prompt: "Use $ui-forge to design and implement this interface. Set a visual ambition, avoid generic hero/card/gradient defaults, create a memorable product-specific hook, show truthful proof, cover real states, and verify responsive/accessibility quality."
 
 policy:
   allow_implicit_invocation: true

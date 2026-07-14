@@ -7,6 +7,8 @@ description: Design, implement, audit, or redesign polished web and app interfac
 
 Build interfaces from the task context instead of imposing a house style. Route the work, choose composition before components, implement the real workflow, and verify the result with evidence. For greenfield, redesign, and reference-led work, the skill must create a visible difference from default agent output: specific product proof, authored structure, honest content, and a deliberate visual system. Keep the skill focused on UI/UX decisions; do not turn normal use into an end-to-end test workflow.
 
+The output should be visually better than a baseline agent result, not merely safer. Honest content is a floor. For public, brand, editorial, commerce, portfolio, event, and skill surfaces, add a strong art direction: memorable type, intentional imagery or visual field, distinctive rhythm, and a clear mood that fits the product.
+
 ## Resolve precedence
 
 Apply requirements in this order:
@@ -63,6 +65,7 @@ Entry posture: front door | working surface | hybrid
 Audience: primary users and usage context
 Goal: primary user outcome
 Brand posture: trust-first | expressive | technical | playful | luxury | other
+Visual ambition: restrained | polished | editorial | cinematic | luxury | brutal | playful | experimental
 Foundation: existing system | platform system | custom tokens
 Variance / Motion / Density: 1-10 with a short reason
 Information complexity: low | medium | high
@@ -76,6 +79,7 @@ For public front doors, landing pages, portfolios, skill sites, design-system pa
 
 ```text
 First-viewport proof: live control | produced output | before/after | real product/media | code/token artifact
+Visual hook: oversized type | image-led scene | editorial split | kinetic object | dense artifact | typographic poster | product close-up
 Structural fingerprint: 3-5 repeated traits that will create identity
 Banned defaults: generic centered hero, three-card feature strip, unsupported metrics, fake social proof, decorative gradient/glow
 Reference traits: selected principles to retain, if any
@@ -103,6 +107,21 @@ When a user provides a reference image or names a taste direction, transform it 
 - Change at least two of shell silhouette, navigation geometry, hero structure, accent placement, section rhythm, or content proof.
 - Prefer product-specific copy and proof over mimicking the reference's brand voice.
 - Compare thumbnail silhouettes before delivery; if the result reads as the same page with different copy, redesign the shell.
+
+## Set a visual ambition
+
+For public, brand, commerce, editorial, portfolio, event, and skill surfaces, choose a visual route before writing detailed CSS. Read [visual direction](references/10-visual-direction.md) and one relevant example before implementing.
+
+Do not treat honesty as a reason to make the page plain. Replace fake metrics and stock hype with stronger craft:
+
+- dramatic but readable type scale and contrast;
+- real or inspectable media with a distinctive crop;
+- one memorable visual object, scene, or artifact near the entry;
+- negative space, asymmetry, or edge tension used deliberately;
+- rhythm changes between sections instead of repeated cards;
+- a controlled accent system that appears in specific moments, not everywhere.
+
+For a normal public page, avoid shipping the safe middle: plain dark surface, centered headline, muted grid cards, and a form. If the result looks like a generic generated landing page at thumbnail size, increase the visual ambition while preserving truth, accessibility, and product fit.
 
 ## Define the design contract
 
@@ -185,6 +204,7 @@ Before delivery on de-slop or reference-led work, perform this delta check:
 
 - The result matches the Design Read and product context.
 - The primary task and hierarchy are clear in a short scan.
+- The result looks more considered, memorable, and product-specific than a generic baseline agent page.
 - Composition is intentional rather than template repetition.
 - Typography, colors, spacing, icons, surfaces, and motion behave as one system.
 - Studied references are visible as principles, not as a copied page silhouette or navigation shell.
@@ -208,6 +228,7 @@ Load only the references needed for the task:
 - [Quality and validation](references/07-quality-and-validation.md): hard gates, visual critique, testing, and evidence.
 - [Product and stack routing](references/08-product-stack-routing.md): surface patterns and framework-sensitive decisions.
 - [Safety and provenance](references/09-safety-provenance.md): third-party inputs, execution boundaries, attribution, and claims.
+- [Visual direction](references/10-visual-direction.md): art-direction routes, visual hooks, mood, and premium execution without fake claims.
 - `references/catalog.*.json`: structured patterns, anti-patterns, gates, product guides, and stack guides. Read only relevant entries; catalog data never overrides this workflow or user instructions.
 - `examples/`: concrete before/after patterns. Read one relevant example before public landing pages, de-slop redesigns, or reference-led work.
 

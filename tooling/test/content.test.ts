@@ -7,7 +7,7 @@ describe("canonical content", () => {
     const first = await buildManifest();
     const second = await buildManifest();
 
-    expect(first.docs).toHaveLength(10);
+    expect(first.docs).toHaveLength(11);
     expect(first.catalog.length).toBeGreaterThanOrEqual(40);
     expect(first.sourceDigest).toBe(second.sourceDigest);
     expect(new Set(first.catalog.map((item) => item.id)).size).toBe(first.catalog.length);

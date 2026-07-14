@@ -54,6 +54,23 @@
       "level": "contextual"
     },
     {
+      "id": "visual-ambition",
+      "title": "Visual Ambition",
+      "summary": "Choose a fitting art direction and memorable visual hook so the interface is not merely safe, but visually stronger than a generic baseline.",
+      "intent": "Push public and creative surfaces beyond flat correctness by requiring a product-specific mood, hero object, type treatment, and section rhythm.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["visual-direction", "art-direction", "brand"],
+      "checks": [
+        "Name the chosen visual ambition and primary visual hook before detailed styling.",
+        "Use at least one product-specific artifact, subject image, typographic moment, or interactive object near the entry.",
+        "Confirm the page is more memorable at thumbnail scale than a generic baseline without adding false claims."
+      ],
+      "warnings": ["A truthful page can still fail if it has no strong visual point of view."],
+      "exceptions": ["Strict enterprise tools may prioritize operational clarity over visual drama."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
       "id": "stable-state-geometry",
       "title": "Stable State Geometry",
       "summary": "Reserve dimensions for controls, rows, media, and async regions so labels and state changes do not shift the layout.",

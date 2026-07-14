@@ -1,6 +1,6 @@
 # UI Forge
 
-Agent skill for practical frontend interface design, redesign, and UI quality reviews.
+Agent skill for premium frontend interface design, redesign, and UI quality reviews.
 
 ## Available Skill
 
@@ -14,6 +14,7 @@ Design, implement, audit, and redesign polished interfaces for:
 - loading, empty, error, disabled, success, hover, active, and focus-visible states;
 - design-system reuse, typography, spacing, color, icons, surfaces, and motion;
 - product-specific composition instead of generic AI-looking templates;
+- stronger art direction, visual hooks, premium rhythm, and memorable first viewports;
 - UI/UX review with concrete quality gates and severity-ranked findings.
 
 The skill prioritizes explicit user constraints, existing behavior, functional correctness, accessibility, platform conventions, product context, performance, and visual direction before anti-slop heuristics. For repository work, it preserves behavior and reports concrete file/line evidence where possible. For greenfield work, it starts from product context and the primary user workflow.
@@ -96,11 +97,12 @@ UI Forge routes each task through a compact design read:
 - entry posture;
 - audience and goal;
 - brand posture;
+- visual ambition and primary hook;
 - existing foundation or design system;
 - variance, motion, and density;
 - information complexity.
 
-It then applies quality gates for UI/UX fit, correctness, accessibility, responsive behavior, state contrast, readable wrapping, state coverage, alignment, and honest content. Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.
+It then pushes for product-specific visual direction before applying quality gates for UI/UX fit, correctness, accessibility, responsive behavior, state contrast, readable wrapping, state coverage, alignment, and honest content. Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.
 
 ## Contributing
 
