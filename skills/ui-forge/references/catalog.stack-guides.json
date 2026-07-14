@@ -99,7 +99,7 @@
         "Provide loading, error, reduced-motion, and non-WebGL fallback behavior.",
         "Keep keyboard, touch, pointer, resize, and visibility lifecycle behavior coherent."
       ],
-      "warnings": ["Do not place the primary 3D experience inside a decorative card or omit real browser frame checks."],
+      "warnings": ["Do not place the primary 3D experience inside a decorative card or omit rendered framing checks when a render is practical."],
       "exceptions": ["A small 3D inspector within an operational tool may use a bounded functional viewport."],
       "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"

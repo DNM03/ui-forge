@@ -1,6 +1,6 @@
 ---
 title: Quality and validation
-summary: Verify correctness, accessibility, responsive behavior, and design quality with explicit evidence.
+summary: Verify UI/UX quality, accessibility, responsive behavior, and correctness with proportionate evidence.
 order: 70
 ---
 
@@ -8,12 +8,16 @@ order: 70
 
 Prefer evidence in this order:
 
-1. Automated tests and build output for deterministic behavior.
-2. Browser inspection of the actual rendered state.
-3. Static inspection of semantics, styles, and source paths.
-4. Reasoned inference, clearly labeled as unverified.
+1. UI/UX review of the actual design decisions: hierarchy, flow, copy, states, density, and product fit.
+2. Static inspection of semantics, styles, source paths, and component contracts.
+3. Existing project checks for deterministic behavior, such as typecheck, lint, unit tests, or build.
+4. Manual rendered inspection when a local render is already practical.
+5. Automated browser or end-to-end tests only when the user asks, the project already owns that workflow, or the task is specifically site validation.
+6. Reasoned inference, clearly labeled as unverified.
 
 Do not report a viewport, contrast, keyboard, performance, or screen-reader pass based only on prose review.
+
+Do not install or run Playwright as a default part of this skill. Playwright belongs to this repository's optional site testing and to projects that explicitly require e2e validation, not to routine UI/UX design guidance.
 
 ## Blocking findings
 
@@ -54,18 +58,18 @@ Use these checks before calling a visual redesign complete:
 
 | Risk | Guard | Required evidence |
 | --- | --- | --- |
-| Reference tracing | Preserve selected principles, but change the product shell, navigation geometry, or composition enough to create a distinct silhouette. | Side-by-side or thumbnail comparison with each studied reference. |
-| State contrast drift | Set every foreground and icon color explicitly when a state changes its background. | Browser-applied hover, active, focus, selected, and disabled states scanned or measured in their rendered composites. |
-| Pathological wrapping | Avoid hard breaks in ordinary copy and reject body text that collapses into one- or two-word lines. Keep short actions intact when the supported width allows it. | Screenshots at narrow mobile, desktop, and the breakpoint immediately before and after recomposition. |
+| Reference tracing | Preserve selected principles, but change the product shell, navigation geometry, or composition enough to create a distinct silhouette. | Side-by-side or thumbnail comparison with each studied reference; static comparison is acceptable. |
+| State contrast drift | Set every foreground and icon color explicitly when a state changes its background. | Static state review plus manual rendered inspection when available; automated browser checks are optional. |
+| Pathological wrapping | Avoid hard breaks in ordinary copy and reject body text that collapses into one- or two-word lines. Keep short actions intact when the supported width allows it. | Inspect narrow mobile, desktop, and breakpoint-adjacent layouts when practical; otherwise state the review was static. |
 | Bleed/container mismatch | Specify background extent and content extent independently. Do not reuse viewport gutter calculations inside constrained children. | Computed section and shared-container `x` positions and widths at wide desktop, tablet, and mobile; document width equals viewport width. |
 | Incidental alignment | Declare alignment for repeated values, labels, icons, and controls instead of inheriting layout defaults. | Rendered bounding boxes or an overlay showing intended centers, baselines, or column edges. |
 
-A static screenshot of the default desktop state is not enough evidence for any of these guards.
+A default desktop-only review is not enough evidence for any of these guards.
 
-## Browser matrix
+## UI review matrix
 
-At minimum inspect one narrow mobile width and one desktop width. Add tablet, wide desktop, short landscape, zoom, and multiple browsers when the component risk justifies them. Test primary navigation, core action, search or filtering, modal layers, errors, empty states, long labels, and long content.
+At minimum, reason through one narrow mobile layout and one desktop layout. When a local render is already available, manually inspect those sizes. Add tablet, wide desktop, short landscape, zoom, or automated browser tests only when the component risk justifies them or the project already uses that workflow. Review primary navigation, core action, search or filtering, modal layers, errors, empty states, long labels, and long content.
 
 ## Completion report
 
-State what changed, which checks ran, what they proved, and any remaining risk. Separate successful automated results from visual inspection. If a check could not run, say so directly.
+State what changed, which checks ran, what they proved, and any remaining risk. Separate UI/UX review, static inspection, project checks, rendered observations, and automated browser results. If a check did not run, say so directly.

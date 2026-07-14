@@ -27,7 +27,7 @@ Move focus only when a new context requires it, such as opening a modal or compl
 
 Meet at least 4.5:1 for normal text and 3:1 for large text. Interactive component boundaries and meaningful graphics need 3:1 against adjacent colors where WCAG requires it. Pair color with text, icon, pattern, or position for state meaning.
 
-Validate the rendered composite for every reachable state: default, hover on hover-capable devices, active, focus-visible, selected, disabled, error, success, and high-contrast contexts when supported. A foreground token that passes on the default surface may fail after a hover or selected background changes. Apply each state in a browser, then measure or scan that state; static token review is insufficient.
+Validate the rendered composite for every reachable state when a local render is practical: default, hover on hover-capable devices, active, focus-visible, selected, disabled, error, success, and high-contrast contexts when supported. A foreground token that passes on the default surface may fail after a hover or selected background changes. If no render is available, review the state styles statically and report that limitation instead of forcing browser automation.
 
 ## Reflow and zoom
 

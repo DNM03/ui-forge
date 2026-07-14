@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Forge"
-  short_description: "Design and build context-aware, polished interfaces"
-  default_prompt: "Use $ui-forge to design and implement this interface with contextual composition and rigorous quality gates."
+  short_description: "Design proof-led, non-generic interfaces"
+  default_prompt: "Use $ui-forge to design and implement this interface. Start with a compact design contract, avoid generic hero/card/gradient defaults, show product-specific proof, cover real states, and verify responsive/accessibility quality."
 
 policy:
   allow_implicit_invocation: true

@@ -106,17 +106,17 @@
     },
     {
       "id": "evidence-backed-qa",
-      "title": "Evidence-backed QA",
-      "summary": "Tie every quality claim to an automated result, rendered browser observation, or clearly bounded static inspection.",
-      "intent": "Prevent unsupported claims that an interface passed responsive, accessibility, performance, or interaction review.",
+      "title": "Proportionate UI Review",
+      "summary": "Tie every UI/UX quality claim to design reasoning, static inspection, existing project checks, or rendered review when practical.",
+      "intent": "Prevent unsupported claims without turning ordinary interface work into an automated browser-testing workflow.",
       "appliesTo": ["all"],
-      "tags": ["quality", "testing", "evidence"],
+      "tags": ["quality", "review", "evidence"],
       "checks": [
-        "Record which commands and viewports were actually checked.",
-        "Separate automated results from visual observations.",
-        "Report untested states and remaining risk directly."
+        "Record which UI/UX dimensions, states, and layouts were actually reviewed.",
+        "Separate design critique, static inspection, existing project checks, rendered observations, and automated results.",
+        "Use Playwright or other e2e tooling only when the user asks, the project already owns that workflow, or the task is site validation."
       ],
-      "warnings": ["A static source review cannot prove rendered layout or keyboard behavior."],
+      "warnings": ["A static source review cannot prove every rendered layout or keyboard behavior; label that limitation instead of forcing automation."],
       "exceptions": ["During early exploration, label quality conclusions as provisional."],
       "sourceRefs": ["hallmark", "ui-forge-synthesis"],
       "level": "recommended"

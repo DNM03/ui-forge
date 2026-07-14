@@ -50,7 +50,7 @@
       "tags": ["accessibility", "contrast", "color"],
       "checks": [
         "Measure every semantic color pairing used and inspect state cues without relying on hue.",
-        "Apply hover, active, focus-visible, selected, disabled, error, and success states in a browser, then scan or measure each rendered composite."
+        "Review hover, active, focus-visible, selected, disabled, error, and success states through source, design-state inspection, or manual rendered review when practical."
       ],
       "warnings": [
         "Token names do not prove the actual foreground and background pairing passes.",
@@ -64,7 +64,7 @@
       "id": "responsive-no-loss",
       "title": "Responsive Without Loss",
       "summary": "Supported widths and text zoom preserve content, controls, reading order, and recovery without clipping or incoherent overlap.",
-      "intent": "Make narrow screens and zoomed text first-class operating conditions rather than screenshots checked after implementation.",
+      "intent": "Make narrow screens and zoomed text first-class design conditions rather than a visual afterthought.",
       "appliesTo": ["responsive", "web"],
       "tags": ["responsive", "reflow", "zoom"],
       "checks": ["Inspect at 320 CSS pixels, representative mobile and desktop widths, and 200 percent text zoom."],
@@ -209,8 +209,8 @@
       "intent": "Give reviewers a factual account of confidence instead of a generic claim that quality checks passed.",
       "appliesTo": ["all"],
       "tags": ["quality", "evidence", "delivery"],
-      "checks": ["Separate automated evidence, rendered observations, static review, and untested risk."],
-      "warnings": ["Do not imply that a command ran or a viewport was inspected when it was not."],
+      "checks": ["Separate UI/UX review, static inspection, existing project checks, rendered observations, automated evidence, and untested risk."],
+      "warnings": ["Do not imply that a command, viewport, browser, or e2e test was inspected when it was not."],
       "exceptions": ["A conceptual-only response should state that no implementation checks apply."],
       "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
