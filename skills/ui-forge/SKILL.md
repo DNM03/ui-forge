@@ -66,6 +66,7 @@ Audience: primary users and usage context
 Goal: primary user outcome
 Brand posture: trust-first | expressive | technical | playful | luxury | other
 Visual ambition: restrained | polished | editorial | cinematic | luxury | brutal | playful | experimental
+Macrostructure: named page/screen shape and why it fits
 Foundation: existing system | platform system | custom tokens
 Variance / Motion / Density: 1-10 with a short reason
 Information complexity: low | medium | high
@@ -79,7 +80,12 @@ For public front doors, landing pages, portfolios, skill sites, design-system pa
 
 ```text
 First-viewport proof: live control | produced output | before/after | real product/media | code/token artifact
+Macrostructure route: poster + artifact | image-led scene | editorial split | tool-first | product shelf | manifesto/index | custom
 Visual hook: oversized type | image-led scene | editorial split | kinetic object | dense artifact | typographic poster | product close-up
+Type direction: system sans | expressive serif | condensed | mono | mixed pairing
+Motion moment: none | state feedback | entrance | ambient | object interaction
+Media plan: existing asset | generated bitmap | curated authentic image | CSS/canvas/SVG artifact | no media
+Hero math: title line count, subcopy measure, first action position, mobile first-screen proof
 Structural fingerprint: 3-5 repeated traits that will create identity
 Banned defaults: generic centered hero, three-card feature strip, unsupported metrics, fake social proof, decorative gradient/glow
 Reference traits: selected principles to retain, if any
@@ -91,7 +97,7 @@ If a banned default is still the best choice, state the product reason before us
 ## Choose composition before components
 
 1. Classify the entry posture: branded front door, recurring working surface, or a hybrid that exposes real work immediately.
-2. Select the page or screen macrostructure. Do not force public showcase, documentation, and in-product routes into one shell when their jobs differ.
+2. Select the page or screen macrostructure before choosing cards, grids, nav geometry, or visual effects. Do not force public showcase, documentation, and in-product routes into one shell when their jobs differ.
 3. Define a structural fingerprint: heading placement, body rhythm, dividers, action voice, image treatment, and reveal behavior.
 4. Choose a theme route: existing brand, studied reference traits, catalog direction, or custom tokens.
 5. Decide what the primary viewport must reveal: task UI, product, data, place, person, object, focused content, or inspectable output proof.
@@ -122,6 +128,43 @@ Do not treat honesty as a reason to make the page plain. Replace fake metrics an
 - a controlled accent system that appears in specific moments, not everywhere.
 
 For a normal public page, avoid shipping the safe middle: plain dark surface, centered headline, muted grid cards, and a form. If the result looks like a generic generated landing page at thumbnail size, increase the visual ambition while preserving truth, accessibility, and product fit.
+
+Use the design dials to break default model habits:
+
+- **Variance:** raise for campaign, portfolio, event, editorial, or de-slop work; lower for dense tools and enterprise workflows.
+- **Motion:** choose one purposeful motion idea, not global scroll animation.
+- **Density:** vary by region so the page has contrast: entry, proof, index, process, form.
+
+Use expressive type, motion, and imagery when they fit the product:
+
+- Pair a sturdy interface sans with an aesthetic display face such as Playfair Display, Fraunces, Cormorant, Newsreader, or a comparable project-approved font for editorial emphasis, pull words, prices, titles, or quotes. Do not make one decorative font carry the entire UI.
+- Use motion for one meaningful moment: an artifact assembling, a selector changing state, a marquee, a reveal tied to reading order, or tactile control feedback. Avoid universal scroll fades and `transition: all`.
+- Use image generation or curated imagery when the subject needs a memorable scene and no real asset exists. Generated images must be treated as illustrative, not evidence, and should reveal the product, object, mood, or artifact rather than generic atmosphere.
+
+When image generation is available and the page needs a strong visual subject, consider an image-first loop: create or select one concrete hero/section asset, inspect the composition, then build the layout around its crop, light, palette, and subject. Do not use generated people, venues, awards, sponsor walls, or screenshots as real evidence.
+
+## Refine execution craft
+
+After the first implementation pass, refine the page like a visual designer:
+
+- No clipped hero type, accidental one-word lines, or display text that overwhelms the usable content.
+- No repeated oversized headings with the same alignment, scale, and spacing across every section.
+- No empty oversized bands whose only purpose is to look premium.
+- No fake precision: do not invent prize amounts, percentages, dates, judge names, logos, counts, ratings, or countdowns.
+- No grid/noise/particles as the whole visual system; they must support a stronger object, image, typography, or interaction.
+- No mobile downgrade: preserve the hook, proof, and action hierarchy near the top.
+- If the page feels technically correct but visually forgettable, add a stronger type pairing, image/object, motion moment, or section rhythm instead of more cards.
+
+For public greenfield, de-slop, and reference-led work, run a short pre-delivery critique before finalizing. Score 1-5 in working notes:
+
+- **Concept:** the page has a recognizable idea beyond "clean landing page."
+- **Hierarchy:** the first scan reveals subject, proof, and action.
+- **Execution:** type, spacing, media, controls, and mobile are clean.
+- **Specificity:** content and structure belong to this product, not any prompt.
+- **Restraint:** effects, accents, cards, and fonts are not overused.
+- **Variety:** adjacent sections do not repeat the same layout move.
+
+Revise any score at 3 or below before delivery unless the user explicitly asks for a rough draft.
 
 ## Define the design contract
 
@@ -205,6 +248,9 @@ Before delivery on de-slop or reference-led work, perform this delta check:
 - The result matches the Design Read and product context.
 - The primary task and hierarchy are clear in a short scan.
 - The result looks more considered, memorable, and product-specific than a generic baseline agent page.
+- The selected macrostructure is visible and does not collapse into the default hero/cards/form page.
+- Hero math works: display type fits, subcopy is readable, the first action is visible, and mobile still shows proof or the hook early.
+- Visual ambition is executed cleanly: no clipped type, repetitive oversized headings, empty premium space, or mobile downgrade.
 - Composition is intentional rather than template repetition.
 - Typography, colors, spacing, icons, surfaces, and motion behave as one system.
 - Studied references are visible as principles, not as a copied page silhouette or navigation shell.

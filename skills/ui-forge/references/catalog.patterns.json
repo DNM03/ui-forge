@@ -71,6 +71,78 @@
       "level": "recommended"
     },
     {
+      "id": "visual-craft-guard",
+      "title": "Visual Craft Guard",
+      "summary": "Refine ambitious visuals so typography, motion, imagery, spacing, and mobile layout feel deliberate instead of generated.",
+      "intent": "Prevent strong concepts from shipping with clipped display type, repetitive giant headings, empty premium space, fake precision, or decorative effects substituting for craft.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["visual-direction", "typography", "motion", "media", "craft"],
+      "checks": [
+        "Verify display type fits its container and uses intentional line breaks at desktop and mobile sizes.",
+        "Use one purposeful motion idea or state-feedback system instead of universal animation effects.",
+        "Choose media, generated imagery, or visual artifacts that reveal a concrete subject rather than generic atmosphere.",
+        "Vary section rhythm so the page is not repeated oversized headings plus grids."
+      ],
+      "warnings": ["A concept can be original and still look generated if execution craft is weak."],
+      "exceptions": ["Strictly functional internal tools may need restrained craft rather than expressive art direction."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "hero-math",
+      "title": "Hero Math",
+      "summary": "Constrain display type, subcopy, action position, and mobile proof so expressive heroes remain readable and useful.",
+      "intent": "Prevent ambitious public pages from shipping with clipped title text, accidental line breaks, hidden calls to action, or mobile first screens that delay the actual proof.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["typography", "hero", "responsive", "visual-direction"],
+      "checks": [
+        "Name the intended desktop title line count and mobile title behavior.",
+        "Keep subcopy compact enough to scan and within a readable measure.",
+        "Keep the first action and primary proof or hook visible early on mobile.",
+        "Use responsive type steps and balanced wrapping instead of brittle hard breaks."
+      ],
+      "warnings": ["A poster-style hero can be tall, but it still needs a deliberate crop, action path, and mobile proof."],
+      "exceptions": ["Experimental art pages may prioritize poster impact when the user explicitly asks for that direction."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "image-first-asset-loop",
+      "title": "Image-First Asset Loop",
+      "summary": "When a page needs a memorable visual subject, create or select one focused asset and design around its composition.",
+      "intent": "Move beyond generic atmosphere by making imagery, crop, light, palette, and subject direction shape the layout before detailed styling.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["media", "imagery", "visual-direction", "assets"],
+      "checks": [
+        "Define the asset role before generating or curating it.",
+        "Use concrete subjects such as products, artifacts, places, materials, or output examples instead of generic ambience.",
+        "Extract layout decisions from the image crop, light, palette, texture, and negative space.",
+        "Do not present generated people, venues, sponsor walls, awards, or screenshots as real evidence."
+      ],
+      "warnings": ["Dropping a generated image into a finished generic template rarely improves the design."],
+      "exceptions": ["Strict UI components, dashboards, and text-first documentation may not need imagery."],
+      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "pre-delivery-design-critique",
+      "title": "Pre-Delivery Design Critique",
+      "summary": "Score concept, hierarchy, execution, specificity, restraint, and variety before shipping public or de-slop work.",
+      "intent": "Force a final design pass that catches generated-looking outputs even when they are honest, accessible, and technically correct.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["quality", "critique", "visual-direction", "anti-slop"],
+      "checks": [
+        "Confirm the page has one recognizable idea beyond a clean landing page.",
+        "Confirm the first scan reveals subject, proof, and action.",
+        "Confirm type, spacing, media, controls, and mobile execution are deliberate.",
+        "Revise if adjacent sections repeat the same layout move or the structure could fit any product."
+      ],
+      "warnings": ["Do not treat this as a public scoring report unless the user asked for one; use it to improve the work."],
+      "exceptions": ["A narrow component fix may not need page-level critique."],
+      "sourceRefs": ["hallmark", "taste", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
       "id": "stable-state-geometry",
       "title": "Stable State Geometry",
       "summary": "Reserve dimensions for controls, rows, media, and async regions so labels and state changes do not shift the layout.",

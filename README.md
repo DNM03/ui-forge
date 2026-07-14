@@ -14,7 +14,7 @@ Design, implement, audit, and redesign polished interfaces for:
 - loading, empty, error, disabled, success, hover, active, and focus-visible states;
 - design-system reuse, typography, spacing, color, icons, surfaces, and motion;
 - product-specific composition instead of generic AI-looking templates;
-- stronger art direction, visual hooks, premium rhythm, and memorable first viewports;
+- stronger art direction, macrostructure selection, visual hooks, tasteful type, motion, imagery, premium rhythm, and memorable first viewports;
 - UI/UX review with concrete quality gates and severity-ranked findings.
 
 The skill prioritizes explicit user constraints, existing behavior, functional correctness, accessibility, platform conventions, product context, performance, and visual direction before anti-slop heuristics. For repository work, it preserves behavior and reports concrete file/line evidence where possible. For greenfield work, it starts from product context and the primary user workflow.
@@ -98,11 +98,23 @@ UI Forge routes each task through a compact design read:
 - audience and goal;
 - brand posture;
 - visual ambition and primary hook;
+- macrostructure route and first-viewport proof;
+- type, motion, and media direction;
 - existing foundation or design system;
 - variance, motion, and density;
 - information complexity.
 
-It then pushes for product-specific visual direction before applying quality gates for UI/UX fit, correctness, accessibility, responsive behavior, state contrast, readable wrapping, state coverage, alignment, and honest content. Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.
+It then pushes for product-specific visual direction and execution craft before applying quality gates for UI/UX fit, correctness, accessibility, responsive behavior, state contrast, readable wrapping, state coverage, alignment, and honest content.
+
+For public, brand, event, editorial, portfolio, and de-slop work, the skill asks the agent to:
+
+- choose the page shape before styling details;
+- set variance, motion, and density dials;
+- use hero math so display type, proof, and actions survive desktop and mobile;
+- use image-first assets when a real or generated visual subject would make the page more specific;
+- run a short pre-delivery design critique for concept, hierarchy, execution, specificity, restraint, and variety.
+
+Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.
 
 ## Contributing
 
