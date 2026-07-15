@@ -17,27 +17,31 @@ Common weak result:
 
 ## Better process
 
-Before coding, define:
+Before coding, resolve the content and generate materially different directions. Do not infer a dark technical style merely because the audience is engineers.
 
 ```text
 Surface: campaign front door
 Audience: engineers deciding whether the event is worth attention
-First-viewport proof: real date/place/format, schedule slice, speaker or session artifact, or registration command
-Structural fingerprint: editorial headline contrast, compact navigation, event metadata row, schedule proof, restrained accent
-Banned defaults: fake ratings, generic gradient glow, feature-card wall, unsupported attendance numbers
+Product thesis: the specific reason this conference deserves a day of attention
+Content spine: literal offer, real date/place/format, program evidence, registration path
+Candidate A: image or place-led route with quiet program detail
+Candidate B: editorial program route led by sessions and ideas
+Candidate C: interaction-led route built around a truthful schedule or topic chooser
+Selected direction: choose by available assets, audience fit, content, and mobile viability
+Central move: one product-derived idea, not a category effect
+Suppressed defaults: generic gradient glow, terminal theater, feature-card wall, unsupported numbers
 ```
 
 Then write copy from the actual subject:
 
 - Use event-specific language, location, date, format, and session types.
 - If facts are unknown, label sample data or avoid the claim.
-- Make the first proof inspectable: agenda preview, venue image, registration state, ticket picker, or before/after output.
+- Make the first subject evidence concrete: agenda preview, venue image, registration state, ticket picker, or program detail.
 
 ## Better output traits
 
 - The first viewport says what the thing is, who it is for, and why it is specific.
-- Decorative style follows the product context: late-night event can use dark editorial contrast; compliance SaaS should not.
-- Proof appears before vague feature lists.
-- Section rhythm changes: hero, proof strip, schedule/detail, speaker/session artifact, action.
+- Decorative style follows the product context and supplied evidence, not the category label.
+- Concrete program evidence appears before vague feature lists.
+- Section rhythm changes according to the selected route instead of repeating a stock event sequence.
 - Mobile preserves identity and proof instead of stacking cards under a huge headline.
-

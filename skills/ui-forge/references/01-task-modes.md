@@ -6,9 +6,9 @@ order: 10
 
 ## Greenfield
 
-Establish the smallest usable product surface first. Decide the primary workflow, content model, states, route structure, foundation, and responsive contract. Build the actual tool or experience as the first screen; add explanatory or promotional framing only when it belongs to the product.
+Establish the smallest usable product surface first. Decide the primary workflow, content model, states, route structure, foundation, and responsive contract. For a full page, form three materially different visual directions and commit to one whole-page macrostructure, central move, aesthetic system, and section rhythm before detailed styling. Build the actual requested experience as the first screen; add explanatory or promotional framing only when it belongs to the product.
 
-Output a working vertical slice with real state behavior and a deliberately bounded token system.
+Output a working vertical slice with real state behavior and a deliberately bounded token system. Do not substitute an audit report for generation.
 
 ## Existing implementation
 

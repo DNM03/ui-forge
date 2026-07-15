@@ -131,6 +131,40 @@
       "exceptions": ["Atmospheric media may lead a narrative experience when detailed inspection is not the user goal."],
       "sourceRefs": ["hallmark", "taste"],
       "level": "contextual"
+    },
+    {
+      "id": "per-section-posterization",
+      "title": "Per-Section Posterization",
+      "summary": "Every long-page section resets into another hero with giant display type, excessive lead-in space, outline words, numbered labels, or a full visual spectacle.",
+      "intent": "Preserve one display crescendo and create section hierarchy through content, media, composition, density, and interaction instead of repeated headline scale.",
+      "appliesTo": ["marketing", "brand", "editorial", "portfolio", "event", "site"],
+      "tags": ["typography", "composition", "rhythm", "anti-slop"],
+      "checks": [
+        "Use hero-scale typography at one display apex and at most one intentional secondary climax.",
+        "Step ordinary section headings down materially and remove empty bands that exist only to frame type.",
+        "Rewrite adjacent sections that repeat the same heading, spacing, and grid move."
+      ],
+      "warnings": ["Changing background color or alignment does not make repeated hero sections structurally different."],
+      "exceptions": ["An explicit poster, exhibition, or typographic narrative may use repeated display moments when the sequence itself is the concept and viewport fit remains intact."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "house-style-convergence",
+      "title": "House-Style Convergence",
+      "summary": "Unrelated briefs repeatedly converge on the same macrostructure and motif bundle, such as dark canvas, fluorescent accent, mono section labels, hard grids, terminal chrome, and giant condensed type.",
+      "intent": "Keep UI Forge product-derived by separating subject matter from style and rotating complete direction systems instead of recoloring a familiar shell.",
+      "appliesTo": ["all"],
+      "tags": ["visual-direction", "genre", "template", "anti-slop"],
+      "checks": [
+        "Name three tempting genre defaults before selection and use at most one without brand, asset, or reference evidence.",
+        "Compare against existing project surfaces or recent artifacts when available; reroute if the macrostructure and two or more strong motifs repeat.",
+        "Reject unsupported bundles such as condensed ultra-bold type, uppercase mono labels, fluorescent ticker, saturated artifact panel, offset shadow, and hard rules when three or more recur together."
+      ],
+      "warnings": ["Each motif may be valid alone; the unsupported recurring combination is the failure."],
+      "exceptions": ["An established brand system or explicit reference may intentionally own the recurring combination."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "contextual"
     }
   ]
 }

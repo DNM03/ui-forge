@@ -12,9 +12,11 @@ Reserve image dimensions and use explicit aspect ratios. Set meaningful alternat
 
 Use generated assets only when the user requests them or no suitable authentic asset exists. Label synthetic examples when they could be mistaken for evidence.
 
-## Visible proof
+## Concrete subject evidence
 
-For skills, developer tools, design systems, and creative products, show what the system changes. Prefer this proof order:
+Use the strongest truthful subject signal for the surface. For skills, developer tools, design systems, and creative products, show what the system changes. For events, editorial, venues, and commerce, real program, place, subject, inventory, offer, or availability detail may be the better evidence.
+
+For tools and generators, prefer this proof order:
 
 1. a live control or real primary workflow;
 2. an inspectable output produced by the system;
@@ -22,7 +24,7 @@ For skills, developer tools, design systems, and creative products, show what th
 4. a truthful code, token, or process artifact;
 5. decorative brand media only as support.
 
-Do not make visitors infer product quality from prose alone. Generated atmosphere cannot substitute for an actual interface, output, or workflow demonstration.
+Do not make visitors infer product quality from prose alone. Generated atmosphere cannot substitute for an actual interface, output, workflow, program, subject, or offer. Do not invent a terminal, dashboard, or interactive artifact when the page's real job is orientation or conversion.
 
 ## Copy
 

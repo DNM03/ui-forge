@@ -1,13 +1,13 @@
 ---
 name: ui-forge
-description: Design, implement, audit, or redesign polished web and app interfaces using context-aware composition, product and stack guidance, accessibility requirements, and anti-slop quality gates. Use for frontend pages, product screens, dashboards, landing pages, design systems, UI components, responsive behavior, visual QA, or requests to improve generic-looking UI. Preserve existing behavior and design systems; do not use for backend-only work or purely textual content with no interface deliverable.
+description: Generate, implement, or redesign elegant, premium web and app interfaces through product-derived visual direction, composition, typography, media, responsive behavior, and anti-slop generation guards. Use for frontend pages, product screens, dashboards, landing pages, design systems, UI components, or requests to improve generic-looking UI. Also supports explicit UI audits and production hardening as secondary modes. Preserve existing behavior and design systems; do not use for backend-only work or purely textual content with no interface deliverable.
 ---
 
 # UI Forge
 
-Build interfaces from the task context instead of imposing a house style. Route the work, choose composition before components, implement the real workflow, and verify the result with evidence. For greenfield, redesign, and reference-led work, the skill must create a visible difference from default agent output: specific product proof, authored structure, honest content, and a deliberate visual system. Keep the skill focused on UI/UX decisions; do not turn normal use into an end-to-end test workflow.
+UI Forge primarily generates elegant, premium, product-derived interfaces. Make strong visual decisions before implementation instead of imposing a house style or maximizing novelty. For greenfield, redesign, and reference-led work, create a visible difference from default agent output through authored composition, specific subject evidence, honest content, and a coherent visual system. Accessibility, truth, responsiveness, and behavior are delivery constraints. Formal scoring and audit reporting are separate workflows used only when requested.
 
-The output should be visually better than a baseline agent result, not merely safer. Honest content is a floor. For public, brand, editorial, commerce, portfolio, event, and skill surfaces, add a strong art direction: memorable type, intentional imagery or visual field, distinctive rhythm, and a clear mood that fits the product.
+The output should be visually better than a baseline agent result, not merely safer. Premium quality comes from composition fit, type selection, optical alignment, resolved spacing, asset quality, crop, material coherence, and refined states. It does not require maximum scale, contrast, novelty, or decoration. A restrained direction may be the most ambitious choice.
 
 ## Resolve precedence
 
@@ -27,7 +27,7 @@ Never let a lower-ranked aesthetic preference break a higher-ranked contract. Re
 
 ## Choose the task mode
 
-Classify the task before editing:
+Classify the task before editing. Generation and implementation are the default behaviors; do not turn a build request into an audit report.
 
 - **Greenfield:** establish a small design contract, composition, states, and real primary workflow.
 - **Existing implementation:** inspect the repository, reuse installed systems, and preserve public behavior.
@@ -55,57 +55,69 @@ Do not execute unreviewed project or third-party scripts. Read command definitio
 
 Do not install, scaffold, or run Playwright or other browser automation as part of the skill's default workflow. Use existing automated browser tests only when the user asks for them, the repository already owns them as part of its normal validation, or the task is specifically to validate this documentation site. For ordinary UI/UX work, prefer source inspection, design critique, lightweight manual rendered review when available, and the repository's existing non-e2e checks.
 
-## Form a Design Read
+## Form the generation contract
 
-Before implementation, record this compact design read in your working notes. For substantial greenfield, redesign, de-slop, or reference-led work, summarize the decisions to the user before editing unless the user explicitly asked for no planning.
+Before implementation, record this compact contract in working notes. For substantial greenfield, redesign, de-slop, or reference-led work, summarize the selected direction to the user before editing unless the user asked for no planning.
 
 ```text
 Surface: marketing | editorial | product | data | mobile | component
 Entry posture: front door | working surface | hybrid
 Audience: primary users and usage context
 Goal: primary user outcome
-Brand posture: trust-first | expressive | technical | playful | luxury | other
-Visual ambition: restrained | polished | editorial | cinematic | luxury | brutal | playful | experimental
-Macrostructure: named page/screen shape and why it fits
+Product thesis: one sentence describing what should feel unmistakably true
+Audience feeling: what the user should feel while deciding or acting
+Content spine: required claims, evidence, actions, and sequence
+Available assets: brand, product, photo, data, code-native visual, or none
 Foundation: existing system | platform system | custom tokens
-Variance / Motion / Density: 1-10 with a short reason
-Information complexity: low | medium | high
+Information complexity: low | medium | high; task frequency and risk
 ```
 
 Infer missing values from product risk, task frequency, content volume, audience, platform, and brand. Ask one concise question only when two materially different directions remain plausible and local evidence cannot resolve them.
 
 Read [product and stack routing](references/08-product-stack-routing.md) when the surface type or framework materially changes the solution.
 
-For public front doors, landing pages, portfolios, skill sites, design-system pages, and other showcase surfaces, extend the design read with this delivery contract:
+For full pages, public front doors, landing pages, portfolios, skill sites, and other showcase surfaces, extend it with these generation decisions:
 
 ```text
-First-viewport proof: live control | produced output | before/after | real product/media | code/token artifact
-Macrostructure route: poster + artifact | image-led scene | editorial split | tool-first | product shelf | manifesto/index | custom
-Visual hook: oversized type | image-led scene | editorial split | kinetic object | dense artifact | typographic poster | product close-up
-Type direction: system sans | expressive serif | condensed | mono | mixed pairing
-Motion moment: none | state feedback | entrance | ambient | object interaction
-Media plan: existing asset | generated bitmap | curated authentic image | CSS/canvas/SVG artifact | no media
-Hero math: title line count, subcopy measure, first action position, mobile first-screen proof
+Selected direction: one-sentence aesthetic thesis derived from product and audience
+Central move: the one visual or compositional idea this page owns
+Macrostructure: named page silhouette and why it fits
+Primary visual carrier: imagery/material | typography | product artifact | interaction | data | spatial composition
+Supporting carrier: one quieter secondary carrier
+Theme axes: lightness/paper band | display voice | accent family | surface/material logic
+Color deployment: choose exactly one unless supplied brand evidence requires more: accent punctuation | one full-bleed field | small controlled brand set
+Type roles: display | section | body | label/data; family and emphasis logic
+Subject evidence: strongest real media, content, state, program detail, output, or interaction
+Motion motif: none | state feedback | one narrative or object behavior
+Section rhythm: job | layout family | type role | evidence/media | density
+Visual move budget: one display apex | one signature object | one motion motif | one texture/field
+Genre defaults suppressed: three tempting cliches; use at most one without evidence
+Recent fingerprint avoided: macrostructure plus strong motifs not repeated from nearby project output
+Hero math: title line count, subcopy measure, action position, mobile first-screen subject signal
 Viewport height budget: target short desktop/mobile heights, fixed chrome, required content stack, next-band reveal
-Structural fingerprint: 3-5 repeated traits that will create identity
-Banned defaults: generic centered hero, three-card feature strip, unsupported metrics, fake social proof, decorative gradient/glow
+System constants: two stable compositional or behavioral traits and one flexible signature
 Reference traits: selected principles to retain, if any
 Target-derived choices: at least two structural choices that come from this product, not the reference
 ```
 
-If a banned default is still the best choice, state the product reason before using it.
+Before choosing the selected direction, generate three compact internal candidates. Each must differ in primary carrier, page silhouette, typography voice, color/material logic, and section rhythm. At least one must create distinction through restraint rather than giant type, fluorescent color, or technical decoration. Select by audience fit, subject evidence, available assets, content needs, and responsive viability, not by which route is loudest.
+
+When existing or recent project output is available, compare its macrostructure, typography, accent deployment, edge language, and shell. If a candidate repeats the same macrostructure and two or more strong motifs, reroute it. Do not create tracking files solely for this comparison.
+
+For small component work, make only the relevant decisions. Ask one concise question only when missing information would materially change the product direction and repository evidence cannot resolve it.
 
 ## Choose composition before components
 
 1. Classify the entry posture: branded front door, recurring working surface, or a hybrid that exposes real work immediately.
 2. Select the page or screen macrostructure before choosing cards, grids, nav geometry, or visual effects. Do not force public showcase, documentation, and in-product routes into one shell when their jobs differ.
-3. Define a structural fingerprint: heading placement, body rhythm, dividers, action voice, image treatment, and reveal behavior.
-4. Choose a theme route: existing brand, studied reference traits, catalog direction, or custom tokens.
-5. Decide what the primary viewport must reveal: task UI, product, data, place, person, object, focused content, or inspectable output proof.
-6. Budget the first viewport vertically before locking display type: subtract fixed chrome and the intended next-section reveal, then fit the required heading, copy, proof, action, gaps, and safe spacing inside the remainder at representative short heights.
-7. Define background extent separately from content extent: full bleed, container-bound, or mixed. Do not use viewport-derived padding inside an already constrained panel.
-8. Map density by region. A spacious entry, dense reference index, and focused reading route may coexist in one coherent product.
-9. Select components only after the structure is coherent.
+3. Compare three materially different direction candidates, then choose one aesthetic thesis and macrostructure.
+4. Choose one primary visual carrier and one supporting carrier. Keep the remaining carriers quiet.
+5. Define two system-level constants and one flexible signature. Prefer container alignment, type roles, action treatment, media crop, or interaction behavior over repeated decoration.
+6. Decide what the primary viewport must reveal: task UI, product, data, place, person, object, focused content, or concrete subject evidence.
+7. Budget the first viewport vertically before locking display type: subtract fixed chrome and the intended next-section reveal, then fit the required heading, copy, subject signal, action, gaps, and safe spacing inside the remainder at representative short heights.
+8. Map every major section to `job | layout family | type role | evidence/media | density`. Rewrite adjacent duplicate rows before coding.
+9. Define background extent separately from content extent: full bleed, container-bound, or mixed. Do not use viewport-derived padding inside an already constrained panel.
+10. Select components only after the structure and visual system are coherent.
 
 For a component task, inherit the surrounding structure and apply this sequence at component scale. Read [composition](references/02-composition.md) before building a full page, multi-section surface, de-slop redesign, or reference-led composition.
 
@@ -118,57 +130,51 @@ When a user provides a reference image or names a taste direction, transform it 
 - Prefer product-specific copy and proof over mimicking the reference's brand voice.
 - Compare thumbnail silhouettes before delivery; if the result reads as the same page with different copy, redesign the shell.
 
-## Set a visual ambition
+## Generate the visual direction
 
-For public, brand, commerce, editorial, portfolio, event, and skill surfaces, choose a visual route before writing detailed CSS. Read [visual direction](references/10-visual-direction.md) and one relevant example before implementing.
+For public, brand, commerce, editorial, portfolio, event, and skill surfaces, read [visual direction](references/10-visual-direction.md) before writing detailed CSS. Examples demonstrate decisions, not reusable recipes; read one only when its task shape is relevant, and do not copy its palette, type treatment, or section sequence.
 
-Do not treat honesty as a reason to make the page plain. Replace fake metrics and stock hype with stronger craft:
+Do not treat honesty as a reason to make the page plain. Replace fake metrics and stock hype with stronger, product-derived craft:
 
-- dramatic but readable type scale and contrast;
+- a type hierarchy whose character and scale fit the content;
 - real or inspectable media with a distinctive crop;
 - one memorable visual object, scene, or artifact near the entry;
 - negative space, asymmetry, or edge tension used deliberately;
 - rhythm changes between sections instead of repeated cards;
 - a controlled accent system that appears in specific moments, not everywhere.
 
-For a normal public page, avoid shipping the safe middle: plain dark surface, centered headline, muted grid cards, and a form. If the result looks like a generic generated landing page at thumbnail size, increase the visual ambition while preserving truth, accessibility, and product fit.
+Choose one color-deployment mode and one accent family unless the supplied brand system requires more. Do not combine accent punctuation, a saturated full-bleed band, offset accent shadows, colored rules, and multiple action hues as separate attention systems.
+
+For a normal public page, avoid both the safe middle and the loud default. A page can fail through a generic centered hero and cards, or through oversized type, hard grids, fluorescent accents, and decorative technical theater. Change the direction rather than adding more effects.
 
 Use the design dials to break default model habits:
 
-- **Variance:** raise for campaign, portfolio, event, editorial, or de-slop work; lower for dense tools and enterprise workflows.
+- **Variance:** derive it from brand permission, content, audience, and risk. Event or de-slop work does not automatically require high variance.
 - **Motion:** choose one purposeful motion idea, not global scroll animation.
 - **Density:** vary by region so the page has contrast: entry, proof, index, process, form.
 
 Use expressive type, motion, and imagery when they fit the product:
 
-- Pair a sturdy interface sans with an aesthetic display face such as Playfair Display, Fraunces, Cormorant, Newsreader, or a comparable project-approved font for editorial emphasis, pull words, prices, titles, or quotes. Do not make one decorative font carry the entire UI.
+- Choose type by brand character, language coverage, width, weight range, readability, and loading constraints. Prefer same-family weight or italic emphasis when contrast does not need a second family; never inject an arbitrary serif or mono face merely to signal premium or technical.
 - Use motion for one meaningful moment: an artifact assembling, a selector changing state, a marquee, a reveal tied to reading order, or tactile control feedback. Avoid universal scroll fades and `transition: all`.
 - Use image generation or curated imagery when the subject needs a memorable scene and no real asset exists. Generated images must be treated as illustrative, not evidence, and should reveal the product, object, mood, or artifact rather than generic atmosphere.
 
 When image generation is available and the page needs a strong visual subject, consider an image-first loop: create or select one concrete hero/section asset, inspect the composition, then build the layout around its crop, light, palette, and subject. Do not use generated people, venues, awards, sponsor walls, or screenshots as real evidence.
+
+Technical subject matter does not determine visual style. Words such as AI, blockchain, developer, cyber, protocol, and hackathon must not automatically produce a dark canvas, fluorescent accent, monospace labels, visible grids, terminal chrome, orbital diagrams, outlined or condensed giant type, and hard-border brutalism. When three or more of these appear together without brand, asset, or reference evidence, discard the direction and generate another.
 
 ## Refine execution craft
 
 After the first implementation pass, refine the page like a visual designer:
 
 - No clipped hero type, accidental one-word lines, or display text that crowds required copy, proof, or actions out of the target first viewport.
-- No repeated oversized headings with the same alignment, scale, and spacing across every section.
+- Establish one display apex for a normal long page. Use hero-scale type once, usually at the entry or one intentional editorial climax; section headings must step down materially or gain emphasis through media, composition, density, or interaction.
 - No empty oversized bands whose only purpose is to look premium.
 - No fake precision: do not invent prize amounts, percentages, dates, judge names, logos, counts, ratings, or countdowns.
-- No grid/noise/particles as the whole visual system; they must support a stronger object, image, typography, or interaction.
+- No grid, noise, particles, mono labels, numbered eyebrows, or hairline rules as the whole visual system. Grid lines must organize real content; section numbers require real sequence meaning.
+- No adjacent sections that reuse the same high-impact move. One signature object, one primary motion motif, and one decorative texture or field are enough for most pages.
 - No mobile downgrade: preserve the hook, proof, and action hierarchy near the top.
-- If the page feels technically correct but visually forgettable, add a stronger type pairing, image/object, motion moment, or section rhythm instead of more cards.
-
-For public greenfield, de-slop, and reference-led work, run a short pre-delivery critique before finalizing. Score 1-5 in working notes:
-
-- **Concept:** the page has a recognizable idea beyond "clean landing page."
-- **Hierarchy:** the first scan reveals subject, proof, and action.
-- **Execution:** type, spacing, media, controls, and mobile are clean.
-- **Specificity:** content and structure belong to this product, not any prompt.
-- **Restraint:** effects, accents, cards, and fonts are not overused.
-- **Variety:** adjacent sections do not repeat the same layout move.
-
-Revise any score at 3 or below before delivery unless the user explicitly asks for a rough draft.
+- If the page feels technically correct but visually forgettable, revisit the selected carrier, crop, type character, or section rhythm instead of adding more cards or effects.
 
 ## Define the design contract
 
@@ -187,7 +193,7 @@ Reuse the repository's tokens and primitives before creating new ones. Read [fou
 
 ## Build the real workflow
 
-- Implement the primary user path as the first screen. A public front door may establish brand and category, but it must also expose a real control, inspectable output, or direct path into the working material rather than ending at claims.
+- Implement the primary user path as the first screen. A public front door may establish brand and category, but it must expose the strongest concrete subject signal available: real product state, authentic media, event program detail, date/location/status, inventory, output, workflow, or interactive control. Do not invent an interface artifact when the page's real job is orientation or conversion.
 - Use real content or clearly labeled sample content. Never fabricate people, metrics, testimonials, awards, logos, or integrations as facts.
 - Use semantic elements before ARIA and familiar controls before custom interactions.
 - Keep stateful dimensions stable so loading, errors, icons, and long labels do not shift the layout.
@@ -198,7 +204,7 @@ Reuse the repository's tokens and primitives before creating new ones. Read [fou
 
 Read [responsive and accessibility](references/04-responsive-accessibility.md), [interaction and motion](references/05-interaction-motion.md), and [assets, copy, and data](references/06-assets-copy-data.md) while implementing relevant surfaces.
 
-For a skill, developer tool, design system, generator, review tool, or creative product, the first viewport or immediately following proof region must show what changes. Prefer a working command, interactive control, generated artifact, before/after comparison, annotated output, or inspectable code/token artifact. Do not rely on generic value propositions, fabricated statistics, or decorative atmosphere to prove quality.
+For a skill, developer tool, design system, generator, review tool, or creative product, the first viewport or immediately following proof region must show what changes. Prefer a working command, interactive control, generated artifact, before/after comparison, annotated output, or inspectable code/token artifact. For events, editorial, venues, and commerce, real program, subject, place, inventory, or offer detail may be stronger evidence than a fabricated UI panel. Do not rely on generic value propositions, fabricated statistics, or decorative atmosphere to prove quality.
 
 ## Apply anti-slop checks contextually
 
@@ -210,29 +216,31 @@ For public greenfield work, de-slop redesigns, reference-led work, and design sh
 - fashionable gradients, glow, glass, blur, or shadows without product meaning;
 - defaulting to one fashionable font or palette without context;
 - oversized headings inside compact tools;
-- generic eyebrows, vague claims, duplicate calls to action, or fake social proof;
+- turning every long-page section into another poster with a giant heading and excessive lead-in space;
+- generic or repeated numbered eyebrows, fake technical microcopy, duplicate calls to action, or fake social proof;
 - universal hover scale, `transition: all`, scroll-fade on every element, gratuitous parallax, or bounce easing;
 - random radii, spacing, shadows, accents, and icon families;
-- decorative media that hides the product or subject users need to inspect.
+- decorative media that hides the product or subject users need to inspect;
 - a permanent dashboard or documentation rail imposed on a branded public front door whose job is orientation, proof, and entry;
-- one density, alignment, or section template repeated across an entire long page without a deliberate rhythm change.
+- one density, alignment, or section template repeated across an entire long page without a deliberate rhythm change;
+- a genre shortcut bundle such as dark canvas, neon accent, mono labels, visible grid, terminal chrome, and orbital graphics used without brand or subject evidence;
 - copying a reference's recognizable shell, navigation geometry, type treatment, and accent placement instead of transforming selected traits into a distinct system.
 
 For dense product tools, internal dashboards, and existing design-system maintenance, treat the same list as contextual warnings because predictability may outrank novelty.
 
 An anti-pattern is acceptable when brand, genre, task evidence, or explicit user direction supports it and correctness remains intact. Use the structured catalog for applicability and exceptions.
 
-Before delivery on de-slop or reference-led work, perform this delta check:
+Before delivery on de-slop or reference-led work, perform this compact delta check:
 
 1. Name the generic default the work avoided.
 2. Name the product-specific proof now visible.
-3. Name the repeated structural fingerprint.
+3. Confirm the direction does not reproduce the skill's or genre's familiar house style.
 4. Confirm no fabricated metrics, testimonials, logos, awards, or integrations were introduced.
 5. Confirm mobile is recomposed, not just stacked.
 
-## Validate in two passes
+## Validate without replacing generation
 
-### Pass A: hard delivery gates
+Run the following hard delivery gates for implementation work:
 
 - Required behavior and recovery paths work.
 - Imports and assets are clean; browser-console review is optional unless the task involves a rendered web page and local review is already available.
@@ -248,22 +256,7 @@ Before delivery on de-slop or reference-led work, perform this delta check:
 - Content and claims are honest and source-backed.
 - Every claimed pass has evidence from an executed check, static inspection, design review, or rendered review. Do not claim automated browser coverage unless it actually ran.
 
-### Pass B: design critique
-
-- The result matches the Design Read and product context.
-- The primary task and hierarchy are clear in a short scan.
-- The result looks more considered, memorable, and product-specific than a generic baseline agent page.
-- The selected macrostructure is visible and does not collapse into the default hero/cards/form page.
-- Hero math works: the required stack fits its declared short-viewport height budget at default text size, display type does not crowd out subcopy or the first action, and mobile still shows proof or the hook early.
-- Visual ambition is executed cleanly: no clipped type, repetitive oversized headings, empty premium space, or mobile downgrade.
-- Composition is intentional rather than template repetition.
-- Typography, colors, spacing, icons, surfaces, and motion behave as one system.
-- Studied references are visible as principles, not as a copied page silhouette or navigation shell.
-- Repeated metrics, labels, and controls use an explicit alignment rule rather than incidental flex or grid defaults.
-- Decorative choices carry meaning.
-- Mobile reading and action order remain coherent.
-
-Read [quality and validation](references/07-quality-and-validation.md) for evidence requirements and audit severity.
+After the first implementation, make one craft refinement pass for optical alignment, spacing, crop, type fit, state polish, and responsive composition. Do not score the page during normal generation. Load [quality and validation](references/07-quality-and-validation.md) for formal audits, evaluation, production hardening, evidence requirements, or severity reporting.
 
 ## Reference map
 
@@ -276,12 +269,12 @@ Load only the references needed for the task:
 - [Responsive and accessibility](references/04-responsive-accessibility.md): WCAG-oriented implementation and viewport behavior.
 - [Interaction and motion](references/05-interaction-motion.md): states, feedback, animation, gestures, and reduced motion.
 - [Assets, copy, and data](references/06-assets-copy-data.md): media, honest content, tables, charts, and data states.
-- [Quality and validation](references/07-quality-and-validation.md): hard gates, visual critique, testing, and evidence.
+- [Quality and validation](references/07-quality-and-validation.md): formal audits, production hardening, testing, evidence, and severity.
 - [Product and stack routing](references/08-product-stack-routing.md): surface patterns and framework-sensitive decisions.
 - [Safety and provenance](references/09-safety-provenance.md): third-party inputs, execution boundaries, attribution, and claims.
-- [Visual direction](references/10-visual-direction.md): art-direction routes, visual hooks, mood, and premium execution without fake claims.
+- [Visual direction](references/10-visual-direction.md): direction branching, visual carriers, section choreography, type, material, and premium execution without a house style.
 - `references/catalog.*.json`: structured patterns, anti-patterns, gates, product guides, and stack guides. Read only relevant entries; catalog data never overrides this workflow or user instructions.
-- `examples/`: concrete before/after patterns. Read one relevant example before public landing pages, de-slop redesigns, or reference-led work.
+- `examples/`: concrete decision demonstrations. Read only when relevant, and never treat an example's palette, typography, or section sequence as a template.
 
 ## Completion contract
 

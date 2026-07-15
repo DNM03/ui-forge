@@ -4,6 +4,8 @@ summary: Verify UI/UX quality, accessibility, responsive behavior, and correctne
 order: 70
 ---
 
+Use this reference for explicit audits, evaluation, production hardening, or severity reporting. Normal generation uses the hard delivery gates in `SKILL.md` and one craft refinement pass; it does not need a scored review report.
+
 ## Evidence ladder
 
 Prefer evidence in this order:
@@ -38,14 +40,14 @@ Review six dimensions:
 - responsive behavior and density;
 - authenticity, assets, and product fit.
 
-Use anti-patterns to locate weak decisions, then judge them against the Design Read. Do not fail a purposeful convention merely because it resembles a catalog warning.
+Use anti-patterns to locate weak decisions, then judge them against the generation contract and product context. Do not fail a purposeful convention merely because it resembles a catalog warning.
 
 ## Front-door and rhythm review
 
 For public, branded, editorial, or showcase surfaces, inspect the full page in addition to individual viewports:
 
 - The first viewport makes the name, category, or literal offer unmistakable and leaves a visible hint of what follows.
-- A real control, output, artifact, or worked example proves the proposition near the entry.
+- Concrete subject evidence appears near the entry: a real control, output, worked example, media subject, program detail, place, offer, inventory, or other truthful signal appropriate to the page.
 - Global navigation is proportional to the number and importance of destinations.
 - Adjacent sections do not repeat the same alignment, density, card grid, or split layout without purpose.
 - Display typography appears only at true editorial moments and does not leak into compact tools or reference rows.

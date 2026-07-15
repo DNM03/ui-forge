@@ -3,16 +3,16 @@
   "kind": "pattern",
   "items": [
     {
-      "id": "design-read",
-      "title": "Design Read",
-      "summary": "Summarize the surface, audience, outcome, brand posture, foundation, and contextual dials before choosing an aesthetic.",
-      "intent": "Turn an underspecified UI prompt into an explicit, testable context model without forcing the same visual direction onto every product.",
+      "id": "generation-contract",
+      "title": "Generation Contract",
+      "summary": "Resolve the product thesis, audience feeling, content spine, assets, and constraints before generating visual directions.",
+      "intent": "Turn an underspecified UI prompt into a compact creative strategy without allowing subject labels or fashionable treatments to choose the aesthetic.",
       "appliesTo": ["all"],
       "tags": ["routing", "brief", "context"],
       "checks": [
-        "Identify the primary user outcome and usage context.",
-        "Record variance, motion, density, and information complexity independently.",
-        "Name the existing or chosen design foundation."
+        "Identify the primary user outcome, audience feeling, and usage context.",
+        "Record the required content, strongest available subject evidence, and real asset constraints.",
+        "Name the existing or chosen design foundation without choosing a style from category labels alone."
       ],
       "warnings": ["Do not expose a long design questionnaire when repository evidence can resolve the decisions."],
       "exceptions": ["A narrowly scoped visual fix may need only a one-line context read."],
@@ -39,14 +39,14 @@
     {
       "id": "structural-fingerprint",
       "title": "Structural Fingerprint",
-      "summary": "Repeat a controlled set of composition traits so the interface feels authored without repeating identical section templates.",
-      "intent": "Create recognizable visual coherence through heading placement, dividers, action voice, media treatment, rhythm, and reveal behavior.",
+      "summary": "Use two stable system constants and one flexible signature so the interface feels authored without coating every region in the same motifs.",
+      "intent": "Create coherence through alignment, type roles, action treatment, media behavior, and rhythm while preventing decorative repetition from becoming a house style.",
       "appliesTo": ["page", "screen", "brand"],
       "tags": ["composition", "identity", "rhythm"],
       "checks": [
-        "Name three to six repeated structural traits.",
-        "Use controlled variation instead of identical sections.",
-        "Confirm the fingerprint does not break content priority or semantics."
+        "Name two stable compositional or behavioral constants and one flexible signature.",
+        "Use controlled variation instead of identical sections or repeated decoration.",
+        "Require a functional or brand reason before repeating one motif across more than two adjacent regions."
       ],
       "warnings": ["A fingerprint is not a license to apply decoration to every region."],
       "exceptions": ["Strict platform-native tools may rely primarily on platform structure."],
@@ -54,36 +54,37 @@
       "level": "contextual"
     },
     {
-      "id": "visual-ambition",
-      "title": "Visual Ambition",
-      "summary": "Choose a fitting art direction and memorable visual hook so the interface is not merely safe, but visually stronger than a generic baseline.",
-      "intent": "Push public and creative surfaces beyond flat correctness by requiring a product-specific mood, hero object, type treatment, and section rhythm.",
+      "id": "direction-branching",
+      "title": "Direction Branching",
+      "summary": "Generate three materially different visual routes, then choose the product-derived direction with the strongest audience, content, asset, and responsive fit.",
+      "intent": "Prevent the first category association or most dramatic treatment from becoming the design and create genuine structural variety before implementation.",
       "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
       "tags": ["visual-direction", "art-direction", "brand"],
       "checks": [
-        "Name the chosen visual ambition and primary visual hook before detailed styling.",
-        "Use at least one product-specific artifact, subject image, typographic moment, or interactive object near the entry.",
-        "Confirm the page is more memorable at thumbnail scale than a generic baseline without adding false claims."
+        "Make each candidate differ in primary carrier, page silhouette, typography voice, color or material logic, and section rhythm.",
+        "Include at least one restrained candidate that does not depend on giant type, fluorescent color, or technical decoration.",
+        "Select by audience fit, truthful subject evidence, available assets, content needs, production fit, and responsive viability."
       ],
-      "warnings": ["A truthful page can still fail if it has no strong visual point of view."],
+      "warnings": ["Do not choose the loudest route merely because it looks most different from a generic template."],
       "exceptions": ["Strict enterprise tools may prioritize operational clarity over visual drama."],
       "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {
-      "id": "visual-craft-guard",
-      "title": "Visual Craft Guard",
-      "summary": "Refine ambitious visuals so typography, motion, imagery, spacing, and mobile layout feel deliberate instead of generated.",
-      "intent": "Prevent strong concepts from shipping with clipped display type, repetitive giant headings, empty premium space, fake precision, or decorative effects substituting for craft.",
+      "id": "visual-move-budget",
+      "title": "Visual Move Budget",
+      "summary": "Allocate one display apex, one signature subject or object, one motion motif, one texture or field, and one accent logic across the page.",
+      "intent": "Make the chosen direction feel elegant and coherent by preventing every section from competing with hero-scale typography, decoration, and animation.",
       "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
       "tags": ["visual-direction", "typography", "motion", "media", "craft"],
       "checks": [
-        "Verify display type fits its container and uses intentional line breaks at desktop and mobile sizes.",
-        "Use one purposeful motion idea or state-feedback system instead of universal animation effects.",
-        "Choose media, generated imagery, or visual artifacts that reveal a concrete subject rather than generic atmosphere.",
-        "Vary section rhythm so the page is not repeated oversized headings plus grids."
+        "Use hero-scale typography at one display apex and step section headings down materially.",
+        "Choose one primary visual carrier and one quieter supporting carrier.",
+        "Choose one color-deployment mode and one accent family unless supplied brand evidence requires more.",
+        "Use one purposeful motion motif instead of universal animation effects.",
+        "Rewrite adjacent sections that repeat the same layout family or high-impact move."
       ],
-      "warnings": ["A concept can be original and still look generated if execution craft is weak."],
+      "warnings": ["More simultaneous visual moves usually reduce perceived quality instead of increasing ambition."],
       "exceptions": ["Strictly functional internal tools may need restrained craft rather than expressive art direction."],
       "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
       "level": "recommended"
@@ -126,19 +127,18 @@
       "level": "contextual"
     },
     {
-      "id": "pre-delivery-design-critique",
-      "title": "Pre-Delivery Design Critique",
-      "summary": "Score concept, hierarchy, execution, specificity, restraint, and variety before shipping public or de-slop work.",
-      "intent": "Force a final design pass that catches generated-looking outputs even when they are honest, accessible, and technically correct.",
+      "id": "craft-refinement-loop",
+      "title": "Craft Refinement Loop",
+      "summary": "Make one focused visual pass after implementation for optical alignment, spacing, crop, type fit, states, and responsive composition.",
+      "intent": "Polish the selected direction without replacing generation with a scorecard or adding new effects after the system is established.",
       "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
       "tags": ["quality", "critique", "visual-direction", "anti-slop"],
       "checks": [
-        "Confirm the page has one recognizable idea beyond a clean landing page.",
-        "Confirm the first scan reveals subject, proof, and action.",
-        "Confirm type, spacing, media, controls, and mobile execution are deliberate.",
-        "Revise if adjacent sections repeat the same layout move or the structure could fit any product."
+        "Resolve optical alignment, display fit, line breaks, spacing, media crop, and interaction states.",
+        "Remove repeated display spectacle, decorative rules, fake technical labels, and empty premium space.",
+        "Confirm the central subject signal, action, and visual identity survive mobile recomposition."
       ],
-      "warnings": ["Do not treat this as a public scoring report unless the user asked for one; use it to improve the work."],
+      "warnings": ["Do not introduce a second visual concept during refinement; reroute only when the selected direction itself is wrong."],
       "exceptions": ["A narrow component fix may not need page-level critique."],
       "sourceRefs": ["hallmark", "taste", "ui-forge-synthesis"],
       "level": "recommended"

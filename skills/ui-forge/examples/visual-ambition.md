@@ -1,61 +1,74 @@
-# Visual Ambition Example
+# Direction Branching Example
 
-Use this example when a page is honest and structured but still looks generated, flat, or less compelling than a no-skill result.
+Use this example to learn how to explore directions before selection. Do not reuse its palettes, type treatments, subjects, or section sequences as a template.
 
-## Weak safe result
+## Brief
 
-Prompt: "Build a landing page for an AI and blockchain hackathon event."
+Create a public landing page for a regional maker program. The supplied content includes the program purpose, application window, workshop topics, participation requirements, and application action. No photography or established brand system is available.
 
-Common safe result:
+## Weak generation behavior
 
-- dark page with centered title and muted cards;
-- truthful disclaimers but little event energy;
-- list-style tracks, agenda, criteria, and form;
-- no strong hero object, scene, or typographic moment;
-- visually more responsible than the baseline, but less exciting.
+The first category association becomes the design:
 
-## Better process
+- "maker" becomes black, orange, mono labels, grid lines, and fake workshop controls;
+- every section receives a giant heading and numeric eyebrow;
+- fabricated stats and interface panels substitute for real program detail;
+- visual novelty is achieved by increasing scale and decoration.
 
-Raise visual ambition without adding fake claims:
+## Generate three different routes
+
+### Route A: material-led field guide
+
+- **Primary carrier:** close, tactile illustrations or generated material studies.
+- **Silhouette:** image-led entry followed by compact annotated program chapters.
+- **Type voice:** practical and human, with quiet labels and a strong reading face.
+- **Material logic:** light worktable surface, natural color sampled from the focal asset.
+- **Rhythm:** immersive entry, dense topic index, open schedule, focused application close.
+
+### Route B: civic program notice
+
+- **Primary carrier:** program language and real dates, requirements, and locations.
+- **Silhouette:** confident notice, structured information ledger, clear application path.
+- **Type voice:** institutional but warm; hierarchy comes from proportion and spacing rather than decoration.
+- **Material logic:** restrained print system with one clear action color.
+- **Rhythm:** concise offer, scannable facts, participant journey, application details.
+
+### Route C: living workshop canvas
+
+- **Primary carrier:** one meaningful interaction that combines topics into a changing workshop composition.
+- **Silhouette:** interactive entry, alternating demonstrations and concise program details.
+- **Type voice:** contemporary and compact so the interaction remains dominant.
+- **Material logic:** medium-toned canvas with a small set of vivid material colors.
+- **Rhythm:** interactive focus, explanatory pause, topic sequence, quiet conversion close.
+
+The candidates differ in carrier, silhouette, type voice, material logic, and rhythm. They are not the same shell with different colors.
+
+## Select with evidence
+
+Choose only after checking:
+
+- Which route best supports the actual audience and decision?
+- Which route can be honest with the available content and assets?
+- Which route remains distinctive at mobile width and short height?
+- Which route avoids the category defaults most likely to make the page look generated?
+- Which route can be implemented with the available runtime and time?
+
+Do not automatically choose Route C because it is the most active. If the program is public-service oriented and has no media, Route B may produce the most elegant and credible result. If illustration generation is allowed and the materials are central to the offer, Route A may be stronger.
+
+## Commit the generation contract
+
+After selection, record:
 
 ```text
-Visual ambition: technical editorial / event energy
-Macrostructure route: poster + build-lane artifact, then index/rubric/form rhythm
-Visual hook: build-lane chooser as a hero artifact
-Type direction: sturdy sans plus mono proof labels; optional expressive display word if the page needs a campaign moment
-Motion moment: lane selector changes the proof card, with reduced-motion-safe state feedback
-Media plan: CSS/canvas proof network or generated lab-scene image only if it can be concrete and non-fake
-Hero math: title 2-3 strong desktop lines unless poster-scale; proof card or lane chooser visible in the first viewport; mobile keeps action and artifact before long section lists
-Mood: late-night prototype lab, not generic neon conference
-Proof: lane prompt, required proof, demo surface, draft agenda
-Avoid: invented prize pool, fake attendance, stock network background
+Selected direction: one-sentence thesis
+Primary / supporting carrier: one dominant, one quiet
+Macrostructure: page silhouette and reading route
+Theme axes: lightness, display voice, accent family, material logic
+Type roles: display, section, body, label or data
+Subject evidence: strongest truthful content, media, state, or interaction
+Section rhythm: job | layout family | type role | evidence/media | density
+Visual move budget: one display apex, object, motion motif, and texture
+Suppressed defaults: three category cliches not supported by evidence
 ```
 
-Then make the page feel designed:
-
-- Use a poster-like hero with strong type and one live artifact instead of a generic headline plus stat strip.
-- Make the build-lane chooser visually important, not a small card or buried section.
-- Use a distinctive accent system for status, time, and proof labels.
-- Change section rhythm: hero lab, lane index, agenda board, judging rubric, application panel.
-- If no real event image exists and image generation is available, generate one concrete supporting asset only when it adds a believable material, object, or lab scene; do not use it as evidence of a real venue or crowd.
-- Keep mobile energetic by preserving the artifact near the top instead of pushing it below all copy.
-- Refine after the first pass: reduce clipped title scale, vary oversized headings, tighten empty bands, and remove fake percentages unless the rubric was provided.
-
-## Pre-delivery critique
-
-Before delivery, revise if any answer is weak:
-
-- Concept: does the page have one memorable event idea beyond "dark technical landing page"?
-- Hierarchy: can a visitor identify event, proof, and action in a short scan?
-- Execution: do type, media, spacing, controls, and mobile look intentionally composed?
-- Specificity: would the structure still fit any hackathon after swapping the name?
-- Restraint: are the grid, particles, accents, and motion supporting the artifact instead of replacing it?
-- Variety: do agenda, tracks, rubric, and form change rhythm?
-
-## Better output traits
-
-- The page has a memorable first viewport even without fake metrics.
-- It feels like this specific event, not any AI hackathon.
-- It uses constraints as content: draft agenda, local form, proof requirements.
-- It is more visually ambitious than the default output while remaining honest.
-- Its craft is clean: type fits, motion has purpose, the accent is controlled, and mobile preserves the hook.
+Then implement the chosen route as a coherent system. Do not blend the most decorative parts of all three candidates.

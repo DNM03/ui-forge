@@ -1,150 +1,149 @@
 ---
 title: Visual direction
-summary: Choose art direction, visual hooks, and mood so honest interfaces still feel premium and memorable.
+summary: Explore and select a product-derived aesthetic direction before implementation without converging on a house style.
 order: 100
 ---
 
-## Visual ambition
+## Direction is a decision, not a recipe
 
-For public, brand, commerce, editorial, portfolio, event, and skill surfaces, choose a visual ambition before detailed layout:
+Premium output begins with a fitting idea, not a fashionable treatment. Derive the direction from the product thesis, audience, content, available assets, brand permission, and desired feeling. Subject labels are weak visual evidence: `AI`, `blockchain`, `developer`, `luxury`, `wellness`, or `finance` do not determine a palette, font, motif, or page shell.
 
-- **Polished:** clean hierarchy, strong spacing, refined controls, restrained accent.
-- **Editorial:** expressive type contrast, authored crops, asymmetric rhythm, strong reading voice.
-- **Cinematic:** immersive subject image or scene, dramatic light, controlled overlay, sparse copy.
-- **Luxury:** material restraint, close-up subject detail, quiet type, generous negative space.
-- **Technical:** dense artifact, terminal/code/data object, precise grid, high contrast.
-- **Playful:** custom shapes, bolder color, tactile controls, surprising but coherent motion.
-- **Experimental:** unusual composition, fragmented type, spatial interface, strong constraints.
+Before detailed CSS, form three compact internal candidates. Do not present a mood-board essay unless the user asks. Each candidate must differ materially in:
 
-Match the ambition to the audience and product. A hackathon can be energetic and technical without fake numbers. A florist can be cinematic and luxurious without inventing press quotes. A software deal page can be sharp and commerce-oriented without generic SaaS gradients.
+- primary visual carrier;
+- page silhouette and reading route;
+- typography voice;
+- color and material logic;
+- section rhythm.
 
-## Macrostructure route
+At least one candidate should create distinction through restraint. Reject candidates that are only color swaps or the same hero with different decoration.
 
-Pick a page shape before styling details. Strong visual work usually comes from structure, not decoration:
+## Select by fit
 
-- **Poster + artifact:** oversized title paired with one inspectable object such as a command, pass, receipt, player, code card, or selector.
-- **Image-led scene:** authentic or generated subject image drives the crop, color, and reading order.
-- **Editorial split:** a strong reading voice with asymmetric media, annotations, pull words, or side notes.
-- **Tool-first:** the primary control, configurator, comparison, or workflow appears immediately.
-- **Product shelf:** inspectable products, packages, screenshots, or output cards form the first proof.
-- **Manifesto/index:** a bold claim or rule system followed by a dense index, rubric, timeline, or collection.
-- **Custom:** one central idea unique to the product, with a simple rule that repeats across sections.
+Choose the direction that best satisfies:
 
-Do not choose the same centered hero plus three cards unless the product genuinely needs it. If the first thumbnail silhouette looks like a default AI landing page, change the macrostructure before adding effects.
+1. **Audience fit:** it creates the right confidence, appetite, focus, urgency, or ease.
+2. **Subject evidence:** its main visual carrier can be supported by real content or a truthful illustrative asset.
+3. **Content fit:** the structure handles the actual amount and order of information.
+4. **Brand distance:** it respects existing identity while avoiding category cliches.
+5. **Responsive viability:** its core idea survives narrow widths and short heights.
+6. **Production fit:** it can be implemented cleanly with the available stack, time, and assets.
 
-## Design dials
+Do not choose the loudest candidate merely because it differs most from a generic template.
 
-Set these dials before implementation:
+## Choose the visual carriers
 
-- **Variance:** 1-3 for operational tools, 4-6 for polished SaaS and docs, 7-9 for campaigns, portfolios, events, editorial, de-slop, and creative products.
-- **Motion:** 1-3 for state feedback, 4-6 for one authored reveal or selector, 7-8 only for motion-native or campaign work. Avoid 9-10 unless the user asked for an experimental experience.
-- **Density:** choose per region. A public page can combine a sparse poster hero, a dense proof artifact, a compact index, and a focused form.
+Select one primary carrier and one quieter supporting carrier:
 
-High variance does not mean chaos. It means the page has a stronger structural decision than the default model pattern.
+- **Imagery and material:** photography, generated bitmap art, texture, product close-up, place, person, object, or process.
+- **Typography and language:** editorial pacing, naming, quotations, scale, contrast, or verbal rhythm.
+- **Product artifact:** real interface, output, package, inventory, document, code, or physical artifact.
+- **Interaction:** chooser, configurator, timeline, comparison, player, map, or other meaningful behavior.
+- **Data and evidence:** real measurements, program details, state, availability, schedule, or comparison.
+- **Spatial composition:** crop, overlap, layering, asymmetry, progression, or a deliberate field.
 
-## Visual hook
+Keep the remaining carriers quiet. A page where typography, grids, noise, motion, cards, illustrations, and data all compete does not feel premium.
 
-Every memorable public page needs one primary hook. Pick one:
+## Build a complete theme
 
-- oversized typographic composition with one surprising word, italic, image pill, or annotation;
-- full-bleed subject image with an uncommon crop and readable foreground;
-- product or artifact cluster that shows what users get;
-- interactive chooser, configurator, command, player, map, timeline, or comparison;
-- editorial object such as a record, botanical arrangement, receipt, code card, or agenda card;
-- dense proof panel with real states, constraints, and outcomes.
+Set theme axes together rather than swapping a single color:
 
-The hook must support the product. Do not add decorative blobs, generic neon networks, or stock ambience when the subject can be shown directly.
+- **Lightness and paper band:** light, mid, dark, or an intentional progression.
+- **Display voice:** quiet humanist, editorial, utilitarian, expressive, compact, or project-specific.
+- **Accent family:** one coherent attention color or an existing brand set.
+- **Color deployment:** accent punctuation, one intentional full-bleed field, or a small controlled brand set.
+- **Material logic:** flat ink, photographic, tactile, luminous, industrial, soft, or platform-native.
+- **Edge and surface behavior:** open layout, rules, frames, cards, elevation, or full-bleed media, used only where they carry meaning.
 
-## Premium execution
+Use one base theme and at most one intentional contrast or inversion band unless color progression is the central concept. A custom theme must be a coherent system, not a color variation of a familiar shell.
 
-Use craft instead of hype:
+Choose exactly one color deployment mode and one accent family unless supplied brand evidence requires more. Do not combine accent punctuation, a saturated full-bleed field, offset accent shadows, repeated accent rules, colored labels, and multiple action hues as separate attention systems.
 
-- Give display type a clear role, weight, measure, and line-break strategy.
-- Pair type with one strong visual material: photo, artifact, code, object, diagram, map, audio player, or product image.
-- Let sections change rhythm: poster entry, proof artifact, catalog/index, process, form.
-- Use cards only when they represent actual objects, choices, products, or records.
-- Prefer one decisive accent to many scattered accents.
-- Make buttons and controls feel designed through size, alignment, states, and icon choice, not decoration.
+## Suppress genre defaults
 
-## Typography with taste
+Name three tempting visual shortcuts for the brief and use at most one without direct brand, asset, or reference evidence.
 
-Do not default every ambitious page to a heavy geometric sans. Choose type like a design material:
+For technical subjects, common shortcuts include dark canvas, fluorescent green, mono labels, numbered eyebrows, visible grid, terminal chrome, orbital diagrams, outlined type, condensed all-caps, and hard borders. When three or more of this bundle appear together without evidence, discard the direction.
 
-- **Editorial/luxury:** pair a neutral UI sans with Playfair Display, Cormorant, Newsreader, Fraunces, Libre Baskerville, or an equivalent expressive serif for highlighted words, quotes, titles, prices, or object names.
-- **Technical:** use a precise mono or narrow sans for labels, metadata, timestamps, code, receipts, and proof artifacts while keeping body text highly readable.
-- **Commerce/product:** use a calm sans for buying decisions and a display face only where it adds brand or product character.
-- **Event/campaign:** use one display move: italic word, condensed title, oversized number, custom line break, or image pill. Do not use every move at once.
+Apply the same reasoning to other categories:
 
-When adding a new font, prefer the project's existing font loader or local assets. If network font loading is not appropriate, use a strong fallback stack and still create contrast through scale, weight, style, and spacing. Keep body copy readable and avoid display fonts for long paragraphs, forms, tables, or dense controls.
+- premium does not automatically mean cream, brass, serif italics, and excessive empty space;
+- wellness does not automatically mean beige, rounded cards, soft gradients, and leaf imagery;
+- finance does not automatically mean navy, green deltas, glass cards, and invented charts;
+- creative does not automatically mean giant type, stickers, marquees, and cursor effects.
 
-Use hero math:
+## Compose the page silhouette
 
-- On normal landing pages, keep the main display title to two or three intentional desktop lines. A poster-style page may go taller only when the crop and first action still work.
-- Keep subcopy compact enough to scan, usually one short paragraph.
-- Make the first action visible without hunting.
-- Avoid accidental one-word lines; use measured containers, `text-wrap: balance` where supported, and responsive type steps.
-- On mobile, preserve the visual hook or proof near the top. Do not stack a giant headline, long paragraph, two buttons, and metrics before the page shows why it is special.
+Name the macrostructure in plain language based on how the content should be encountered. Examples of structure families include an image-led sequence, a comparison workspace, a product or artifact shelf, a focused editorial reading route, a guided task, a compact catalog, a narrative progression, or a custom composition derived from the subject.
 
-## Motion and interaction
+These are families, not templates. Define the actual silhouette: where density changes, where the eye rests, when evidence appears, and how the action path develops. If two candidates have the same thumbnail silhouette, they are not materially different.
 
-Motion should make the interface feel alive without becoming a template effect:
+When existing project pages or recent artifacts are available, inspect their macrostructure, typography treatment, accent deployment, edge language, navigation, and footer. If the new candidate repeats the same macrostructure and two or more strong motifs, reroute it. This is a working comparison, not a reason to create public logs or metadata.
 
-- Pick one primary motion idea: object assembly, card selection, command copy, timeline advance, marquee, media reveal, or input confirmation.
-- Keep state feedback immediate and tactile: hover, active, selected, focus-visible, loading, and success should feel intentional.
-- Use reduced-motion alternatives for travel, parallax, marquee, and repeated entrance effects.
-- Avoid universal scroll fades, cursor followers, bounce easing, endless particle animation, and `transition: all`.
-- For plain HTML/CSS/JS, simple CSS keyframes and small event-driven class changes are usually enough.
+For references, retain no more than five principles and change at least two of shell silhouette, navigation geometry, hero structure, accent placement, section rhythm, or evidence strategy. Never reproduce the reference's full combination.
 
-## Imagery and generation
+## Choreograph sections before markup
 
-Use images when they make the page more specific:
+Map every major section before building components:
 
-- Prefer real product, place, object, person, inventory, output, or artifact imagery when available.
-- Use generated bitmap imagery when no authentic asset exists and the user allows or expects generated visuals.
-- Generated imagery should create a concrete scene, object, material, or product proof: studio floral close-up, event lab scene, software box cluster, audio object, interface artifact, venue detail, or before/after output.
-- Do not use generated images as fake evidence of real people, customers, venues, sponsors, awards, or product screenshots.
-- Reserve dimensions, crop intentionally, and keep the subject inspectable. Avoid dark overlays that hide the thing users need to see.
+```text
+job | layout family | type role | evidence or media | density
+```
 
-When image generation is available, an image-first workflow can improve aesthetic quality:
+Rewrite adjacent duplicate rows. A long page needs controlled rhythm, not a new hero at every scroll stop. Change one or two dimensions between adjacent regions while maintaining the same visual world:
 
-1. Decide the concrete subject and role: hero crop, product close-up, artifact, background material, or section illustration.
-2. Generate or curate one focused asset, not a mood-board collage.
-3. Inspect the image and extract composition traits: crop, light, palette, texture, negative space, and subject direction.
-4. Build the layout around those traits instead of dropping the image into a finished generic template.
-5. Label or frame synthetic assets honestly when they could be mistaken for real proof.
+- alignment or content measure;
+- media ratio or crop;
+- density and whitespace;
+- surface or background extent;
+- interaction or reading mode.
 
-## Craft guard
+Do not manufacture variety with arbitrary color flips, random angles, or unrelated component styles.
 
-After implementation, fix visual ambition failures before delivery:
+Do not append the same shared tail to every public page. Features, proof cards, pricing, CTA, and footer are not a mandatory sequence. Include only content the brief supports, and vary its representation according to the selected direction and decision path.
 
-- Hero type must be intentionally framed, never accidentally clipped or forced below the fold by its own scale.
-- Adjacent sections need rhythm changes in alignment, density, surface, or media; do not repeat the same giant heading plus grid.
-- Large empty space must create focus, tension, or reveal. If it only looks unfinished, tighten it.
-- Accent color should guide attention. If every label, button, and number glows, nothing is special.
-- Mobile must preserve the primary hook and first action. Do not push the artifact, image, or proof below a wall of text.
-- If a generated page still looks like "AI landing page", change the art direction route rather than adding more decoration.
+## Budget high-impact moves
 
-## Pre-delivery critique
+For most public pages:
 
-Before finalizing a public page, score the design from 1-5:
+- one display apex, used once;
+- one signature visual object or subject;
+- one primary motion motif;
+- one texture or decorative field;
+- one coherent accent logic.
 
-- **Concept:** is there one memorable idea?
-- **Hierarchy:** can someone identify subject, proof, and action in a short scan?
-- **Execution:** do type, spacing, media, states, and mobile look deliberate?
-- **Specificity:** would this structure still work if the brand name changed? If yes, make it more product-derived.
-- **Restraint:** are effects, accent colors, typefaces, and surfaces used selectively?
-- **Variety:** do adjacent sections change rhythm without feeling disconnected?
+Section headings should be materially subordinate to the display apex unless one alternate editorial climax is deliberately selected. Adjacent sections must not repeat the same high-impact move. Numbered or uppercase mono labels should be rare and should describe real sequence or metadata, not simulate sophistication. Grid lines should align, compare, or separate actual content.
 
-Revise any weak score before delivery. The skill should make the result look more authored than no-skill output, not merely more cautious.
+## Typography as a system
 
-## Avoid the safe middle
+Assign display, section, body, label, and data roles. Choose families by brand character, language coverage, width, weight range, readability, and loading constraints.
 
-These outputs are usually not good enough for the skill:
+- Prefer same-family weight, width, case, or italic emphasis when it supplies enough contrast.
+- Add a second family only when it creates a necessary voice distinction.
+- Reserve mono for code, data, or genuinely technical metadata; it is not a universal premium accent.
+- Keep body copy within a readable measure and prevent section copy from collapsing into narrow one- or two-word lines.
+- Plan hero copy, display scale, and focal media together. On a normal landing page, target no more than two intentional desktop headline lines unless a poster composition is explicitly chosen and the full entry still fits.
 
-- dark background, centered title, muted copy, two buttons, and equal cards;
-- a trustworthy but visually flat page with no hero object or authored rhythm;
-- a layout that removes fake claims but replaces them with empty disclaimers;
-- a product/event page where the first viewport could belong to any similar product;
-- images that are only atmospheric and do not create a specific point of view.
+For self-authored landing-page copy, prefer a main heading at about seven words or 50 characters or fewer. From 51 to 90 characters, step down the display size and widen the safe measure as needed; beyond that, rewrite when editorially allowed or treat it as a page title rather than a display stunt. As default desktop bounds, keep normal landing-page display type at or below about `5.5rem` (`88px`), allow about `6rem` only when poster-scale typography is the central move, and reserve about `7rem` for a single short word or value around 12 characters or fewer. Existing brand systems and explicit editorial art direction may exceed these bounds only when the first-viewport budget still passes.
 
-When truth constraints remove fake stats, replace them with better visual proof: sample agenda, product close-up, interface state, artifact card, before/after, track chooser, real inventory, or a labeled draft.
+Use discrete responsive type steps. Do not scale font size directly with viewport width, clip display text, or let the headline crowd out the subject signal and action.
+
+## Color, media, and motion
+
+Use a coherent base palette with deliberate accent placement. Verify actual foreground and background combinations, including interaction states. Accent color should guide attention rather than coat every label, number, border, and button.
+
+Prefer the strongest truthful subject signal available: real product state, authentic media, event program, place, inventory, output, workflow, data, or interaction. Do not invent a terminal, dashboard, or product panel merely to make an orientation page look technical. Generated media may create an illustrative scene, material, or object, but it must not masquerade as evidence.
+
+Motion should communicate state, hierarchy, causality, or story. Use one meaningful motif and complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
+
+## Craft refinement
+
+After implementation, make one visual refinement pass:
+
+- resolve optical alignment, crop, spacing, type fit, and responsive hierarchy;
+- remove repeated display spectacle, decorative rules, and fake technical labels;
+- tighten empty space that creates no focus or tension;
+- preserve the subject signal, action, and identity on mobile;
+- change the direction rather than adding effects if the page still resembles a category template.
+
+Formal scoring, severity, and audit evidence belong in `references/07-quality-and-validation.md`, not in the normal generation path.

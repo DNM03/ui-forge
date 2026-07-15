@@ -73,7 +73,7 @@ test("search filters the generated index", async ({ page }) => {
 test("catalog filters by level and opens detail", async ({ page }) => {
   await page.goto("/catalog/anti-pattern/");
   await page.getByRole("combobox", { name: "Filter by level" }).selectOption("blocking");
-  await expect(page.getByText("2 of 10")).toBeVisible();
+  await expect(page.getByText("2 of 12")).toBeVisible();
   await page.getByRole("link", { name: /Fabricated Evidence/ }).click();
   await expect(page.getByRole("heading", { level: 1, name: "Fabricated Evidence" })).toBeVisible();
 });

@@ -47,27 +47,26 @@ Use a full-width wrapper with a constrained inner layout when a color, image, or
 
 Adjacent constrained sections should share measurable left and right edges unless the offset is intentional. Verify the computed `x` position and width at wide desktop, compact desktop, tablet, and mobile sizes.
 
-## Structural fingerprint
+## System constants and flexible signature
 
-Define a small set of repeated traits:
+Define two stable system-level traits and one flexible signature. Prefer traits that create coherence without decorating every section:
 
-- heading alignment and measure;
-- body-column width and rhythm;
-- divider and surface behavior;
-- primary and secondary action voice;
-- media crop and edge treatment;
-- transition or reveal pattern;
-- density and whitespace contrast.
+- container alignment and reading measure;
+- type roles and emphasis logic;
+- primary and secondary action treatment;
+- media crop or edge behavior;
+- one transition or reveal behavior;
+- density and whitespace relationships.
 
-Repeat these traits with controlled variation. Repetition creates identity; identical section templates create monotony.
+Repeat the constants with controlled variation. Do not apply every decorative motif to every region. A motif repeated in more than two adjacent regions needs a functional or brand reason.
 
-Before implementation, sketch a rhythm map for long pages: entry, proof, explanation, index, evidence, and continuation. Vary scale, alignment, surface, and media cadence between adjacent regions while preserving the fingerprint.
+Before implementation, map each long-page region as `job | layout family | type role | evidence/media | density`. Rewrite adjacent duplicate rows. Vary scale, alignment, surface, and media cadence while preserving the same system.
 
 ## Hierarchy
 
 Make the primary outcome obvious through position, scale, contrast, and surrounding space. Keep no more than one dominant action per local decision region. Secondary actions should remain discoverable without visually competing.
 
-Use display-sized type only for genuine heroes or editorial moments. Compact panels, tables, sidebars, and tools need tighter type and stable row dimensions.
+Establish one display apex for a normal long page. Use hero-scale type once, usually at the entry or one intentional editorial climax. Section headings must step down materially or derive emphasis from media, composition, density, or interaction. Compact panels, tables, sidebars, and tools need tighter type and stable row dimensions.
 
 Avoid hard line breaks in responsive headings and prose unless the phrase must remain editorially fixed at every supported width. Prefer a measured container, responsive type step, and an inline or block phrase span so the browser can reflow naturally.
 

@@ -1,6 +1,6 @@
 # UI Forge
 
-Agent skill for premium frontend interface design, redesign, and UI quality reviews.
+Agent skill for premium frontend interface generation and redesign, with UI quality review as a secondary mode.
 
 ## Available Skill
 
@@ -14,7 +14,7 @@ Design, implement, audit, and redesign polished interfaces for:
 - loading, empty, error, disabled, success, hover, active, and focus-visible states;
 - design-system reuse, typography, spacing, color, icons, surfaces, and motion;
 - product-specific composition instead of generic AI-looking templates;
-- stronger art direction, macrostructure selection, visual hooks, tasteful type, motion, imagery, premium rhythm, and memorable first viewports;
+- product-derived direction branching, macrostructure selection, visual carriers, refined type, motion, imagery, section rhythm, and memorable first viewports;
 - UI/UX review with concrete quality gates and severity-ranked findings.
 
 The skill prioritizes explicit user constraints, existing behavior, functional correctness, accessibility, platform conventions, product context, performance, and visual direction before anti-slop heuristics. For repository work, it preserves behavior and reports concrete file/line evidence where possible. For greenfield work, it starts from product context and the primary user workflow.
@@ -91,28 +91,32 @@ Do not inspect repository context.
 
 ## How It Works
 
-UI Forge routes each task through a compact design read:
+UI Forge routes each generation task through a compact creative contract:
 
 - surface type;
 - entry posture;
 - audience and goal;
-- brand posture;
-- visual ambition and primary hook;
-- macrostructure route and first-viewport proof;
-- type, motion, and media direction;
+- product thesis, audience feeling, content spine, and available assets;
+- three materially different direction candidates before selection;
+- a central move, macrostructure, and primary visual carrier;
+- theme axes, type roles, color deployment, motion, and section choreography;
 - existing foundation or design system;
 - variance, motion, and density;
 - information complexity.
 
-It then pushes for product-specific visual direction and execution craft before applying quality gates for UI/UX fit, correctness, accessibility, responsive behavior, state contrast, readable wrapping, state coverage, alignment, and honest content.
+It selects the route with the strongest audience, content, asset, production, and responsive fit, then implements the complete experience. Correctness, accessibility, responsive behavior, state contrast, readable wrapping, alignment, and honest content remain hard delivery constraints; formal scoring and severity reporting are reserved for explicit audits and evaluation.
 
 For public, brand, event, editorial, portfolio, and de-slop work, the skill asks the agent to:
 
-- choose the page shape before styling details;
-- set variance, motion, and density dials;
+- generate three different page directions before styling details;
+- choose one whole-page shape and one central visual move;
+- use one primary visual carrier and one quieter supporting carrier;
+- map section job, layout family, type role, evidence or media, and density before markup;
+- budget one display apex, signature object, motion motif, texture, and coherent accent logic;
 - use hero math and a short-viewport height budget so display type, proof, and actions survive desktop and mobile;
 - use image-first assets when a real or generated visual subject would make the page more specific;
-- run a short pre-delivery design critique for concept, hierarchy, execution, specificity, restraint, and variety.
+- suppress unsupported genre cliches and reroute directions that repeat recent project macrostructures and motif bundles;
+- make one focused craft refinement pass after implementation.
 
 Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.
 

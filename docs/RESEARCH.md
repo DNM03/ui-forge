@@ -19,8 +19,8 @@ Static analysis covered the exact local revisions recorded below. No upstream sc
 
 | Source | Revision | License | Adopted strengths | Deliberately excluded |
 |---|---|---|---|---|
-| `Leonxlnx/taste-skill` | `b17742737e79` | MIT | Context read, design dials, implementation-first workflow, anti-slop review | Shell installer, image scripts, hard-coded paths, unsupported quantitative claims, universal aesthetic bans |
-| `Nutlope/hallmark` | `aeb42fb354ff` | MIT | Macrostructure-first composition, structural fingerprints, theme routes, six-axis critique | Site scripts, remote asset instructions, unverified leaf recipes, novelty rules that override usability |
+| `Leonxlnx/taste-skill` | `b17742737e79` | MIT | Brief and audience inference, hero copy/media planning, layout-family rhythm, coherent palette and type roles, focal media, motivated motion, production-tested AI-tell guards | Shell installer, image scripts, fixed dials, named font pools, exhaustive judgment checklist, mandatory asset counts, house-style variants |
+| `Nutlope/hallmark` | `aeb42fb354ff` | MIT | Generation-first routing, whole-page macrostructure, one central move, display crescendo, theme-axis variation, recent-output rotation, back-half choreography | Site scripts, remote asset instructions, rigid theme catalog, automatic AI-to-dark mapping, blanket font bans, public log/stamp ceremony, large gate checklist |
 | `nextlevelbuilder/ui-ux-pro-max-skill` | `fe3f65e5d020` | MIT core; sibling assets may differ | Product/style/color/type/UX/stack taxonomy and priority lookup | Installers, downloads, persistence writes, sibling bundles, unreviewed generated copies, executable search system |
 
 Detailed static reports remain outside this repository in `../skill-analysis/`, and the combined reasoning blueprint remains in `../UI_SKILL_SYNTHESIS.md`.
