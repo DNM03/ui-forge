@@ -67,7 +67,11 @@
       "intent": "Make narrow screens and zoomed text first-class design conditions rather than a visual afterthought.",
       "appliesTo": ["responsive", "web"],
       "tags": ["responsive", "reflow", "zoom"],
-      "checks": ["Inspect at 320 CSS pixels, representative mobile and desktop widths, and 200 percent text zoom."],
+      "checks": [
+        "Inspect at 320 CSS pixels, representative mobile and desktop widths, and 200 percent text zoom.",
+        "Verify sticky or fixed chrome reserves visual and scroll offset so headings, controls, cards, anchor targets, and focused elements remain unobscured.",
+        "Verify wrapped controls and stacked panels retain explicit row, column, and edge spacing instead of collapsing to zero."
+      ],
       "warnings": ["Hiding overflow can conceal a defect instead of fixing it."],
       "exceptions": ["Inherently two-dimensional canvases and tables may use bounded scrolling with accessible controls."],
       "sourceRefs": ["wcag-2.2", "taste", "hallmark"],
@@ -80,7 +84,10 @@
       "intent": "Prevent generated UI content from misrepresenting product facts or creating false trust evidence.",
       "appliesTo": ["all"],
       "tags": ["content", "trust", "provenance"],
-      "checks": ["Trace each factual claim and evidence-like asset to a source or sample label."],
+      "checks": [
+        "Trace each factual claim and evidence-like asset to a source or sample label.",
+        "For fictional storefronts and product concepts, label the surface once and treat inventory, prices, policies, locations, stock, ratings, specifications, and delivery promises as sample content."
+      ],
       "warnings": ["Plausible placeholder content can be mistaken for real data during release."],
       "exceptions": ["Clearly labeled fictional fixtures are valid in demos and automated tests."],
       "sourceRefs": ["ui-forge-synthesis"],
@@ -119,7 +126,10 @@
       "intent": "Prevent layout shifts, missed actions, and overlapping UI across normal state transitions.",
       "appliesTo": ["all"],
       "tags": ["layout", "states", "performance"],
-      "checks": ["Compare geometry across loading, longest-content, error, success, and empty states."],
+      "checks": [
+        "Compare geometry across loading, longest-content, error, success, and empty states.",
+        "For side-by-side regions, compare natural content heights and reject accidental dead columns, unbounded sticky children, or independent scrolling without a task reason."
+      ],
       "warnings": ["Rigid heights can trade layout shift for clipping; use responsive constraints."],
       "exceptions": ["Content regions may grow naturally when growth does not displace an active control unexpectedly."],
       "sourceRefs": ["taste", "ui-ux-pro-max"],
@@ -202,7 +212,8 @@
       "tags": ["systems", "consistency", "tokens"],
       "checks": [
         "Scan the implementation for duplicate roles, arbitrary tokens, and mixed icon or component systems.",
-        "For repeated metrics, labels, icons, and controls, declare the intended center, edge, baseline, or decimal alignment and inspect rendered geometry."
+        "For repeated metrics, labels, icons, and controls, declare the intended center, edge, baseline, or decimal alignment and inspect rendered geometry.",
+        "Verify page gutter, section gap, panel inset, stack gap, and control gap are declared as distinct relationships and remain coherent after wrapping."
       ],
       "warnings": ["Consistency should not erase necessary hierarchy or state differences."],
       "exceptions": ["A migration boundary may temporarily host two systems with explicit isolation."],
@@ -216,8 +227,11 @@
       "intent": "Make media useful evidence rather than generic atmosphere or an unstable decorative layer.",
       "appliesTo": ["commerce", "portfolio", "venue", "brand", "product"],
       "tags": ["assets", "media", "authenticity"],
-      "checks": ["Inspect the subject, crop, loading behavior, reserved space, and text alternative at representative widths."],
-      "warnings": ["Dark overlays and aggressive crops often hide the subject and reduce contrast."],
+      "checks": [
+        "Inspect the subject, crop, loading behavior, reserved space, and text alternative at representative widths.",
+        "For commerce and object-focused pages, confirm the primary media reveals useful silhouette, material, and detail rather than a generic gradient, blob, or abstract placeholder."
+      ],
+      "warnings": ["Dark overlays, aggressive crops, and decorative abstractions often hide the subject and reduce trust."],
       "exceptions": ["Abstract or atmospheric imagery is valid when detailed inspection is not a user need."],
       "sourceRefs": ["hallmark", "taste", "wcag-2.2"],
       "level": "recommended"

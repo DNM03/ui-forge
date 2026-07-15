@@ -43,6 +43,10 @@ Define alignment by role. In metric strips and repeated data cells, decide indep
 
 Use a compact base scale with named layout gaps. Align repeated controls and data columns. Reserve stable dimensions for toolbars, boards, counters, tiles, and rows so state changes do not resize the interface.
 
+Name spacing by relationship instead of reusing one padding value everywhere: page gutter, section gap, panel inset, stack gap, inline control gap, and compact seam. A container's outside margin does not replace its internal inset, and a child's padding does not create a reliable gap between siblings.
+
+When a surface has a visible border, fill, radius, or elevation, verify that its content clears the edge on every side. When peers share a row, column, wrap, or grid, set both row and column gaps explicitly. Preserve some separation after responsive wrapping; do not let controls, cards, labels, or paragraphs stick together at a breakpoint.
+
 Use container constraints, grid tracks, aspect ratios, and min/max sizes to prevent clipping and overlap. Avoid arbitrary values when a nearby token already expresses the relationship.
 
 Model full-bleed paint separately from constrained content. A viewport-wide background should not force its text or controls outside the shared page grid, and a constrained panel should not inherit viewport gutters a second time.

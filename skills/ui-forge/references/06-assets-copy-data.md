@@ -12,6 +12,10 @@ Reserve image dimensions and use explicit aspect ratios. Set meaningful alternat
 
 Use generated assets only when the user requests them or no suitable authentic asset exists. Label synthetic examples when they could be mistaken for evidence.
 
+For commerce, catalog, real-estate, portfolio, food, venue, and object-focused pages, the primary media must let users inspect what they are choosing. Prefer authentic photography, supplied renders, or honestly generated product imagery with useful silhouette, material, and detail views. Generic gradients, colored blobs, abstract geometry, icon-scale SVGs, or exploded decorative pieces are not substitutes for a primary product image. If a real or generated subject asset is unavailable, use a clearly labeled placeholder and avoid claims that depend on unseen detail.
+
+Treat primary-media scale as part of art direction. In a hero or major product region, the subject should dominate or create deliberate crop tension. Do not place a small object in a large empty card, then add another frame around it. Replace or regenerate a weak primary asset before spending effort on surrounding decoration.
+
 ## Concrete subject evidence
 
 Use the strongest truthful subject signal for the surface. For skills, developer tools, design systems, and creative products, show what the system changes. For events, editorial, venues, and commerce, real program, place, subject, inventory, offer, or availability detail may be the better evidence.
@@ -30,7 +34,11 @@ Do not make visitors infer product quality from prose alone. Generated atmospher
 
 Use specific action verbs and product language. Avoid vague claims, generic startup language, repeated calls to action, decorative eyebrows on every section, and visible instructions explaining obvious controls.
 
+Keep final copy inside the product world. Never expose prompt language, design rationale, or commentary about the landing page, hero, layout, feature grid, generated output, or why a compositional decision was made. Internal reasoning should become brand-facing meaning, not public explanation.
+
 Never fabricate testimonials, customer names, avatars, metrics, awards, integrations, reviews, or usage statistics. Clearly label sample data and placeholders in development surfaces.
+
+When the entire greenfield brief is fictional, label the experience once as a concept, prototype, or demo rather than attaching a disclaimer to every item. Treat product names and prices as sample inventory, and do not present shipping origin, delivery time, return window, stock level, ratings, material specifications, or service promises as real unless supplied. A polished fictional surface still needs an honest content status, but honesty copy should not dominate the visual narrative.
 
 ## Forms
 

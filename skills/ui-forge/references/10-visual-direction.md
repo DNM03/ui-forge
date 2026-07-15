@@ -44,6 +44,33 @@ Select one primary carrier and one quieter supporting carrier:
 
 Keep the remaining carriers quiet. A page where typography, grids, noise, motion, cards, illustrations, and data all compete does not feel premium.
 
+## Aim for visual authorship
+
+Use these benchmark qualities to judge the selected direction before detailed implementation:
+
+- **Immediate identity:** the first viewport has a recognizable silhouette and makes the product, place, object, person, offer, or idea unmistakable.
+- **Subject authority:** important media is large enough, sharp enough, and well cropped enough to carry the page rather than decorate a panel.
+- **Typographic character:** one deliberate type move creates recall; the rest of the hierarchy supports it without repeating the spectacle.
+- **Compositional tension:** crop, overlap, alignment, asymmetry, negative space, or scale creates a reason for the eye to move.
+- **Rhythm:** the page changes pace across immersive, dense, open, and focused regions while remaining one visual world.
+- **Material coherence:** color, surface, edge, media, and motion feel chosen together rather than added as independent effects.
+- **Interaction character:** one visible behavior makes the page feel alive and belongs to the subject.
+
+A safe specification sheet can satisfy every content requirement and still fail this benchmark. Correctness does not replace desire, atmosphere, authorship, or visual confidence on a public front door.
+
+## Choose a front-door strategy
+
+Use these as strategy families, not templates:
+
+- **Immersive subject field:** full-bleed or edge-dominant photography, generated art, video, or a rendered scene with copy placed in real negative space.
+- **Editorial type composition:** a memorable verbal arrangement with controlled scale, inline media interruptions, italic or width contrast, and deliberate line choreography.
+- **Artifact tableau:** layered real outputs, interface states, packages, documents, or product artifacts arranged as one scene rather than a grid of cards.
+- **Product stage:** a large inspectable object or interface, usually unframed or held by one meaningful boundary, with concise supporting facts.
+- **Media-led catalog:** strong photography or render crops in an authored shelf, mosaic, or sequence whose aspect ratios reflect content importance.
+- **Kinetic poster:** typography, graphic form, and motion lead when the subject is abstract, event-based, or has no inspectable object.
+
+The strategy must fit the subject and asset quality. Do not choose a product stage when the only available subject is a tiny icon-like drawing, and do not force immersive photography when no credible image can be produced.
+
 ## Build a complete theme
 
 Set theme axes together rather than swapping a single color:
@@ -68,6 +95,7 @@ For technical subjects, common shortcuts include dark canvas, fluorescent green,
 Apply the same reasoning to other categories:
 
 - premium does not automatically mean cream, brass, serif italics, and excessive empty space;
+- commerce, shoes, fashion, studio, or craft do not automatically mean cream canvas, brown or burgundy accents, display serif, floating pill navigation, soft rounded panels, and sepia material swatches;
 - wellness does not automatically mean beige, rounded cards, soft gradients, and leaf imagery;
 - finance does not automatically mean navy, green deltas, glass cards, and invented charts;
 - creative does not automatically mean giant type, stickers, marquees, and cursor effects.
@@ -134,7 +162,9 @@ Use a coherent base palette with deliberate accent placement. Verify actual fore
 
 Prefer the strongest truthful subject signal available: real product state, authentic media, event program, place, inventory, output, workflow, data, or interaction. Do not invent a terminal, dashboard, or product panel merely to make an orientation page look technical. Generated media may create an illustrative scene, material, or object, but it must not masquerade as evidence.
 
-Motion should communicate state, hierarchy, causality, or story. Use one meaningful motif and complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
+For a visual subject, inspect the ratio between the subject and its media region. The item should normally dominate or deliberately tension the crop, not float at icon scale inside an empty frame. Avoid nested frames around a hero asset unless the frame itself carries product meaning. If the asset is weak, replace or regenerate it before polishing surrounding panels.
+
+Motion should communicate state, hierarchy, causality, or story. On expressive public pages, make one motif clearly perceptible during ordinary use: reveal the subject, shift the crop, assemble an artifact, transition a selected state, move a typographic phrase, or progress a sequence. A faint ambient sweep inside a large panel is support, not a motion signature. Complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
 
 ## Craft refinement
 

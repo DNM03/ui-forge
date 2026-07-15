@@ -27,6 +27,7 @@ At default text size, collect or visually establish:
 ```text
 viewport height
 fixed or sticky chrome bottom
+sticky chrome height and document scroll-padding
 hero top and bottom
 title top and bottom
 required orientation/proof bottom
@@ -39,6 +40,7 @@ Pass when:
 
 - the title is fully visible and has no glyph collision or accidental extra line;
 - fixed chrome does not cover the title or action;
+- anchor targets, focus destinations, and the next-section cue clear sticky chrome by the declared scroll offset;
 - required orientation, proof, and the primary action are visible inside the declared first-viewport budget;
 - the promotional entry reveals a meaningful label, heading, media edge, control, or other content cue from the next section, rather than only its empty background, when that is part of the composition contract;
 - no fixed hero boundary or hidden overflow clips content;
@@ -48,6 +50,7 @@ Fail when:
 
 - a headline fits horizontally but extends below the visible hero or overlaps later content;
 - a fixed `100vh`, `100svh`, or pixel height ignores a separate header;
+- sticky chrome overlays headings, controls, cards, or focus because the document reserves no visual or scroll clearance;
 - typography consumes the screen and pushes all proof or actions behind a non-scrolling boundary;
 - the implementation obtains a visual pass with transform scaling, hidden overflow, unreadably tight line height, or tiny supporting copy;
 - a mobile repair only stacks the desktop layout and creates a title-dominated first screen with no orientation or action.

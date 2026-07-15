@@ -33,6 +33,14 @@ Validate the rendered composite for every reachable state when a local render is
 
 Verify content at 320 CSS pixels wide and 200 percent text zoom without loss of content or two-dimensional scrolling except where the content inherently requires it, such as a data table or canvas. Long words, localized labels, validation messages, and code must wrap or scroll within bounded regions. Inspect line quality as well as overflow: body copy should retain a usable measure, headings should not gain accidental extra lines, and actions should not split into incoherent fragments.
 
+## Sticky and fixed chrome
+
+Reserve layout space for sticky or fixed headers, toolbars, and bottom actions. Include their visible height in first-viewport and scroll calculations. Apply equivalent document `scroll-padding` and target `scroll-margin` so in-page navigation, validation focus, search results, and skip links land fully below the chrome.
+
+Inspect sticky layers while scrolling through the longest content and while keyboard focus moves. They must not cover headings, controls, cards, error messages, or the active focus indicator. A sticky child must remain bounded by its owning section and release before unrelated content begins.
+
+When compacting for mobile, reduce spacing through the declared scale rather than collapsing panel inset or sibling gaps to zero. Wrapped controls need both row and column separation, including room for focus indicators.
+
 ## Targets and input modes
 
 Meet WCAG 2.2 minimum target spacing requirements and prefer at least 44 by 44 CSS pixels for primary touch controls. Do not rely on hover. Provide pointer, touch, and keyboard equivalents; provide a non-drag alternative for drag interactions.

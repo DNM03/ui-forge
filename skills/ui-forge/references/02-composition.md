@@ -47,6 +47,22 @@ Use a full-width wrapper with a constrained inner layout when a color, image, or
 
 Adjacent constrained sections should share measurable left and right edges unless the offset is intentional. Verify the computed `x` position and width at wide desktop, compact desktop, tablet, and mobile sizes.
 
+## Inset and sibling-gap contract
+
+Declare five spacing roles independently:
+
+- page or container gutter;
+- gap between major sections;
+- inset inside bordered or tinted surfaces;
+- vertical stack gap between headings, copy, controls, and metadata;
+- row and column gap between peer controls or items.
+
+A visible border, background surface, or rounded boundary normally requires content inset on every occupied edge. A divider line is the exception because it separates content rather than containing it. Text, icons, media, and controls must not touch a container border unless an explicit full-bleed crop or edge-aligned interaction is the central idea.
+
+Use `gap`, grid tracks, or an equivalent explicit layout rule for sibling relationships. Do not depend on collapsed margins, whitespace characters, `justify-content: space-between`, or incidental intrinsic width to create breathing room. On smaller screens, step down to a smaller spacing token rather than removing the gap. A zero gap is valid only for a deliberate seam such as segmented controls, table cells, tiled media, or a continuous rule.
+
+Inspect the tightest real state: longest label, selected outline, validation message, wrapped body copy, and mobile stack. Focus rings and shadows also need clearance from neighboring content and clipping boundaries.
+
 ## System constants and flexible signature
 
 Define two stable system-level traits and one flexible signature. Prefer traits that create coherence without decorating every section:
@@ -69,6 +85,17 @@ Make the primary outcome obvious through position, scale, contrast, and surround
 Establish one display apex for a normal long page. Use hero-scale type once, usually at the entry or one intentional editorial climax. Section headings must step down materially or derive emphasis from media, composition, density, or interaction. Compact panels, tables, sidebars, and tools need tighter type and stable row dimensions.
 
 Avoid hard line breaks in responsive headings and prose unless the phrase must remain editorially fixed at every supported width. Prefer a measured container, responsive type step, and an inline or block phrase span so the browser can reflow naturally.
+
+## Split-region height balance
+
+For side-by-side hero, product, comparison, or editorial regions, compare the natural heights using the longest real content. When one side is materially taller, choose one explicit response:
+
+1. balance the content or give the shorter side a meaningful media, summary, or action region;
+2. keep the shorter side sticky only within the start and end bounds of the shared section;
+3. recompose long controls or details into a following full-width band;
+4. switch to a sequential layout before the mismatch creates a dead column.
+
+Do not use an oversized minimum height to disguise the mismatch. Do not create independent scrolling inside one column unless comparing persistent content is the actual task. Sticky children must release before the next section and must not cover content while the taller sibling continues.
 
 ## First-viewport height budget
 

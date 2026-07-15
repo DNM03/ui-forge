@@ -74,7 +74,10 @@
       "intent": "Protect user trust and prevent generated placeholders from becoming false product evidence.",
       "appliesTo": ["all"],
       "tags": ["content", "trust", "data"],
-      "checks": ["Use source-backed facts or label all development examples and sample data clearly."],
+      "checks": [
+        "Use source-backed facts or label development examples and sample data clearly.",
+        "For a fictional concept, label the surface once and treat inventory, prices, policies, location, stock, ratings, and delivery promises as sample content."
+      ],
       "warnings": ["Realistic-looking placeholder evidence is easily mistaken for a verified claim."],
       "exceptions": ["Clearly labeled fictional data is acceptable for prototypes and tests."],
       "sourceRefs": ["taste", "ui-forge-synthesis"],
@@ -126,11 +129,32 @@
       "intent": "Use media as evidence and usable content rather than as interchangeable atmosphere.",
       "appliesTo": ["commerce", "portfolio", "venue", "product", "brand"],
       "tags": ["assets", "media", "authenticity"],
-      "checks": ["Verify the primary subject is recognizable and materially inspectable in the first relevant viewport."],
+      "checks": [
+        "Verify the primary subject is recognizable and materially inspectable in the first relevant viewport.",
+        "For commerce and object-focused pages, reject generic gradients, blobs, abstract geometry, or exploded decorative pieces as the primary product image."
+      ],
       "warnings": ["Decorative overlays can hide detail and weaken trust."],
       "exceptions": ["Atmospheric media may lead a narrative experience when detailed inspection is not the user goal."],
       "sourceRefs": ["hallmark", "taste"],
       "level": "contextual"
+    },
+    {
+      "id": "collapsed-spacing",
+      "title": "Collapsed Spacing",
+      "summary": "Content touches a visible border, peer items stick together, or responsive wrapping removes the separation needed to read grouping and hierarchy.",
+      "intent": "Make breathing room an explicit layout relationship instead of an accidental result of margins, intrinsic width, or leftover container space.",
+      "appliesTo": ["all"],
+      "tags": ["spacing", "layout", "responsive", "craft"],
+      "checks": [
+        "Inspect every bordered or filled surface for intentional content inset on each occupied edge.",
+        "Inspect vertical stacks, control clusters, wrapped rows, card grids, labels, and actions for explicit row and column gaps.",
+        "Verify focus rings, shadows, selected outlines, and validation messages do not touch or clip against neighboring content.",
+        "At mobile breakpoints, step down the spacing scale without collapsing ordinary relationships to zero."
+      ],
+      "warnings": ["A layout can avoid overlap and still feel broken when content is visually glued to its border or neighbor."],
+      "exceptions": ["Intentional seams are valid for segmented controls, tables, tiled media, continuous rules, and edge-to-edge crops."],
+      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "level": "recommended"
     },
     {
       "id": "per-section-posterization",
@@ -150,6 +174,36 @@
       "level": "contextual"
     },
     {
+      "id": "tiny-subject-stage",
+      "title": "Tiny Subject in a Decorative Stage",
+      "summary": "The primary product or object appears at icon scale inside a large empty panel, often with multiple nested frames and surrounding labels doing more visual work than the subject.",
+      "intent": "Make the subject carry the page through credible scale, crop, silhouette, and material detail instead of using decoration to compensate for a weak asset.",
+      "appliesTo": ["marketing", "brand", "commerce", "portfolio", "product", "site"],
+      "tags": ["media", "hero", "assets", "composition"],
+      "checks": [
+        "Compare the subject bounding area with its media region at desktop and mobile sizes.",
+        "Remove nested frames that do not communicate product meaning.",
+        "Replace or regenerate icon-like primary art before polishing the surrounding stage."
+      ],
+      "warnings": ["A large media container does not create product authority when most of it is empty."],
+      "exceptions": ["A deliberately distant subject may be valid when scale and isolation are the narrative concept."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "contextual"
+    },
+    {
+      "id": "visible-design-rationale",
+      "title": "Visible Design Rationale",
+      "summary": "Public copy explains the prompt, landing page, hero, layout, feature grid, generated output, or why the interface was composed a certain way.",
+      "intent": "Keep internal generation reasoning out of the product experience and preserve a coherent brand voice.",
+      "appliesTo": ["all"],
+      "tags": ["copy", "content", "authenticity", "generation"],
+      "checks": ["Rewrite implementation commentary as product meaning or remove it."],
+      "warnings": ["Meta copy makes a polished interface feel generated and breaks immersion."],
+      "exceptions": ["Documentation, case studies, and design-system education may explicitly discuss their own interface decisions."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "blocking"
+    },
+    {
       "id": "house-style-convergence",
       "title": "House-Style Convergence",
       "summary": "Unrelated briefs repeatedly converge on the same macrostructure and motif bundle, such as dark canvas, fluorescent accent, mono section labels, hard grids, terminal chrome, and giant condensed type.",
@@ -159,7 +213,8 @@
       "checks": [
         "Name three tempting genre defaults before selection and use at most one without brand, asset, or reference evidence.",
         "Compare against existing project surfaces or recent artifacts when available; reroute if the macrostructure and two or more strong motifs repeat.",
-        "Reject unsupported bundles such as condensed ultra-bold type, uppercase mono labels, fluorescent ticker, saturated artifact panel, offset shadow, and hard rules when three or more recur together."
+        "Reject unsupported technical bundles such as condensed ultra-bold type, uppercase mono labels, fluorescent ticker, saturated artifact panel, offset shadow, and hard rules when three or more recur together.",
+        "Reject unsupported premium-commerce bundles such as cream canvas, brown or burgundy accents, display serif, floating pill navigation, soft rounded panels, and sepia material swatches when three or more recur together."
       ],
       "warnings": ["Each motif may be valid alone; the unsupported recurring combination is the failure."],
       "exceptions": ["An established brand system or explicit reference may intentionally own the recurring combination."],

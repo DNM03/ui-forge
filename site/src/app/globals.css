@@ -29,7 +29,38 @@
 
 html {
   background: var(--canvas);
-  scroll-behavior: smooth;
+  scrollbar-color: var(--ink) var(--canvas);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-inline-start: 1px solid var(--line);
+  background: var(--canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: 48px;
+  border: 3px solid var(--canvas);
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--action);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--action-strong);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--canvas);
 }
 
 body {

@@ -29,6 +29,7 @@ Candidate B: editorial program route led by sessions and ideas
 Candidate C: interaction-led route built around a truthful schedule or topic chooser
 Selected direction: choose by available assets, audience fit, content, and mobile viability
 Central move: one product-derived idea, not a category effect
+Spacing contract: explicit page gutter, panel inset, stack gap, and control gap
 Suppressed defaults: generic gradient glow, terminal theater, feature-card wall, unsupported numbers
 ```
 

@@ -66,6 +66,9 @@ Use these checks before calling a visual redesign complete:
 | First-viewport height overflow | Budget fixed chrome, required entry content, spacing, and a meaningful next-section content cue before locking display scale or hero height. | Inspect the longest real entry at a short desktop and short mobile height; record viewport height, chrome bottom, required-content bottom, hero boundary, first next-section cue, and whether document scrolling remains available. |
 | Bleed/container mismatch | Specify background extent and content extent independently. Do not reuse viewport gutter calculations inside constrained children. | Computed section and shared-container `x` positions and widths at wide desktop, tablet, and mobile; document width equals viewport width. |
 | Incidental alignment | Declare alignment for repeated values, labels, icons, and controls instead of inheriting layout defaults. | Rendered bounding boxes or an overlay showing intended centers, baselines, or column edges. |
+| Collapsed inset or sibling gap | Declare page gutter, section gap, panel inset, stack gap, and control gap separately; preserve smaller tokens after wrapping. | Inspect bordered surfaces, longest labels, wrapped controls, selected outlines, focus rings, and validation messages at desktop and mobile widths. |
+| Split-height dead column | Balance side-by-side content, bound sticky regions, move long details into a following band, or recompose sequentially. | Compare natural column heights using the longest real content and inspect the full scroll range through the section transition. |
+| Sticky-content occlusion | Reserve visible and scroll clearance for sticky or fixed chrome and bound sticky children to their owning section. | Scroll to headings and anchors, move keyboard focus through covered regions, and confirm the chrome releases before unrelated content. |
 
 A default desktop-only review is not enough evidence for any of these guards.
 

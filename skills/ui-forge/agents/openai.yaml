@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Forge"
-  short_description: "Generate elegant, product-derived interfaces"
-  default_prompt: "Use $ui-forge to generate and implement this interface. Resolve the product thesis, audience, content, and assets; explore three materially different visual directions; select one product-derived central move and macrostructure; choose one primary visual carrier, a coherent theme, type roles, color deployment, and section rhythm; budget one display apex and the first viewport before sizing type; suppress unsupported genre defaults and recent house-style motifs; implement truthful subject evidence and complete states; then make one craft refinement pass and verify blocking responsive, accessibility, behavior, and honesty constraints."
+  short_description: "Generate premium, anti-slop interfaces"
+  default_prompt: "Use $ui-forge to generate and implement a distinctive premium interface. Lead with art direction: resolve the product thesis, audience feeling, content, and available assets; branch three materially different visual routes; secure a strong real or generated visual carrier when the subject needs one; then choose the page silhouette, hero strategy, typography, color and material logic, navigation posture, section rhythm, and one visible motion signature. Build the complete responsive experience, keep public copy inside the product world, make one visual craft pass, and finish with only the compact blocking checks for behavior, accessibility, responsive fit, reduced motion, and honest content. Do not turn this generation request into an audit."
 
 policy:
   allow_implicit_invocation: true

@@ -67,6 +67,8 @@ Theme axes: lightness, display voice, accent family, material logic
 Type roles: display, section, body, label or data
 Subject evidence: strongest truthful content, media, state, or interaction
 Section rhythm: job | layout family | type role | evidence/media | density
+Spacing contract: page gutter | section gap | panel inset | stack gap | control gap
+Split-height plan: balanced | bounded sticky | recompose | sequential
 Visual move budget: one display apex, object, motion motif, and texture
 Suppressed defaults: three category cliches not supported by evidence
 ```

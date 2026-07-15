@@ -22,6 +22,14 @@ Use motion to explain state change, spatial relationship, hierarchy, or causalit
 
 Do not use `transition: all`, universal hover scale, bounce easing, cursor followers, repeated scroll reveals, or parallax by default. These may be valid for an expressive experience only when they reinforce the chosen direction and remain controllable.
 
+## Expressive motion signature
+
+For branded public, launch, editorial, portfolio, event, and other expressive surfaces, choose one visible motion signature during art direction rather than adding animation after the layout is complete. It may reveal or reposition the subject, transition a crop, assemble an artifact, move an editorial phrase, progress a sequence, or give a meaningful selector a distinctive state change.
+
+The signature should be noticeable in ordinary use without requiring the visitor to search for it. It should reinforce the page's central move, run smoothly, and yield immediately to user input. Subtle ambient light, grain, or a background sweep may support the system but does not count as the signature by itself.
+
+Use staged entrance motion only when it improves the first reading. Keep content visible by default and enable enhanced reveals from JavaScript so failure, printing, screenshot capture, or reduced motion does not leave major regions transparent.
+
 ## Reduced motion
 
 Respect `prefers-reduced-motion: reduce`. Remove nonessential travel, parallax, autoplay, and repeated animation. Preserve necessary state feedback with instant changes, color, border, or short fades. Never make reduced-motion mode less functional.

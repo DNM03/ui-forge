@@ -112,10 +112,13 @@ For public, brand, event, editorial, portfolio, and de-slop work, the skill asks
 - choose one whole-page shape and one central visual move;
 - use one primary visual carrier and one quieter supporting carrier;
 - map section job, layout family, type role, evidence or media, and density before markup;
+- declare page gutters, section gaps, panel insets, stack gaps, and control gaps as separate relationships;
+- balance unequal split regions and reserve clearance for sticky chrome;
 - budget one display apex, signature object, motion motif, texture, and coherent accent logic;
 - use hero math and a short-viewport height budget so display type, proof, and actions survive desktop and mobile;
 - use image-first assets when a real or generated visual subject would make the page more specific;
 - suppress unsupported genre cliches and reroute directions that repeat recent project macrostructures and motif bundles;
+- use inspectable product media and clearly label fictional storefront data, policies, and promises;
 - make one focused craft refinement pass after implementation.
 
 Browser automation is not part of normal skill use; Playwright is reserved for this repo's optional site tests or projects that explicitly use e2e validation.

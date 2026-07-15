@@ -21,6 +21,18 @@ test("overview renders the working corpus", async ({ page }) => {
   expect(accessibility.violations.filter((violation) => ["serious", "critical"].includes(violation.impact ?? ""))).toEqual([]);
 });
 
+test("Lenis and the themed scrollbar respect motion preferences", async ({ page }) => {
+  await page.goto("/");
+
+  await expect.poll(() => page.locator("html").evaluate((element) => element.classList.contains("lenis"))).toBe(true);
+
+  const scrollbarColor = await page.locator("html").evaluate((element) => getComputedStyle(element).scrollbarColor);
+  expect(scrollbarColor).not.toBe("auto");
+
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect.poll(() => page.locator("html").evaluate((element) => element.classList.contains("lenis"))).toBe(false);
+});
+
 test("landing entry fits representative short viewport heights", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name.includes("mobile"), "Geometry profiles run once in the desktop browser context");
 
@@ -73,7 +85,7 @@ test("search filters the generated index", async ({ page }) => {
 test("catalog filters by level and opens detail", async ({ page }) => {
   await page.goto("/catalog/anti-pattern/");
   await page.getByRole("combobox", { name: "Filter by level" }).selectOption("blocking");
-  await expect(page.getByText("2 of 12")).toBeVisible();
+  await expect(page.getByText("2 of 13")).toBeVisible();
   await page.getByRole("link", { name: /Fabricated Evidence/ }).click();
   await expect(page.getByRole("heading", { level: 1, name: "Fabricated Evidence" })).toBeVisible();
 });

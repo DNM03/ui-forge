@@ -54,6 +54,24 @@
       "level": "contextual"
     },
     {
+      "id": "spacing-contract",
+      "title": "Spacing Contract",
+      "summary": "Declare page gutters, section gaps, panel insets, stack gaps, and control gaps as separate relationships before component styling.",
+      "intent": "Prevent content from touching borders, sibling items from sticking together, and responsive wrapping from collapsing the visual hierarchy.",
+      "appliesTo": ["all"],
+      "tags": ["spacing", "layout", "responsive", "craft"],
+      "checks": [
+        "Give bordered, tinted, rounded, or elevated surfaces intentional inset on every occupied edge.",
+        "Set explicit row and column gaps for sibling stacks, clusters, wraps, and grids.",
+        "Use a smaller responsive spacing token instead of collapsing panel inset or sibling gaps to zero.",
+        "Inspect longest labels, wrapped copy, validation messages, focus rings, and shadows for edge and sibling clearance."
+      ],
+      "warnings": ["Outer margin does not replace panel inset, and child padding does not create a reliable relationship between siblings."],
+      "exceptions": ["Zero gap is valid for an intentional seam such as table cells, segmented controls, tiled media, or a continuous divider."],
+      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
       "id": "direction-branching",
       "title": "Direction Branching",
       "summary": "Generate three materially different visual routes, then choose the product-derived direction with the strongest audience, content, asset, and responsive fit.",
@@ -119,12 +137,31 @@
         "Define the asset role before generating or curating it.",
         "Use concrete subjects such as products, artifacts, places, materials, or output examples instead of generic ambience.",
         "Extract layout decisions from the image crop, light, palette, texture, and negative space.",
+        "Make the primary subject dominate or deliberately tension its media crop instead of floating at icon scale inside nested frames.",
         "Do not present generated people, venues, sponsor walls, awards, or screenshots as real evidence."
       ],
       "warnings": ["Dropping a generated image into a finished generic template rarely improves the design."],
       "exceptions": ["Strict UI components, dashboards, and text-first documentation may not need imagery."],
       "sourceRefs": ["taste", "ui-forge-synthesis"],
       "level": "contextual"
+    },
+    {
+      "id": "front-door-art-direction",
+      "title": "Front-Door Art Direction",
+      "summary": "Choose an authored entry strategy, strong visual carrier, memorable type move, navigation posture, and visible motion signature before detailed component styling.",
+      "intent": "Make public interfaces create desire and immediate identity instead of collapsing into a safe specification sheet or generic split hero.",
+      "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
+      "tags": ["visual-direction", "hero", "media", "typography", "motion"],
+      "checks": [
+        "Select an immersive subject field, editorial type composition, artifact tableau, product stage, media-led catalog, kinetic poster, or product-specific custom strategy.",
+        "Make the identity, subject, literal offer, and primary action legible in the first viewport.",
+        "Treat navigation geometry and mobile behavior as part of the selected composition rather than defaulting to a floating pill.",
+        "Choose one visible motion signature tied to the subject or reading route."
+      ],
+      "warnings": ["A correct and well-spaced entry can still feel generic when it lacks a strong carrier, crop, type idea, and compositional tension."],
+      "exceptions": ["Dense recurring product tools should prioritize the working surface and may not need expressive front-door art direction."],
+      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "level": "recommended"
     },
     {
       "id": "craft-refinement-loop",
