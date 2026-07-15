@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Forge"
   short_description: "Design premium, proof-led interfaces"
-  default_prompt: "Use $ui-forge to design and implement this interface. Choose a macrostructure, set variance/motion/density, create a memorable product-specific hook, use tasteful typography/media/motion or image-first assets when useful, avoid generic AI UI, run the pre-delivery design critique, show truthful proof, cover real states, and verify responsive/accessibility quality."
+  default_prompt: "Use $ui-forge to design and implement this interface. Choose a macrostructure, set variance/motion/density, create a memorable product-specific hook, budget the first viewport at short desktop and mobile heights before sizing display type, use tasteful typography/media/motion or image-first assets when useful, avoid generic AI UI, run the pre-delivery design critique, show truthful proof, cover real states, and verify responsive/accessibility quality."
 
 policy:
   allow_implicit_invocation: true

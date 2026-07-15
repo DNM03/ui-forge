@@ -71,6 +71,36 @@ Use display-sized type only for genuine heroes or editorial moments. Compact pan
 
 Avoid hard line breaks in responsive headings and prose unless the phrase must remain editorially fixed at every supported width. Prefer a measured container, responsive type step, and an inline or block phrase span so the browser can reflow naturally.
 
+## First-viewport height budget
+
+Budget height before selecting the final hero type step. For each representative short desktop and mobile viewport, calculate:
+
+```text
+usable entry height = viewport height
+  - fixed or sticky chrome
+  - safe-area allowance
+  - intended next-section reveal
+
+required stack = entry top/bottom spacing
+  + eyebrow or metadata
+  + title line box
+  + supporting copy
+  + primary proof or action
+  + vertical gaps
+```
+
+At default text size, the required stack must fit inside the usable entry height without clipping, overlap, transform scaling, or an `overflow: hidden` escape. Use the longest real title and action copy, not placeholder text. A heading that technically remains inside its own box still fails when its scale pushes required orientation, proof, or the primary action below a fixed hero boundary.
+
+Repair an over-budget entry in this order:
+
+1. Remove copy or controls that are not required for the first decision.
+2. Reduce excessive top/bottom spacing and decorative gaps.
+3. Choose a smaller discrete display type step or a wider safe title measure to reduce accidental lines.
+4. Recompose media and secondary proof rather than shrinking body text or controls.
+5. Let the entry grow and the document scroll naturally when the brief does not require a one-screen composition.
+
+Do not impose one global hero height or font-size ceiling. Editorial posters may spend more height on type, while commerce and product entries need earlier facts and actions. Fixed `100vh` or `100svh` heroes are especially fragile when combined with separate headers, mobile browser chrome, long copy, or `overflow: hidden`; account for chrome explicitly or use content-driven sizing.
+
 ## Responsive recomposition
 
 Define content priority before breakpoint CSS. On narrow screens:

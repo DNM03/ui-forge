@@ -29,6 +29,8 @@ Keep body measure readable, line height proportional, and letter spacing at zero
 
 Treat line breaking as part of the type contract. Ordinary copy must not rely on hard `<br>` elements, narrow max-widths, or oversized padding that produces one- or two-word lines. Test the longest real heading, body copy, metadata, and action labels at every representative width and text zoom level.
 
+Choose display size from both available width and available height. Declare the intended title line count, measure the complete entry stack at a representative short desktop and mobile height, and step the title down when it crowds out required copy, proof, or the primary action. Do not solve height pressure with viewport-width font scaling, compressed line height that causes glyph collisions, transform scaling, hidden overflow, or unreadably small supporting text.
+
 Define alignment by role. In metric strips and repeated data cells, decide independently whether labels, values, units, and trends align left, center, baseline, or decimal. Do not let `align-self`, `justify-content`, or intrinsic width accidentally determine the visual rule; inspect the rendered bounding geometry when symmetry matters.
 
 ## Spacing and grid

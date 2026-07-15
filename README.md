@@ -110,7 +110,7 @@ For public, brand, event, editorial, portfolio, and de-slop work, the skill asks
 
 - choose the page shape before styling details;
 - set variance, motion, and density dials;
-- use hero math so display type, proof, and actions survive desktop and mobile;
+- use hero math and a short-viewport height budget so display type, proof, and actions survive desktop and mobile;
 - use image-first assets when a real or generated visual subject would make the page more specific;
 - run a short pre-delivery design critique for concept, hierarchy, execution, specificity, restraint, and variety.
 

@@ -91,17 +91,18 @@
     {
       "id": "hero-math",
       "title": "Hero Math",
-      "summary": "Constrain display type, subcopy, action position, and mobile proof so expressive heroes remain readable and useful.",
-      "intent": "Prevent ambitious public pages from shipping with clipped title text, accidental line breaks, hidden calls to action, or mobile first screens that delay the actual proof.",
+      "summary": "Constrain display type, vertical budget, subcopy, action position, and mobile proof so expressive heroes remain readable and useful.",
+      "intent": "Prevent ambitious public pages from shipping with clipped title text, accidental line breaks, hidden calls to action, or first screens whose typography consumes the usable height.",
       "appliesTo": ["marketing", "brand", "editorial", "commerce", "portfolio", "event", "site"],
       "tags": ["typography", "hero", "responsive", "visual-direction"],
       "checks": [
         "Name the intended desktop title line count and mobile title behavior.",
+        "Budget fixed chrome, safe spacing, title, subcopy, proof, action, and next-section reveal at a representative short desktop and mobile height.",
         "Keep subcopy compact enough to scan and within a readable measure.",
         "Keep the first action and primary proof or hook visible early on mobile.",
         "Use responsive type steps and balanced wrapping instead of brittle hard breaks."
       ],
-      "warnings": ["A poster-style hero can be tall, but it still needs a deliberate crop, action path, and mobile proof."],
+      "warnings": ["A poster-style hero can be tall, but fixed viewport heights and hidden overflow must not clip its action path or mobile proof."],
       "exceptions": ["Experimental art pages may prioritize poster impact when the user explicitly asks for that direction."],
       "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
       "level": "recommended"

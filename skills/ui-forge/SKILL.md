@@ -86,6 +86,7 @@ Type direction: system sans | expressive serif | condensed | mono | mixed pairin
 Motion moment: none | state feedback | entrance | ambient | object interaction
 Media plan: existing asset | generated bitmap | curated authentic image | CSS/canvas/SVG artifact | no media
 Hero math: title line count, subcopy measure, first action position, mobile first-screen proof
+Viewport height budget: target short desktop/mobile heights, fixed chrome, required content stack, next-band reveal
 Structural fingerprint: 3-5 repeated traits that will create identity
 Banned defaults: generic centered hero, three-card feature strip, unsupported metrics, fake social proof, decorative gradient/glow
 Reference traits: selected principles to retain, if any
@@ -101,11 +102,14 @@ If a banned default is still the best choice, state the product reason before us
 3. Define a structural fingerprint: heading placement, body rhythm, dividers, action voice, image treatment, and reveal behavior.
 4. Choose a theme route: existing brand, studied reference traits, catalog direction, or custom tokens.
 5. Decide what the primary viewport must reveal: task UI, product, data, place, person, object, focused content, or inspectable output proof.
-6. Define background extent separately from content extent: full bleed, container-bound, or mixed. Do not use viewport-derived padding inside an already constrained panel.
-7. Map density by region. A spacious entry, dense reference index, and focused reading route may coexist in one coherent product.
-8. Select components only after the structure is coherent.
+6. Budget the first viewport vertically before locking display type: subtract fixed chrome and the intended next-section reveal, then fit the required heading, copy, proof, action, gaps, and safe spacing inside the remainder at representative short heights.
+7. Define background extent separately from content extent: full bleed, container-bound, or mixed. Do not use viewport-derived padding inside an already constrained panel.
+8. Map density by region. A spacious entry, dense reference index, and focused reading route may coexist in one coherent product.
+9. Select components only after the structure is coherent.
 
 For a component task, inherit the surrounding structure and apply this sequence at component scale. Read [composition](references/02-composition.md) before building a full page, multi-section surface, de-slop redesign, or reference-led composition.
+
+For a landing page or other hero-led front door, use [the first-viewport height evaluation](examples/first-viewport-height-evaluation.md) before delivery.
 
 When a user provides a reference image or names a taste direction, transform it rather than copying it:
 
@@ -147,7 +151,7 @@ When image generation is available and the page needs a strong visual subject, c
 
 After the first implementation pass, refine the page like a visual designer:
 
-- No clipped hero type, accidental one-word lines, or display text that overwhelms the usable content.
+- No clipped hero type, accidental one-word lines, or display text that crowds required copy, proof, or actions out of the target first viewport.
 - No repeated oversized headings with the same alignment, scale, and spacing across every section.
 - No empty oversized bands whose only purpose is to look premium.
 - No fake precision: do not invent prize amounts, percentages, dates, judge names, logos, counts, ratings, or countdowns.
@@ -233,6 +237,7 @@ Before delivery on de-slop or reference-led work, perform this delta check:
 - Required behavior and recovery paths work.
 - Imports and assets are clean; browser-console review is optional unless the task involves a rendered web page and local review is already available.
 - Supported widths have no unintended overflow, clipping, overlap, or unreadable controls.
+- At representative short desktop and mobile heights, fixed chrome and hero sizing do not clip required entry content or hide it inside an `overflow` boundary; natural page scrolling remains available when content must grow.
 - Keyboard order, names, semantics, and visible focus are correct.
 - Text and non-text contrast meet the stated standard, and meaning is not color-only.
 - Actual hover, active, focus-visible, selected, and disabled composites retain readable contrast; base tokens alone are not evidence.
@@ -249,7 +254,7 @@ Before delivery on de-slop or reference-led work, perform this delta check:
 - The primary task and hierarchy are clear in a short scan.
 - The result looks more considered, memorable, and product-specific than a generic baseline agent page.
 - The selected macrostructure is visible and does not collapse into the default hero/cards/form page.
-- Hero math works: display type fits, subcopy is readable, the first action is visible, and mobile still shows proof or the hook early.
+- Hero math works: the required stack fits its declared short-viewport height budget at default text size, display type does not crowd out subcopy or the first action, and mobile still shows proof or the hook early.
 - Visual ambition is executed cleanly: no clipped type, repetitive oversized headings, empty premium space, or mobile downgrade.
 - Composition is intentional rather than template repetition.
 - Typography, colors, spacing, icons, surfaces, and motion behave as one system.

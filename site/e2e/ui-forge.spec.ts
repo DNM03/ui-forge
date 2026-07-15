@@ -21,6 +21,47 @@ test("overview renders the working corpus", async ({ page }) => {
   expect(accessibility.violations.filter((violation) => ["serious", "critical"].includes(violation.impact ?? ""))).toEqual([]);
 });
 
+test("landing entry fits representative short viewport heights", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name.includes("mobile"), "Geometry profiles run once in the desktop browser context");
+
+  for (const viewport of [
+    { width: 1280, height: 720 },
+    { width: 390, height: 667 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/");
+
+    const geometry = await page.evaluate(() => {
+      const bounds = (selector: string) => {
+        const element = document.querySelector(selector);
+        if (!element) throw new Error(`Missing evaluation element: ${selector}`);
+        const rect = element.getBoundingClientRect();
+        return { top: rect.top, bottom: rect.bottom };
+      };
+
+      return {
+        viewportHeight: window.innerHeight,
+        header: bounds(".site-header-inner"),
+        hero: bounds(".showcase-hero"),
+        title: bounds(".showcase-hero h1"),
+        intro: bounds(".showcase-intro"),
+        install: bounds(".install-command"),
+        actions: bounds(".showcase-actions"),
+        nextSection: bounds(".proof-section"),
+        nextSectionCue: bounds(".proof-copy .section-code"),
+      };
+    });
+
+    expect(geometry.title.top).toBeGreaterThanOrEqual(geometry.header.bottom);
+    expect(Math.max(geometry.intro.bottom, geometry.install.bottom, geometry.actions.bottom)).toBeLessThanOrEqual(
+      Math.min(geometry.viewportHeight, geometry.hero.bottom),
+    );
+    expect(geometry.nextSection.top).toBeLessThan(geometry.viewportHeight);
+    expect(geometry.nextSectionCue.top).toBeLessThan(geometry.viewportHeight);
+    await expectNoHorizontalOverflow(page);
+  }
+});
+
 test("search filters the generated index", async ({ page }) => {
   await page.goto("/search/");
   const search = page.getByRole("textbox", { name: "Search references and catalog" });
