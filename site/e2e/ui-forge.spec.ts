@@ -83,9 +83,12 @@ test("search filters the generated index", async ({ page }) => {
 });
 
 test("catalog filters by level and opens detail", async ({ page }) => {
+  const antiPatterns = manifest.catalog.filter((entry) => entry.kind === "anti-pattern");
+  const blockingAntiPatterns = antiPatterns.filter((entry) => entry.level === "blocking");
+
   await page.goto("/catalog/anti-pattern/");
   await page.getByRole("combobox", { name: "Filter by level" }).selectOption("blocking");
-  await expect(page.getByText("2 of 13")).toBeVisible();
+  await expect(page.getByText(`${blockingAntiPatterns.length} of ${antiPatterns.length}`)).toBeVisible();
   await page.getByRole("link", { name: /Fabricated Evidence/ }).click();
   await expect(page.getByRole("heading", { level: 1, name: "Fabricated Evidence" })).toBeVisible();
 });
