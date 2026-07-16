@@ -23,10 +23,10 @@ Catalog files conform to `references/catalog.schema.json`. Every item requires:
 - `appliesTo` and `tags` for routing;
 - concrete `checks` that can be verified;
 - `warnings` and `exceptions` to prevent brittle universal rules;
-- `sourceRefs` naming the adaptation source or standard;
+- `sourceRefs` naming applicable standards and the `ui-forge-synthesis` marker;
 - a `level` of `blocking`, `recommended`, or `contextual`.
 
-Do not encode implementation-specific commands or executable snippets in catalog data. A source reference is provenance, not an instruction to consult or run that source at skill runtime.
+Do not encode implementation-specific commands or executable snippets in catalog data. Catalog `sourceRefs` identify standards that materially support an entry and mark independently authored UI Forge synthesis. Record upstream research influence at topic level in `provenance/extraction-map.csv`, not on individual catalog entries.
 
 ## Review checklist
 
@@ -35,4 +35,4 @@ Do not encode implementation-specific commands or executable snippets in catalog
 - Does it state where it does not apply?
 - Does it duplicate another entry?
 - Does it introduce an uncited factual or quantitative claim?
-- Does the source map and notice file cover the adaptation?
+- Are upstream research influences recorded in the topic map without implying that an individual entry copies a source?

@@ -40,8 +40,8 @@ export async function buildManifest(): Promise<GeneratedManifest> {
   const { files: catalogPaths, items: catalog } = await loadCatalogs();
   const sourcesPath = resolveInside(provenanceRoot, "sources.yaml");
   const extractionPath = resolveInside(provenanceRoot, "extraction-map.csv");
-  const noticesPath = resolveInside(provenanceRoot, "THIRD_PARTY_NOTICES.md");
-  const canonicalPaths = [...referencePaths, ...catalogPaths, sourcesPath, extractionPath, noticesPath];
+  const researchReferencesPath = resolveInside(provenanceRoot, "RESEARCH_REFERENCES.md");
+  const canonicalPaths = [...referencePaths, ...catalogPaths, sourcesPath, extractionPath, researchReferencesPath];
   const { digest, contents } = await readCanonicalFiles(canonicalPaths);
 
   const docs: GeneratedDoc[] = [];

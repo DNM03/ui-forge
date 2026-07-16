@@ -16,7 +16,7 @@ The textual review compared 19 authored UI Forge files against 439 text-bearing 
 - `Nutlope/hallmark` at `aeb42fb354ff`
 - `nextlevelbuilder/ui-ux-pro-max-skill` at `fe3f65e5d020`
 
-The UI Forge side included `SKILL.md`, Markdown references, structured catalogs, the repository README, and the research baseline. Generated site content, retained license texts, third-party notices, dependencies, test output, and binary assets were excluded from similarity scoring.
+The UI Forge side included `SKILL.md`, Markdown references, structured catalogs, the repository README, and the research baseline. Generated site content, retained license texts, the research reference record, dependencies, test output, and binary assets were excluded from similarity scoring.
 
 No source-repository script, installer, CLI, package command, build, server, or generated asset was executed during the review.
 
@@ -33,8 +33,8 @@ The current corpus therefore shows conceptual influence and independent expressi
 
 ## Controls
 
-1. Keep `sources.yaml`, `THIRD_PARTY_NOTICES.md`, `extraction-map.csv`, and the retained license files.
-2. Keep upstream project identifiers in the topic-level extraction map and repository notices rather than displaying them on individual catalog entries.
+1. Keep `sources.yaml`, `RESEARCH_REFERENCES.md`, `extraction-map.csv`, and the retained license files.
+2. Keep upstream project identifiers in the topic-level extraction map and research reference record rather than displaying them on individual catalog entries.
 3. Use `ui-forge-synthesis` on every catalog entry and add standards identifiers only when they materially support that entry.
 4. Add a separate `licensedFrom` record before including any copied or closely adapted code, prose, data, or asset.
 5. Do not redistribute sibling bundles or visual assets until their individual licenses are reviewed.
