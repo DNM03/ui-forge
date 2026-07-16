@@ -38,7 +38,7 @@ Keep final copy inside the product world. Never expose prompt language, design r
 
 Never fabricate testimonials, customer names, avatars, metrics, awards, integrations, reviews, or usage statistics. Clearly label sample data and placeholders in development surfaces.
 
-When the entire greenfield brief is fictional, label the experience once as a concept, prototype, or demo rather than attaching a disclaimer to every item. Treat product names and prices as sample inventory, and do not present shipping origin, delivery time, return window, stock level, ratings, material specifications, or service promises as real unless supplied. A polished fictional surface still needs an honest content status, but honesty copy should not dominate the visual narrative.
+When the entire greenfield brief is fictional, disclose that status once in a quiet footer note, page metadata region, development README, or local label beside content that could reasonably be mistaken for evidence. Do not place `concept`, `prototype`, `demo`, `fictional`, `sample`, or design-process language in the hero eyebrow, headline, main action, or section narrative merely to satisfy disclosure. Treat product names and prices as sample inventory, and do not present shipping origin, delivery time, return window, stock level, ratings, material specifications, or service promises as real unless supplied. A polished fictional surface still needs an honest content status, but honesty copy should not dominate or break immersion.
 
 ## Forms
 

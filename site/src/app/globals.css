@@ -1072,6 +1072,14 @@ kbd {
   text-transform: uppercase;
 }
 
+.detail-aside small {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 .detail-aside ul {
   margin: 0;
   padding: 0;
@@ -2335,6 +2343,10 @@ body {
 
 .detail-aside code {
   color: #d7dcd3;
+}
+
+.detail-aside small {
+  color: #aeb5aa;
 }
 
 .tag-list > span {

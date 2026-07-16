@@ -22,14 +22,17 @@ At least one candidate should create distinction through restraint. Reject candi
 
 Choose the direction that best satisfies:
 
-1. **Audience fit:** it creates the right confidence, appetite, focus, urgency, or ease.
-2. **Subject evidence:** its main visual carrier can be supported by real content or a truthful illustrative asset.
-3. **Content fit:** the structure handles the actual amount and order of information.
-4. **Brand distance:** it respects existing identity while avoiding category cliches.
-5. **Responsive viability:** its core idea survives narrow widths and short heights.
-6. **Production fit:** it can be implemented cleanly with the available stack, time, and assets.
+1. **Category resonance:** without relying on the logo or explanatory copy, the visual world feels native to the subject and audience.
+2. **Visual magnetism:** the first viewport has one subject, artifact, composition, or event strong enough to earn attention.
+3. **Audience fit:** it creates the right confidence, appetite, focus, urgency, or ease.
+4. **Subject evidence:** its main visual carrier can be supported by real content or a truthful illustrative asset.
+5. **Content fit:** the structure handles the actual amount and order of information.
+6. **Brand distance:** it respects existing identity while avoiding interchangeable category defaults.
+7. **Motion opportunity:** the central idea can produce one perceptible, subject-specific behavior.
+8. **Responsive viability:** its core idea survives narrow widths and short heights.
+9. **Production fit:** it can be implemented cleanly with the available stack, time, and assets.
 
-Do not choose the loudest candidate merely because it differs most from a generic template.
+Do not choose the loudest candidate merely because it differs most from a generic template. Do not choose a calm or restrained candidate merely because it is easier to implement or defend. If the direction could sell software, shoes, architecture, and consulting after replacing the nouns, it lacks category resonance.
 
 ## Choose the visual carriers
 
@@ -57,6 +60,16 @@ Use these benchmark qualities to judge the selected direction before detailed im
 - **Interaction character:** one visible behavior makes the page feel alive and belongs to the subject.
 
 A safe specification sheet can satisfy every content requirement and still fail this benchmark. Correctness does not replace desire, atmosphere, authorship, or visual confidence on a public front door.
+
+## Pass the first-ten-second test
+
+Before detailed implementation, imagine the route as a static first viewport and a short interaction:
+
+1. **Two seconds:** one focal subject or compositional event wins immediately.
+2. **Five seconds:** the category, offer, and intended feeling are legible without explanation.
+3. **Ten seconds:** a crop, state change, motion, or interaction reveals a second layer of meaning.
+
+Fail the route if the only memorable quality is a palette, oversized heading, rounded shell, or decorative effect. Fail it if the primary asset is attractive but semantically unrelated to the product. Change the carrier or central move before polishing components.
 
 ## Choose a front-door strategy
 
@@ -86,11 +99,11 @@ Use one base theme and at most one intentional contrast or inversion band unless
 
 Choose exactly one color deployment mode and one accent family unless supplied brand evidence requires more. Do not combine accent punctuation, a saturated full-bleed field, offset accent shadows, repeated accent rules, colored labels, and multiple action hues as separate attention systems.
 
-## Suppress genre defaults
+## Transform genre defaults
 
-Name three tempting visual shortcuts for the brief and use at most one without direct brand, asset, or reference evidence.
+Name three tempting visual shortcuts for the brief. Decide which cues genuinely help recognition, which are supported by brand or subject evidence, and which should be suppressed. Do not ban a useful category vocabulary merely to appear original. Transform at least one familiar cue into a product-specific carrier, interaction, crop, or compositional rule.
 
-For technical subjects, common shortcuts include dark canvas, fluorescent green, mono labels, numbered eyebrows, visible grid, terminal chrome, orbital diagrams, outlined type, condensed all-caps, and hard borders. When three or more of this bundle appear together without evidence, discard the direction.
+For technical subjects, common shortcuts include dark canvas, fluorescent green, mono labels, numbered eyebrows, visible grid, terminal chrome, orbital diagrams, outlined type, condensed all-caps, and hard borders. A coordinated subset can be correct when it visualizes the actual mechanism or desired feeling. Discard it when the combination is literal, decorative, and interchangeable with another technical product.
 
 Apply the same reasoning to other categories:
 
@@ -164,16 +177,18 @@ Prefer the strongest truthful subject signal available: real product state, auth
 
 For a visual subject, inspect the ratio between the subject and its media region. The item should normally dominate or deliberately tension the crop, not float at icon scale inside an empty frame. Avoid nested frames around a hero asset unless the frame itself carries product meaning. If the asset is weak, replace or regenerate it before polishing surrounding panels.
 
-Motion should communicate state, hierarchy, causality, or story. On expressive public pages, make one motif clearly perceptible during ordinary use: reveal the subject, shift the crop, assemble an artifact, transition a selected state, move a typographic phrase, or progress a sequence. A faint ambient sweep inside a large panel is support, not a motion signature. Complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
+Motion should communicate state, hierarchy, causality, or story. On expressive public pages, make one motif clearly perceptible during ordinary use: reveal the subject, shift the crop, assemble an artifact, transition a selected state, move a typographic phrase, or progress a sequence. Support it with no more than two quieter layers, such as ambient depth and responsive pointer or scroll feedback, when they share the same visual logic. A faint ambient sweep inside a large panel is support, not a motion signature. Complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
 
 ## Craft refinement
 
 After implementation, make one visual refinement pass:
 
 - resolve optical alignment, crop, spacing, type fit, and responsive hierarchy;
+- inspect the first viewport as a grayscale thumbnail and at normal scale; strengthen the focal carrier if both views distribute attention evenly;
 - remove repeated display spectacle, decorative rules, and fake technical labels;
 - tighten empty space that creates no focus or tension;
 - preserve the subject signal, action, and identity on mobile;
+- inspect one representative scroll for scene change, sticky overlap, and visible motion payoff;
 - change the direction rather than adding effects if the page still resembles a category template.
 
 Formal scoring, severity, and audit evidence belong in `references/07-quality-and-validation.md`, not in the normal generation path.

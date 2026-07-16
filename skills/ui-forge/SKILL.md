@@ -11,6 +11,8 @@ For normal greenfield, redesign, de-slop, and reference-led work, spend the majo
 
 Premium quality comes from a fitting visual idea, excellent subject media, deliberate crop, memorable but controlled typography, optical alignment, spacing resolution, material coherence, and refined behavior. It does not require one palette, maximum scale, a floating pill header, card-heavy layouts, or extra judgment UI.
 
+For expressive public surfaces, optimize the first ten seconds: the viewer should recognize the category, find one magnetic subject or visual idea, understand the offer, and notice that the page is alive. Anti-slop does not mean erasing useful genre signals. It means choosing and transforming them until they feel specific to this product rather than interchangeable with another generated page.
+
 ## Resolve precedence
 
 Apply requirements in this order:
@@ -65,20 +67,23 @@ For full public pages, extend it with generation decisions:
 ```text
 Candidate directions: three materially different routes
 Selected direction: one-sentence art-direction thesis
+Category vocabulary: two to four recognizable cues that belong to this audience and subject
 Primary / supporting carrier: one dominant visual carrier and one quieter carrier
 Hero strategy: immersive media | editorial type | artifact tableau | product stage |
                kinetic poster | product-specific custom composition
 Central move: the one visual or compositional idea the page owns
+First-ten-second hook: what creates immediate recognition, desire, or curiosity
 Macrostructure: page silhouette and reading route
 Media plan: source, crop, focal subject, aspect ratios, mobile treatment
 Typography: display, section, body, label/data roles and intended title lines
 Color and material: base field, accent deployment, surface and edge logic
 Navigation posture: integrated, overlay, edge bar, split, compact floating, or other
-Motion signature: one visible behavior tied to the subject or reading route
+Motion system: one subject-specific signature plus zero to two supporting layers
 Section rhythm: job | layout family | type role | media/evidence | density
 Spacing: page gutter | section gap | panel inset | stack gap | control gap
 First viewport: identity, subject signal, action, and next-band cue at short heights
 Suppressed defaults: three tempting category cliches not supported by evidence
+Disclosure placement: quiet footer, metadata, or local sample label; never the hero narrative
 ```
 
 Ask one concise question only when missing information would materially change the direction and repository evidence cannot resolve it.
@@ -96,9 +101,12 @@ For substantial public, brand, event, commerce, portfolio, editorial, skill, or 
 
 At least one route should be media-led when the subject is visual. At least one should create distinction through restraint rather than giant type or effects. Reject candidates that are color swaps of the same shell.
 
-Select the route with the strongest product fit, emotional fit, asset potential, compositional identity, responsive viability, and implementation fit. Do not choose the safest, most easily audited, or loudest route merely for those reasons.
+Select the route with the strongest category resonance, visual magnetism, product fit, emotional fit, asset potential, compositional identity, motion opportunity, responsive viability, and implementation fit. Reject a candidate that is elegant but could advertise an unrelated product after changing only the copy. Reject a candidate whose first viewport has no dominant subject, artifact, or compositional event. Do not choose the safest, most easily audited, or loudest route merely for those reasons.
+
+Use familiar category vocabulary when it helps the audience recognize the subject, but make at least one cue product-specific through the asset, composition, interaction, or motion. A coherent technical world can legitimately use dark surfaces, luminous routing, grids, or orbital movement; a premium studio can legitimately use editorial type and tactile media. The failure is an untransformed bundle, not the presence of a familiar cue.
 
 Read [visual direction](references/10-visual-direction.md) before detailed CSS for public or showcase surfaces. Examples demonstrate decision-making only; never reuse an example's palette, typography, hero, or section sequence as a recipe.
+For a worked example of selecting visual impact without fabricating proof, read [visual impact selection](examples/visual-impact-selection.md).
 
 ## Secure the visual carrier
 
@@ -109,6 +117,7 @@ Public websites and branded front doors need a real visual carrier. Choose it be
 - Generated media is illustrative, not evidence. Label it only where it could reasonably be mistaken for a real person, place, event, product, or result.
 - For product, object, venue, food, property, portfolio, and person-focused pages, reveal the actual subject clearly. Do not replace it with a gradient, blob, tiny icon-like SVG, generic dashboard, or decorative exploded parts.
 - In a split hero, let the subject occupy a meaningful share of its media region. Avoid a small object floating inside multiple nested frames and large unused panel space.
+- For abstract or technical products, visualize the mechanism, flow, transformation, or output rather than using an unrelated atmospheric render. The carrier may be illustrative, but it must explain the product world at a glance.
 - Use code-native visuals only when they credibly communicate the real subject or interaction. A technically polished placeholder is not automatically premium media.
 
 If the required media cannot be produced, keep the composition media-ready, use an honest placeholder, and state the limitation. Do not claim premium product inspection without a credible subject asset.
@@ -125,6 +134,7 @@ Choose the entry composition before components:
 4. Plan headline copy, subject scale, action, and vertical space together. Protect names and model tokens from awkward breaks.
 5. At short desktop and mobile heights, keep the identity, subject hook, and primary action reachable without clipping. Leave a meaningful cue that the page continues.
 6. On mobile, recompose the hook rather than shrinking the desktop layout or expanding the header into a large multi-row card.
+7. Give the hero one moment of controlled tension: a decisive crop, overlap, depth shift, lighting change, typographic interruption, live state, or product-specific motion. Do not fill the viewport with evenly weighted panels.
 
 Use [composition](references/02-composition.md) and [first-viewport height evaluation](examples/first-viewport-height-evaluation.md) for full hero-led pages.
 
@@ -135,6 +145,7 @@ Map major regions as `job | layout family | type role | media/evidence | density
 - Establish one display apex for a normal long page.
 - Use one central visual object or subject and one supporting carrier.
 - Change rhythm through media ratio, alignment, density, crop, surface extent, or interaction rather than by restyling the same cards.
+- Plan at least one meaningful scene change after the hero: an inversion, immersive media band, working product state, spatial sequence, or focused evidence moment. It should advance the story, not merely change the background color.
 - Let the back half have its own authored progression. Do not append the same features, metrics, testimonials, CTA, and footer sequence to every page.
 - Use full-bleed bands, open layouts, galleries, ledgers, compact lists, product shelves, or focused forms where the content calls for them. Cards are for bounded entities, not the default section wrapper.
 - Define two system-level constants and one flexible signature. Coherence should come from alignment, type roles, actions, crop, and behavior before repeated decoration.
@@ -152,11 +163,16 @@ Map major regions as `job | layout family | type role | media/evidence | density
 
 Read [foundations](references/03-foundations.md) for detailed type, color, spacing, shape, and icon decisions.
 
-## Give the page a motion signature
+## Give the page a motion system
 
-For expressive public or launch surfaces, implement one visible motion idea tied to the subject or composition: a product reveal, image transition, artifact assembly, typographic shift, marquee, selector, parallax crop, timeline progression, or other product-specific behavior.
+For expressive public or launch surfaces, implement one visible motion idea tied to the subject or composition: a product reveal, image transition, artifact assembly, typographic shift, marquee, selector, parallax crop, timeline progression, or other product-specific behavior. It should be noticeable above the fold or through the first natural interaction.
 
-The motion should be perceptible in normal use, add character or understanding, and remain interruptible. Do not substitute a barely visible ambient sweep for the primary motion idea. Complete tactile hover, pressed, selected, and focus feedback where controls exist.
+Support the signature with at most two quieter layers when useful:
+
+- an ambient layer such as restrained light, texture, topology, or depth movement;
+- a responsive layer such as hover, pointer, scroll, or selection feedback that reveals structure or state.
+
+The layers should share timing and spatial logic. The signature must remain perceptible in normal use, add character or understanding, and yield to user input. Do not substitute a barely visible ambient sweep for the primary idea. Complete tactile hover, pressed, selected, and focus feedback where controls exist.
 
 Avoid universal fade-up reveals, `transition: all`, cursor followers, endless particles, and repeated hover scaling. Respect reduced motion while preserving hierarchy and state feedback. Read [interaction and motion](references/05-interaction-motion.md).
 
@@ -167,7 +183,7 @@ Avoid universal fade-up reveals, `transition: all`, cursor followers, endless pa
 - Add the reachable loading, empty, error, success, disabled, and recovery states the feature genuinely needs.
 - Keep stateful dimensions stable and preserve mobile hierarchy.
 - Use one coherent icon system when available; do not use emoji as product controls.
-- Use real content or label the overall fictional surface once as a concept or demo. Do not invent evidence such as testimonials, customer names, awards, logos, ratings, or usage metrics.
+- Use real content or disclose the overall fictional surface once in a quiet footer note, metadata region, or adjacent sample label. Do not put `concept`, `demo`, `fictional`, or design-process language in the hero eyebrow, main heading, primary action, or section narrative merely to satisfy disclosure. Do not invent evidence such as testimonials, customer names, awards, logos, ratings, or usage metrics.
 - Keep user-facing copy inside the product world. Never expose design reasoning, prompt language, or sentences about the landing page, hero, layout, feature grid, generated result, or why the interface was composed a certain way.
 - A concept label should support honesty without turning the page into a compliance report. Desire, clarity, and brand voice still lead the experience.
 
@@ -178,11 +194,16 @@ Read [responsive and accessibility](references/04-responsive-accessibility.md) w
 After the first implementation, inspect it as a visual designer:
 
 - Is the primary subject large, clear, well cropped, and worthy of the first viewport?
+- Without reading the logo, does the first viewport still feel unmistakably related to the product category and desired audience feeling?
+- Is there one visual magnet that survives a grayscale thumbnail and a two-second glance?
 - Does the thumbnail silhouette look authored rather than like a familiar template?
 - Is there one clear display apex and a controlled hierarchy afterward?
 - Are optical alignment, line breaks, spacing, panel inset, sibling gaps, and media crops resolved?
 - Does each region advance the visual rhythm instead of resetting into another hero or card grid?
 - Is the motion signature visible and specific to this page?
+- Does a representative scroll expose a meaningful scene change rather than repeating the same panel treatment?
+- Does sticky chrome clear every section heading and anchor at rest and during smooth scrolling?
+- Has all visible design rationale, prompt language, and unnecessary concept labeling been removed from the product narrative?
 - Does mobile preserve the visual hook, brand, subject, and action without oversized chrome?
 - If the page is correct but visually forgettable, change the carrier, asset, crop, typography voice, or macrostructure. Do not add more badges, cards, disclaimers, or effects.
 

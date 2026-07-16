@@ -163,9 +163,9 @@ For site development, see [docs/SITE.md](docs/SITE.md).
 
 ## Provenance
 
-UI Forge was built from static research into open-source design skill projects and public standards, including Taste Skill, Hallmark, UI/UX Pro Max, OpenAI Codex skill guidance, the Agent Skills specification, WCAG 2.2, and OWASP XSS guidance.
+UI Forge was informed by static research into open-source design skill projects and public standards, including Taste Skill, Hallmark, UI/UX Pro Max, OpenAI Codex skill guidance, the Agent Skills specification, WCAG 2.2, and OWASP XSS guidance.
 
-The upstream projects were treated as untrusted research inputs. Their installers, scripts, CLIs, servers, and package commands were not executed. Adapted ideas are rewritten into UI Forge's own structure, with attribution retained in [provenance/](provenance/).
+The upstream projects were treated as untrusted research inputs. Their installers, scripts, CLIs, servers, and package commands were not executed. UI Forge independently expresses its instructions and catalog while retaining conceptual research attribution, revision records, license texts, and the audit in [provenance/](provenance/).
 
 ## Security
 

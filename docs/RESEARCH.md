@@ -17,7 +17,7 @@ Research was refreshed on 2026-07-14. Official and standards-body documentation 
 
 Static analysis covered the exact local revisions recorded below. No upstream script, installer, CLI, build, test, server, or package command was run.
 
-| Source | Revision | License | Adopted strengths | Deliberately excluded |
+| Source | Revision | License | Research influences | Deliberately excluded |
 |---|---|---|---|---|
 | `Leonxlnx/taste-skill` | `b17742737e79` | MIT | Brief and audience inference, hero copy/media planning, layout-family rhythm, coherent palette and type roles, focal media, motivated motion, production-tested AI-tell guards | Shell installer, image scripts, fixed dials, named font pools, exhaustive judgment checklist, mandatory asset counts, house-style variants |
 | `Nutlope/hallmark` | `aeb42fb354ff` | MIT | Generation-first routing, whole-page macrostructure, one central move, display crescendo, theme-axis variation, recent-output rotation, back-half choreography | Site scripts, remote asset instructions, rigid theme catalog, automatic AI-to-dark mapping, blanket font bans, public log/stamp ceremony, large gate checklist |
@@ -30,5 +30,6 @@ Detailed static reports remain outside this repository in `../skill-analysis/`, 
 - Repository stars are not a security control.
 - Examples are evidence of an approach, not automatically valid production snippets.
 - Accessibility guidance is normalized to WCAG instead of inheriting conflicting source thresholds.
-- UI Forge stores adaptations in its own words and preserves the applicable MIT notices.
+- UI Forge records conceptual research influences while expressing its catalog and instructions independently.
+- The retained MIT notices, exact revisions, and topic map are conservative provenance controls; see `provenance/AUDIT.md` for the textual-similarity review.
 - The skill contains no scripts in v1. Deterministic schema and content work lives in repository tooling, outside the released skill.

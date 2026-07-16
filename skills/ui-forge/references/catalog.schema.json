@@ -103,6 +103,7 @@
           }
         },
         "sourceRefs": {
+          "description": "Conceptual research influences for this entry. Values do not indicate verbatim copying, affiliation, or endorsement.",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
