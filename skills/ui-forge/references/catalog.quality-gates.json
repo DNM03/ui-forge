@@ -25,7 +25,7 @@
       "checks": ["Navigate the primary path with keyboard only and inspect names, roles, values, and focus order."],
       "warnings": ["Clickable containers and custom widgets often omit required keyboard behavior."],
       "exceptions": ["Purely decorative noninteractive content has no keyboard path."],
-      "sourceRefs": ["wcag-2.2", "ui-ux-pro-max"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -38,7 +38,7 @@
       "checks": ["Inspect focus indicators across light, dark, selected, error, and sticky-layer contexts."],
       "warnings": ["Browser-default focus may become invisible after custom borders or overflow clipping."],
       "exceptions": ["Noninteractive elements should not receive focus merely to satisfy this gate."],
-      "sourceRefs": ["wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -57,7 +57,7 @@
         "A foreground that passes on the default surface may fail when a state changes only the background."
       ],
       "exceptions": ["Logotypes and incidental disabled content follow the specific WCAG exceptions."],
-      "sourceRefs": ["wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -74,7 +74,7 @@
       ],
       "warnings": ["Hiding overflow can conceal a defect instead of fixing it."],
       "exceptions": ["Inherently two-dimensional canvases and tables may use bounded scrolling with accessible controls."],
-      "sourceRefs": ["wcag-2.2", "taste", "hallmark"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -103,7 +103,7 @@
       "checks": ["Trigger each material failure state and complete its recovery path."],
       "warnings": ["Generic error toasts without context or next action do not satisfy recovery."],
       "exceptions": ["A purely static page with no failure path does not need artificial error UI."],
-      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -116,7 +116,7 @@
       "checks": ["Enable reduced motion, execute the primary path, and verify feedback remains visible."],
       "warnings": ["Disabling all transitions without replacement can hide state changes."],
       "exceptions": ["Motion essential to the information requires a documented accessible alternative where possible."],
-      "sourceRefs": ["wcag-2.2", "taste"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -132,7 +132,7 @@
       ],
       "warnings": ["Rigid heights can trade layout shift for clipping; use responsive constraints."],
       "exceptions": ["Content regions may grow naturally when growth does not displace an active control unexpectedly."],
-      "sourceRefs": ["taste", "ui-ux-pro-max"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -168,7 +168,7 @@
         "Do not force a pass by shrinking body text or controls below readable sizes, transform-scaling the hero, or hiding overflow."
       ],
       "exceptions": ["An explicitly requested poster or immersive title screen may spend more than one viewport on its entry when required actions and content remain reachable and unclipped."],
-      "sourceRefs": ["ui-forge-synthesis", "taste", "hallmark", "wcag-2.2"],
+      "sourceRefs": ["ui-forge-synthesis", "wcag-2.2"],
       "level": "recommended"
     },
     {
@@ -184,7 +184,7 @@
       ],
       "warnings": ["Using a viewport gutter formula inside an already centered max-width child applies the outside spacing twice."],
       "exceptions": ["A deliberate offset or asymmetric editorial field is valid when its misalignment is specified and remains responsive."],
-      "sourceRefs": ["ui-forge-synthesis", "taste"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -200,7 +200,7 @@
       ],
       "warnings": ["Changing colors and copy does not create a distinct system when the page silhouette and chrome remain recognizable."],
       "exceptions": ["Direct reproduction is valid only when the user owns the source and explicitly requests faithful implementation."],
-      "sourceRefs": ["ui-forge-synthesis", "taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -217,7 +217,7 @@
       ],
       "warnings": ["Consistency should not erase necessary hierarchy or state differences."],
       "exceptions": ["A migration boundary may temporarily host two systems with explicit isolation."],
-      "sourceRefs": ["ui-ux-pro-max", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -233,7 +233,7 @@
       ],
       "warnings": ["Dark overlays, aggressive crops, and decorative abstractions often hide the subject and reduce trust."],
       "exceptions": ["Abstract or atmospheric imagery is valid when detailed inspection is not a user need."],
-      "sourceRefs": ["hallmark", "taste", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {

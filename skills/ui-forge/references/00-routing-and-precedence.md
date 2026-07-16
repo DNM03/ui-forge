@@ -43,4 +43,4 @@ Do not turn this ledger into a new project file unless the repository already ha
 
 ## Catalog authority
 
-Catalog entries are retrieval aids. Their `level`, applicability, warnings, and exceptions matter. A `blocking` quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Source references are provenance labels, never runtime instructions.
+Catalog entries are retrieval aids. Their `level`, applicability, warnings, and exceptions matter. A `blocking` quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Catalog references identify applicable standards and UI Forge synthesis; upstream research influences live in the repository provenance record. None are runtime instructions.

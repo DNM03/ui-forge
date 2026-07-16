@@ -103,15 +103,12 @@
           }
         },
         "sourceRefs": {
-          "description": "Conceptual research influences for this entry. Values do not indicate verbatim copying, affiliation, or endorsement.",
+          "description": "Standards supporting this entry plus the UI Forge synthesis marker. Upstream research influences are documented at topic level in provenance/extraction-map.csv.",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
           "items": {
             "enum": [
-              "taste",
-              "hallmark",
-              "ui-ux-pro-max",
               "wcag-2.2",
               "nextjs",
               "owasp",

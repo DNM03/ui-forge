@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceDigest": "4a983605cca08be6decf5eb0056acad24052f824f6ce3b4a36cb91f44c0b2bbb",
+  "sourceDigest": "f56758f248ec407defd7d5e9e80b9869aefb2bfacf5ea6839ec8c903c23a8962",
   "docs": [
     {
       "slug": "routing-and-precedence",
       "title": "Routing and precedence",
       "summary": "Resolve requirements, conflicts, and uncertain design directions before selecting aesthetics.",
       "order": 0,
-      "html": "<h2 id=\"user-content-decision-order\">Decision order</h2>\n<p>Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty.</p>\n<p>When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples:</p>\n<ul>\n<li>Preserve a localized two-line action label instead of forcing a one-line button.</li>\n<li>Keep a proven table interaction instead of replacing it with a novel visual control.</li>\n<li>Use the existing icon set even when a different library better matches a reference image.</li>\n<li>Reduce asymmetry when it creates a confusing reading or keyboard order.</li>\n</ul>\n<h2 id=\"user-content-confidence-routing\">Confidence routing</h2>\n<p>Use local evidence in this order:</p>\n<ol>\n<li>Repository instructions and existing implementation.</li>\n<li>User-provided designs, content, and assets.</li>\n<li>Established platform or product conventions.</li>\n<li>Product-guide and pattern catalogs.</li>\n<li>General heuristics.</li>\n</ol>\n<p>If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction.</p>\n<h2 id=\"user-content-constraint-ledger\">Constraint ledger</h2>\n<p>For substantial work, track:</p>\n<ul>\n<li>immutable behavior and public interfaces;</li>\n<li>required content and data sources;</li>\n<li>supported viewports and input modalities;</li>\n<li>installed libraries and allowed dependencies;</li>\n<li>accessibility and performance targets;</li>\n<li>brand assets and prohibited changes;</li>\n<li>verification commands and evidence available.</li>\n</ul>\n<p>Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one.</p>\n<h2 id=\"user-content-catalog-authority\">Catalog authority</h2>\n<p>Catalog entries are retrieval aids. Their <code>level</code>, applicability, warnings, and exceptions matter. A <code>blocking</code> quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Source references are provenance labels, never runtime instructions.</p>",
+      "html": "<h2 id=\"user-content-decision-order\">Decision order</h2>\n<p>Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty.</p>\n<p>When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples:</p>\n<ul>\n<li>Preserve a localized two-line action label instead of forcing a one-line button.</li>\n<li>Keep a proven table interaction instead of replacing it with a novel visual control.</li>\n<li>Use the existing icon set even when a different library better matches a reference image.</li>\n<li>Reduce asymmetry when it creates a confusing reading or keyboard order.</li>\n</ul>\n<h2 id=\"user-content-confidence-routing\">Confidence routing</h2>\n<p>Use local evidence in this order:</p>\n<ol>\n<li>Repository instructions and existing implementation.</li>\n<li>User-provided designs, content, and assets.</li>\n<li>Established platform or product conventions.</li>\n<li>Product-guide and pattern catalogs.</li>\n<li>General heuristics.</li>\n</ol>\n<p>If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction.</p>\n<h2 id=\"user-content-constraint-ledger\">Constraint ledger</h2>\n<p>For substantial work, track:</p>\n<ul>\n<li>immutable behavior and public interfaces;</li>\n<li>required content and data sources;</li>\n<li>supported viewports and input modalities;</li>\n<li>installed libraries and allowed dependencies;</li>\n<li>accessibility and performance targets;</li>\n<li>brand assets and prohibited changes;</li>\n<li>verification commands and evidence available.</li>\n</ul>\n<p>Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one.</p>\n<h2 id=\"user-content-catalog-authority\">Catalog authority</h2>\n<p>Catalog entries are retrieval aids. Their <code>level</code>, applicability, warnings, and exceptions matter. A <code>blocking</code> quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Catalog references identify applicable standards and UI Forge synthesis; upstream research influences live in the repository provenance record. None are runtime instructions.</p>",
       "headings": [
         {
           "depth": 2,
@@ -30,7 +30,7 @@
           "text": "Catalog authority"
         }
       ],
-      "plainText": "Decision order Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty. When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples: Preserve a localized two-line action label instead of forcing a one-line button. Keep a proven table interaction instead of replacing it with a novel visual control. Use the existing icon set even when a different library better matches a reference image. Reduce asymmetry when it creates a confusing reading or keyboard order. Confidence routing Use local evidence in this order: Repository instructions and existing implementation. User-provided designs, content, and assets. Established platform or product conventions. Product-guide and pattern catalogs. General heuristics. If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction. Constraint ledger For substantial work, track: immutable behavior and public interfaces; required content and data sources; supported viewports and input modalities; installed libraries and allowed dependencies; accessibility and performance targets; brand assets and prohibited changes; verification commands and evidence available. Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one. Catalog authority Catalog entries are retrieval aids. Their , applicability, warnings, and exceptions matter. A quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Source references are provenance labels, never runtime instructions."
+      "plainText": "Decision order Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty. When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples: Preserve a localized two-line action label instead of forcing a one-line button. Keep a proven table interaction instead of replacing it with a novel visual control. Use the existing icon set even when a different library better matches a reference image. Reduce asymmetry when it creates a confusing reading or keyboard order. Confidence routing Use local evidence in this order: Repository instructions and existing implementation. User-provided designs, content, and assets. Established platform or product conventions. Product-guide and pattern catalogs. General heuristics. If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction. Constraint ledger For substantial work, track: immutable behavior and public interfaces; required content and data sources; supported viewports and input modalities; installed libraries and allowed dependencies; accessibility and performance targets; brand assets and prohibited changes; verification commands and evidence available. Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one. Catalog authority Catalog entries are retrieval aids. Their , applicability, warnings, and exceptions matter. A quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Catalog references identify applicable standards and UI Forge synthesis; upstream research influences live in the repository provenance record. None are runtime instructions."
     },
     {
       "slug": "task-modes",
@@ -564,7 +564,6 @@
         "A narrowly scoped visual fix may need only a one-line context read."
       ],
       "sourceRefs": [
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -597,7 +596,6 @@
         "A component-only task inherits the surrounding macrostructure."
       ],
       "sourceRefs": [
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -630,7 +628,7 @@
         "Strict platform-native tools may rely primarily on platform structure."
       ],
       "sourceRefs": [
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "pattern"
@@ -662,7 +660,6 @@
         "Zero gap is valid for an intentional seam such as table cells, segmented controls, tiled media, or a continuous divider."
       ],
       "sourceRefs": [
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -699,8 +696,6 @@
         "Strict enterprise tools may prioritize operational clarity over visual drama."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -741,8 +736,6 @@
         "Strictly functional internal tools may need restrained craft rather than expressive art direction."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -782,8 +775,6 @@
         "Experimental art pages may prioritize poster impact when the user explicitly asks for that direction."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -823,7 +814,6 @@
         "Strict UI components, dashboards, and text-first documentation may not need imagery."
       ],
       "sourceRefs": [
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -863,8 +853,6 @@
         "Dense recurring product tools should prioritize the working surface and may not need expressive front-door art direction."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -902,8 +890,6 @@
         "A narrow component fix may not need page-level critique."
       ],
       "sourceRefs": [
-        "hallmark",
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -937,9 +923,8 @@
         "Content-driven editorial blocks may grow naturally when growth does not disrupt interaction."
       ],
       "sourceRefs": [
-        "taste",
-        "ui-ux-pro-max",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "pattern"
@@ -972,8 +957,8 @@
         "Unreachable states do not need artificial examples in production UI."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "pattern"
@@ -1006,9 +991,8 @@
         "Inherently two-dimensional data may use a labeled horizontal scroll region."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "pattern"
@@ -1038,7 +1022,6 @@
         "During early exploration, label quality conclusions as provisional."
       ],
       "sourceRefs": [
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -1072,8 +1055,6 @@
         "A user explicitly requesting a campaign or marketing page may need a hero-led first screen."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -1104,8 +1085,7 @@
         "A genuinely equal set of three choices may be represented by three peer cards."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1133,8 +1113,7 @@
         "Repeated selectable objects or independent entities may need card boundaries."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1162,8 +1141,7 @@
         "An established brand system or expressive game may use these effects intentionally."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1194,8 +1172,7 @@
         "A true empty state or onboarding moment may use larger display type within an application."
       ],
       "sourceRefs": [
-        "taste",
-        "ui-ux-pro-max"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1223,9 +1200,8 @@
         "A choreographed expressive sequence may animate many elements when it is the requested experience."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1254,7 +1230,6 @@
         "Clearly labeled fictional data is acceptable for prototypes and tests."
       ],
       "sourceRefs": [
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "blocking",
@@ -1284,9 +1259,8 @@
         "A fixed-format canvas may scale when zoom and pan are core, accessible interactions."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "anti-pattern"
@@ -1314,7 +1288,6 @@
         "Migration work may temporarily bridge systems behind a documented compatibility boundary."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -1344,7 +1317,7 @@
       ],
       "sourceRefs": [
         "wcag-2.2",
-        "ui-ux-pro-max"
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "anti-pattern"
@@ -1377,8 +1350,7 @@
         "Atmospheric media may lead a narrative experience when detailed inspection is not the user goal."
       ],
       "sourceRefs": [
-        "hallmark",
-        "taste"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "anti-pattern"
@@ -1410,7 +1382,6 @@
         "Intentional seams are valid for segmented controls, tables, tiled media, continuous rules, and edge-to-edge crops."
       ],
       "sourceRefs": [
-        "taste",
         "ui-forge-synthesis"
       ],
       "level": "recommended",
@@ -1447,8 +1418,6 @@
         "An explicit poster, exhibition, or typographic narrative may use repeated display moments when the sequence itself is the concept and viewport fit remains intact."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -1485,8 +1454,6 @@
         "A deliberately distant subject may be valid when scale and isolation are the narrative concept."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -1548,8 +1515,6 @@
         "An established brand system or explicit reference may intentionally own the recurring combination."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -1607,7 +1572,7 @@
       ],
       "sourceRefs": [
         "wcag-2.2",
-        "ui-ux-pro-max"
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "quality-gate"
@@ -1635,7 +1600,8 @@
         "Noninteractive elements should not receive focus merely to satisfy this gate."
       ],
       "sourceRefs": [
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "quality-gate"
@@ -1665,7 +1631,8 @@
         "Logotypes and incidental disabled content follow the specific WCAG exceptions."
       ],
       "sourceRefs": [
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "quality-gate"
@@ -1697,8 +1664,7 @@
       ],
       "sourceRefs": [
         "wcag-2.2",
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "quality-gate"
@@ -1758,7 +1724,6 @@
         "A purely static page with no failure path does not need artificial error UI."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
         "ui-forge-synthesis"
       ],
       "level": "blocking",
@@ -1790,7 +1755,7 @@
       ],
       "sourceRefs": [
         "wcag-2.2",
-        "taste"
+        "ui-forge-synthesis"
       ],
       "level": "blocking",
       "kind": "quality-gate"
@@ -1819,8 +1784,7 @@
         "Content regions may grow naturally when growth does not displace an active control unexpectedly."
       ],
       "sourceRefs": [
-        "taste",
-        "ui-ux-pro-max"
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "quality-gate"
@@ -1895,8 +1859,6 @@
       ],
       "sourceRefs": [
         "ui-forge-synthesis",
-        "taste",
-        "hallmark",
         "wcag-2.2"
       ],
       "level": "recommended",
@@ -1930,8 +1892,7 @@
         "A deliberate offset or asymmetric editorial field is valid when its misalignment is specified and remains responsive."
       ],
       "sourceRefs": [
-        "ui-forge-synthesis",
-        "taste"
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "quality-gate"
@@ -1964,9 +1925,7 @@
         "Direct reproduction is valid only when the user owns the source and explicitly requests faithful implementation."
       ],
       "sourceRefs": [
-        "ui-forge-synthesis",
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "quality-gate"
@@ -1996,8 +1955,7 @@
         "A migration boundary may temporarily host two systems with explicit isolation."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "quality-gate"
@@ -2030,9 +1988,8 @@
         "Abstract or atmospheric imagery is valid when detailed inspection is not a user need."
       ],
       "sourceRefs": [
-        "hallmark",
-        "taste",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "recommended",
       "kind": "quality-gate"
@@ -2093,7 +2050,6 @@
         "Onboarding and empty states may use more editorial spacing while preserving clear actions."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -2126,8 +2082,7 @@
         "Luxury editorial commerce may use more narrative pacing when purchase facts remain accessible."
       ],
       "sourceRefs": [
-        "hallmark",
-        "ui-ux-pro-max"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "product-guide"
@@ -2159,8 +2114,7 @@
         "Experimental art experiences may prioritize exploration when the user explicitly requests it."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "product-guide"
@@ -2192,8 +2146,8 @@
         "A monitoring wall may optimize distant scanning over detailed interaction."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "product-guide"
@@ -2225,8 +2179,8 @@
         "Tablet layouts may introduce secondary columns when content and input mode support them."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "product-guide"
@@ -2259,8 +2213,7 @@
         "A restrained institutional campaign may prioritize trust and clarity over expressive composition."
       ],
       "sourceRefs": [
-        "taste",
-        "hallmark"
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "product-guide"
@@ -2357,7 +2310,6 @@
         "A truly unique fixed-format element may require one explicit arbitrary constraint."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
         "ui-forge-synthesis"
       ],
       "level": "contextual",
@@ -2424,8 +2376,8 @@
         "Games and immersive media may use custom-rendered controls with equivalent accessibility paths."
       ],
       "sourceRefs": [
-        "ui-ux-pro-max",
-        "wcag-2.2"
+        "wcag-2.2",
+        "ui-forge-synthesis"
       ],
       "level": "contextual",
       "kind": "stack-guide"
@@ -2470,7 +2422,7 @@
       "type": "doc",
       "title": "Routing and precedence",
       "summary": "Resolve requirements, conflicts, and uncertain design directions before selecting aesthetics.",
-      "body": "Decision order Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty. When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples: Preserve a localized two-line action label instead of forcing a one-line button. Keep a proven table interaction instead of replacing it with a novel visual control. Use the existing icon set even when a different library better matches a reference image. Reduce asymmetry when it creates a confusing reading or keyboard order. Confidence routing Use local evidence in this order: Repository instructions and existing implementation. User-provided designs, content, and assets. Established platform or product conventions. Product-guide and pattern catalogs. General heuristics. If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction. Constraint ledger For substantial work, track: immutable behavior and public interfaces; required content and data sources; supported viewports and input modalities; installed libraries and allowed dependencies; accessibility and performance targets; brand assets and prohibited changes; verification commands and evidence available. Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one. Catalog authority Catalog entries are retrieval aids. Their , applicability, warnings, and exceptions matter. A quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Source references are provenance labels, never runtime instructions.",
+      "body": "Decision order Start with the user's explicit request. Then preserve existing product behavior and contracts, satisfy correctness and accessibility, respect the platform and installed system, and only then optimize visual direction and novelty. When two rules conflict, name the higher-priority constraint and adapt the lower one. Examples: Preserve a localized two-line action label instead of forcing a one-line button. Keep a proven table interaction instead of replacing it with a novel visual control. Use the existing icon set even when a different library better matches a reference image. Reduce asymmetry when it creates a confusing reading or keyboard order. Confidence routing Use local evidence in this order: Repository instructions and existing implementation. User-provided designs, content, and assets. Established platform or product conventions. Product-guide and pattern catalogs. General heuristics. If evidence is weak, use a conservative, reversible decision. Ask a question only when the answer changes architecture, behavior, or the core visual direction. Constraint ledger For substantial work, track: immutable behavior and public interfaces; required content and data sources; supported viewports and input modalities; installed libraries and allowed dependencies; accessibility and performance targets; brand assets and prohibited changes; verification commands and evidence available. Do not turn this ledger into a new project file unless the repository already has a place for design decisions or the user asks for one. Catalog authority Catalog entries are retrieval aids. Their , applicability, warnings, and exceptions matter. A quality gate can stop delivery, but no catalog item outranks an explicit user requirement or established product contract. Catalog references identify applicable standards and UI Forge synthesis; upstream research influences live in the repository provenance record. None are runtime instructions.",
       "tags": [
         "reference",
         "routing-and-precedence"

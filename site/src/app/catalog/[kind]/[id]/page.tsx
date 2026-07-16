@@ -46,7 +46,6 @@ export default async function CatalogDetailPage({ params }: { params: Promise<{ 
         <aside className="detail-aside">
           <div><strong>Applies to</strong><div className="tag-list">{item.appliesTo.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
           <div><strong>Tags</strong><div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
-          <div><strong>Research influences</strong><small>Conceptual input, not verbatim source text, affiliation, or endorsement.</small><ul>{item.sourceRefs.map((source) => <li key={source}><code>{source}</code></li>)}</ul></div>
         </aside>
       </div>
     </div>

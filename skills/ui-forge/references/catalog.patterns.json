@@ -16,7 +16,7 @@
       ],
       "warnings": ["Do not expose a long design questionnaire when repository evidence can resolve the decisions."],
       "exceptions": ["A narrowly scoped visual fix may need only a one-line context read."],
-      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -33,7 +33,7 @@
       ],
       "warnings": ["Do not choose a structure solely because it appears in a reference gallery."],
       "exceptions": ["A component-only task inherits the surrounding macrostructure."],
-      "sourceRefs": ["hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -50,7 +50,7 @@
       ],
       "warnings": ["A fingerprint is not a license to apply decoration to every region."],
       "exceptions": ["Strict platform-native tools may rely primarily on platform structure."],
-      "sourceRefs": ["hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -68,7 +68,7 @@
       ],
       "warnings": ["Outer margin does not replace panel inset, and child padding does not create a reliable relationship between siblings."],
       "exceptions": ["Zero gap is valid for an intentional seam such as table cells, segmented controls, tiled media, or a continuous divider."],
-      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -85,7 +85,7 @@
       ],
       "warnings": ["Do not choose the loudest route merely because it looks most different from a generic template."],
       "exceptions": ["Strict enterprise tools may prioritize operational clarity over visual drama."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -104,7 +104,7 @@
       ],
       "warnings": ["More simultaneous visual moves usually reduce perceived quality instead of increasing ambition."],
       "exceptions": ["Strictly functional internal tools may need restrained craft rather than expressive art direction."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -123,7 +123,7 @@
       ],
       "warnings": ["A poster-style hero can be tall, but fixed viewport heights and hidden overflow must not clip its action path or mobile proof."],
       "exceptions": ["Experimental art pages may prioritize poster impact when the user explicitly asks for that direction."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -142,7 +142,7 @@
       ],
       "warnings": ["Dropping a generated image into a finished generic template rarely improves the design."],
       "exceptions": ["Strict UI components, dashboards, and text-first documentation may not need imagery."],
-      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -160,7 +160,7 @@
       ],
       "warnings": ["A correct and well-spaced entry can still feel generic when it lacks a strong carrier, crop, type idea, and compositional tension."],
       "exceptions": ["Dense recurring product tools should prioritize the working surface and may not need expressive front-door art direction."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -177,7 +177,7 @@
       ],
       "warnings": ["Do not introduce a second visual concept during refinement; reroute only when the selected direction itself is wrong."],
       "exceptions": ["A narrow component fix may not need page-level critique."],
-      "sourceRefs": ["hallmark", "taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -194,7 +194,7 @@
       ],
       "warnings": ["Fixed dimensions must still allow text reflow and zoom."],
       "exceptions": ["Content-driven editorial blocks may grow naturally when growth does not disrupt interaction."],
-      "sourceRefs": ["taste", "ui-ux-pro-max", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -211,7 +211,7 @@
       ],
       "warnings": ["Do not disable actions without making the reason discoverable."],
       "exceptions": ["Unreachable states do not need artificial examples in production UI."],
-      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -228,7 +228,7 @@
       ],
       "warnings": ["Do not hide essential context merely to remove horizontal scrolling."],
       "exceptions": ["Inherently two-dimensional data may use a labeled horizontal scroll region."],
-      "sourceRefs": ["taste", "hallmark", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -245,7 +245,7 @@
       ],
       "warnings": ["A static source review cannot prove every rendered layout or keyboard behavior; label that limitation instead of forcing automation."],
       "exceptions": ["During early exploration, label quality conclusions as provisional."],
-      "sourceRefs": ["hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -262,7 +262,7 @@
       ],
       "warnings": ["Do not omit necessary onboarding when the workflow is genuinely unfamiliar or high risk."],
       "exceptions": ["A user explicitly requesting a campaign or marketing page may need a hero-led first screen."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     }
   ]

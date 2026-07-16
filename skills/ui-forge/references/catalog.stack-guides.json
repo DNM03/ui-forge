@@ -50,7 +50,7 @@
       ],
       "warnings": ["Frequent arbitrary values and duplicated state selectors indicate a missing token or primitive."],
       "exceptions": ["A truly unique fixed-format element may require one explicit arbitrary constraint."],
-      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -84,7 +84,7 @@
       ],
       "warnings": ["Web hover and breakpoint assumptions do not map directly to native application layout."],
       "exceptions": ["Games and immersive media may use custom-rendered controls with equivalent accessibility paths."],
-      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "contextual"
     },
     {

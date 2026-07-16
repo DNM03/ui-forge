@@ -12,7 +12,7 @@
       "checks": ["Verify the first viewport reveals the actual offer, product, place, person, or user task."],
       "warnings": ["Repeated equal cards often flatten hierarchy and force unrelated content into one shape."],
       "exceptions": ["A genuinely equal set of three choices may be represented by three peer cards."],
-      "sourceRefs": ["taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -25,7 +25,7 @@
       "checks": ["Remove containers that do not communicate an entity, selection, state, modal layer, or bounded tool."],
       "warnings": ["Nested cards obscure ownership and reduce usable space."],
       "exceptions": ["Repeated selectable objects or independent entities may need card boundaries."],
-      "sourceRefs": ["taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -38,7 +38,7 @@
       "checks": ["For every effect, name the hierarchy, state, material, or brand purpose it serves."],
       "warnings": ["Effects can reduce contrast, hide content, and make unrelated products look alike."],
       "exceptions": ["An established brand system or expressive game may use these effects intentionally."],
-      "sourceRefs": ["taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -51,7 +51,7 @@
       "checks": ["Confirm headings, labels, rows, and controls fit their container at supported widths and zoom."],
       "warnings": ["Large type can push primary data and controls below the fold."],
       "exceptions": ["A true empty state or onboarding moment may use larger display type within an application."],
-      "sourceRefs": ["taste", "ui-ux-pro-max"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -64,7 +64,7 @@
       "checks": ["Remove motion that does not communicate state, causality, hierarchy, or spatial relationship."],
       "warnings": ["Universal motion creates distraction, layout cost, and reduced-motion gaps."],
       "exceptions": ["A choreographed expressive sequence may animate many elements when it is the requested experience."],
-      "sourceRefs": ["taste", "hallmark", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -80,7 +80,7 @@
       ],
       "warnings": ["Realistic-looking placeholder evidence is easily mistaken for a verified claim."],
       "exceptions": ["Clearly labeled fictional data is acceptable for prototypes and tests."],
-      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -93,7 +93,7 @@
       "checks": ["Verify grouping, order, disclosure, labels, and controls at a narrow mobile width."],
       "warnings": ["Proportional shrinking produces clipped labels, tiny targets, and incoherent order."],
       "exceptions": ["A fixed-format canvas may scale when zoom and pan are core, accessible interactions."],
-      "sourceRefs": ["taste", "hallmark", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -106,7 +106,7 @@
       "checks": ["Choose one primary component and token system, then justify any exception explicitly."],
       "warnings": ["Visual restyling alone does not reconcile different keyboard and state behavior."],
       "exceptions": ["Migration work may temporarily bridge systems behind a documented compatibility boundary."],
-      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -119,7 +119,7 @@
       "checks": ["Add a non-color cue and verify relevant text and non-text contrast."],
       "warnings": ["A palette that looks distinct to the author may collapse under color-vision differences."],
       "exceptions": ["Color may reinforce a state when another programmatic and visible cue already conveys it."],
-      "sourceRefs": ["wcag-2.2", "ui-ux-pro-max"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "blocking"
     },
     {
@@ -135,7 +135,7 @@
       ],
       "warnings": ["Decorative overlays can hide detail and weaken trust."],
       "exceptions": ["Atmospheric media may lead a narrative experience when detailed inspection is not the user goal."],
-      "sourceRefs": ["hallmark", "taste"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -153,7 +153,7 @@
       ],
       "warnings": ["A layout can avoid overlap and still feel broken when content is visually glued to its border or neighbor."],
       "exceptions": ["Intentional seams are valid for segmented controls, tables, tiled media, continuous rules, and edge-to-edge crops."],
-      "sourceRefs": ["taste", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
     },
     {
@@ -170,7 +170,7 @@
       ],
       "warnings": ["Changing background color or alignment does not make repeated hero sections structurally different."],
       "exceptions": ["An explicit poster, exhibition, or typographic narrative may use repeated display moments when the sequence itself is the concept and viewport fit remains intact."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -187,7 +187,7 @@
       ],
       "warnings": ["A large media container does not create product authority when most of it is empty."],
       "exceptions": ["A deliberately distant subject may be valid when scale and isolation are the narrative concept."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -218,7 +218,7 @@
       ],
       "warnings": ["Each motif may be valid alone; the unsupported recurring combination is the failure."],
       "exceptions": ["An established brand system or explicit reference may intentionally own the recurring combination."],
-      "sourceRefs": ["taste", "hallmark", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     }
   ]

@@ -6,7 +6,7 @@ Audit date: 2026-07-16
 
 Keep the provenance records. They document research inputs, reviewed revisions, license boundaries, and excluded executable material. Removing them would not reduce any underlying similarity risk and would weaken transparency.
 
-Catalog `sourceRefs` values mean conceptual research influence only. They do not claim that an entry contains copied wording, code, visual assets, or a source project's selection and arrangement. They also do not imply affiliation or endorsement.
+Upstream research influences are recorded at topic level in `extraction-map.csv`, not on individual catalog entries. Catalog `sourceRefs` retain only applicable standards and the `ui-forge-synthesis` marker. This avoids implying that an individual rule contains copied wording, code, visual assets, or a source project's selection and arrangement.
 
 ## Scope
 
@@ -34,8 +34,8 @@ The current corpus therefore shows conceptual influence and independent expressi
 ## Controls
 
 1. Keep `sources.yaml`, `THIRD_PARTY_NOTICES.md`, `extraction-map.csv`, and the retained license files.
-2. Display catalog identifiers as **Research influences**, not as copied sources.
-3. Use `ui-forge-synthesis` alone when an entry was independently developed without a concrete source influence.
+2. Keep upstream project identifiers in the topic-level extraction map and repository notices rather than displaying them on individual catalog entries.
+3. Use `ui-forge-synthesis` on every catalog entry and add standards identifiers only when they materially support that entry.
 4. Add a separate `licensedFrom` record before including any copied or closely adapted code, prose, data, or asset.
 5. Do not redistribute sibling bundles or visual assets until their individual licenses are reviewed.
 6. Re-run textual and asset review when source material or the authored corpus changes materially.

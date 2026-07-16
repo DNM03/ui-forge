@@ -16,7 +16,7 @@
       ],
       "warnings": ["Avoid oversized heroes, decorative card walls, and expressive motion that slows repeated work."],
       "exceptions": ["Onboarding and empty states may use more editorial spacing while preserving clear actions."],
-      "sourceRefs": ["ui-ux-pro-max", "ui-forge-synthesis"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -33,7 +33,7 @@
       ],
       "warnings": ["Do not fabricate reviews, scarcity, ratings, or customer activity."],
       "exceptions": ["Luxury editorial commerce may use more narrative pacing when purchase facts remain accessible."],
-      "sourceRefs": ["hallmark", "ui-ux-pro-max"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -50,7 +50,7 @@
       ],
       "warnings": ["Expressive layout must not scramble DOM order or hide links and captions."],
       "exceptions": ["Experimental art experiences may prioritize exploration when the user explicitly requests it."],
-      "sourceRefs": ["taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -67,7 +67,7 @@
       ],
       "warnings": ["Do not use 3D charts, truncated axes, or metric cards without decision context."],
       "exceptions": ["A monitoring wall may optimize distant scanning over detailed interaction."],
-      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -84,7 +84,7 @@
       ],
       "warnings": ["Desktop hover, dense multicolumn layouts, and browser-style chrome rarely transfer directly."],
       "exceptions": ["Tablet layouts may introduce secondary columns when content and input mode support them."],
-      "sourceRefs": ["ui-ux-pro-max", "wcag-2.2"],
+      "sourceRefs": ["wcag-2.2", "ui-forge-synthesis"],
       "level": "contextual"
     },
     {
@@ -101,7 +101,7 @@
       ],
       "warnings": ["Do not put the hero message inside a floating card or use a generic text-media split by default."],
       "exceptions": ["A restrained institutional campaign may prioritize trust and clarity over expressive composition."],
-      "sourceRefs": ["taste", "hallmark"],
+      "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"
     }
   ]
