@@ -154,17 +154,20 @@
     {
       "id": "first-viewport-fit",
       "title": "First Viewport Fit",
-      "summary": "A hero-led entry fits its required identity, orientation, proof, and primary action within the declared short-viewport budget without clipping or crowding.",
-      "intent": "Prevent oversized display type, fixed hero heights, and excessive spacing from pushing required landing-page content outside the visible first screen.",
+      "summary": "A hero-led entry fits its header, identity, subject crop, orientation, proof, and primary action within one declared short-viewport budget.",
+      "intent": "Prevent double-counted header and hero heights, oversized display type, unsafe media crops, and excessive spacing from pushing required content outside the visible first screen.",
       "appliesTo": ["web", "responsive", "marketing", "brand", "landing", "editorial", "commerce", "portfolio", "event"],
       "tags": ["typography", "hero", "responsive", "layout"],
       "checks": [
         "At default text size, inspect the longest real entry at a representative short desktop and short mobile height after fixed chrome and safe areas.",
+        "Verify an integrated header and hero share one viewport-height wrapper, or subtract the measured external header height from the hero budget.",
         "Record the visible viewport height, fixed-chrome bottom, required-content bottom, hero boundary, and first meaningful next-section cue; reject clipping, overlap, hidden actions, empty-background reveals, or a title that crowds out required proof.",
+        "Inspect the rendered media crop and reject cuts through products, faces, labels, or other must-see subject evidence.",
         "At text zoom, allow natural vertical growth and verify every item remains reachable rather than preserving the one-screen composition."
       ],
       "warnings": [
         "Width-only screenshots miss vertical failures caused by short laptops, mobile browser chrome, and accidental title wrapping.",
+        "An external header above an independent `100svh` hero makes the first-screen composition taller than the viewport.",
         "Do not force a pass by shrinking body text or controls below readable sizes, transform-scaling the hero, or hiding overflow."
       ],
       "exceptions": ["An explicitly requested poster or immersive title screen may spend more than one viewport on its entry when required actions and content remain reachable and unclipped."],

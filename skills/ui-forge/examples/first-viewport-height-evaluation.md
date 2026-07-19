@@ -39,6 +39,8 @@ document scroll height
 Pass when:
 
 - the title is fully visible and has no glyph collision or accidental extra line;
+- an integrated header and hero share one viewport budget, or an external header is subtracted from the hero height;
+- must-inspect products, faces, labels, and essential silhouettes remain visible in the rendered media crop;
 - fixed chrome does not cover the title or action;
 - anchor targets, focus destinations, and the next-section cue clear sticky chrome by the declared scroll offset;
 - required orientation, proof, and the primary action are visible inside the declared first-viewport budget;
@@ -50,6 +52,8 @@ Fail when:
 
 - a headline fits horizontally but extends below the visible hero or overlaps later content;
 - a fixed `100vh`, `100svh`, or pixel height ignores a separate header;
+- an external header plus an independent `100svh` hero makes the first-screen composition taller than the viewport;
+- `object-fit: cover` cuts through the product or another subject the user needs to inspect;
 - sticky chrome overlays headings, controls, cards, or focus because the document reserves no visual or scroll clearance;
 - typography consumes the screen and pushes all proof or actions behind a non-scrolling boundary;
 - the implementation obtains a visual pass with transform scaling, hidden overflow, unreadably tight line height, or tiny supporting copy;

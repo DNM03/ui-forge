@@ -22,16 +22,17 @@
     {
       "id": "commerce-product-detail",
       "title": "Commerce and Product Detail",
-      "summary": "Inspectable product media paired with essential configuration, trust, fulfillment, and purchase information.",
-      "intent": "Help users evaluate and act without hiding the product behind atmosphere or scattering key facts across decorative sections.",
+      "summary": "Inspectable product media paired with an early merchandising spine, essential configuration, trust, fulfillment, and purchase information.",
+      "intent": "Help users evaluate and act without letting visual atmosphere displace concrete merchandise or scattering key facts across decorative sections.",
       "appliesTo": ["commerce", "retail", "product"],
       "tags": ["product", "media", "conversion"],
       "checks": [
-        "Show the real product clearly in the first viewport.",
-        "Keep price, availability, configuration, fulfillment, returns, and primary action legible.",
+        "Show the real product clearly in the first viewport or first natural scroll.",
+        "Keep product name, price or plan, meaningful variant or flavor details, availability, configuration, fulfillment, returns, and primary action legible.",
+        "Follow an atmospheric hero with an inspectable product shelf, product-detail stage, bundle, or subscription chooser.",
         "Preserve selected variants and validation through errors."
       ],
-      "warnings": ["Do not fabricate reviews, scarcity, ratings, or customer activity."],
+      "warnings": ["Do not fabricate reviews, scarcity, ratings, or customer activity, and do not let generated mood imagery substitute for SKU evidence or buying states."],
       "exceptions": ["Luxury editorial commerce may use more narrative pacing when purchase facts remain accessible."],
       "sourceRefs": ["ui-forge-synthesis"],
       "level": "contextual"

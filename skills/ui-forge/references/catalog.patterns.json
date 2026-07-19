@@ -117,11 +117,13 @@
       "checks": [
         "Name the intended desktop title line count and mobile title behavior.",
         "Budget fixed chrome, safe spacing, title, subcopy, proof, action, and next-section reveal at a representative short desktop and mobile height.",
+        "Give the combined header and hero one viewport-height budget; use one first-screen wrapper or subtract the measured external header height from the hero.",
+        "Choose full-viewport coverage, an intentional next-band reveal, or a content-led boundary; do not leave a blank page-background strip below full-bleed media.",
         "Keep subcopy compact enough to scan and within a readable measure.",
         "Keep the first action and primary proof or hook visible early on mobile.",
         "Use responsive type steps and balanced wrapping instead of brittle hard breaks."
       ],
-      "warnings": ["A poster-style hero can be tall, but fixed viewport heights and hidden overflow must not clip its action path or mobile proof."],
+      "warnings": ["A poster-style hero can be tall, but fixed viewport heights and hidden overflow must not clip its action path, mobile proof, or intended section boundary."],
       "exceptions": ["Experimental art pages may prioritize poster impact when the user explicitly asks for that direction."],
       "sourceRefs": ["ui-forge-synthesis"],
       "level": "recommended"
@@ -138,6 +140,7 @@
         "Use concrete subjects such as products, artifacts, places, materials, or output examples instead of generic ambience.",
         "Extract layout decisions from the image crop, light, palette, texture, and negative space.",
         "Make the primary subject dominate or deliberately tension its media crop instead of floating at icon scale inside nested frames.",
+        "Keep must-inspect products, faces, labels, and silhouettes inside a crop-safe focal area at wide, short, and narrow aspect ratios.",
         "Do not present generated people, venues, sponsor walls, awards, or screenshots as real evidence."
       ],
       "warnings": ["Dropping a generated image into a finished generic template rarely improves the design."],
@@ -172,8 +175,10 @@
       "tags": ["quality", "critique", "visual-direction", "anti-slop"],
       "checks": [
         "Resolve optical alignment, display fit, line breaks, spacing, media crop, and interaction states.",
+        "Verify the hero ends on an intentional boundary and display copy preserves exact words, spaces, punctuation, and reading order.",
         "Remove repeated display spectacle, decorative rules, fake technical labels, and empty premium space.",
-        "Confirm the central subject signal, action, and visual identity survive mobile recomposition."
+        "Confirm the central subject signal, action, and visual identity survive mobile recomposition.",
+        "For commerce, confirm a product, price or plan, meaningful option, and purchase path appear by the first natural scroll."
       ],
       "warnings": ["Do not introduce a second visual concept during refinement; reroute only when the selected direction itself is wrong."],
       "exceptions": ["A narrow component fix may not need page-level critique."],

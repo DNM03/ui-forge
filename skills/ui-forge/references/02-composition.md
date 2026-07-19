@@ -102,9 +102,11 @@ Do not use an oversized minimum height to disguise the mismatch. Do not create i
 Budget height before selecting the final hero type step. For each representative short desktop and mobile viewport, calculate:
 
 ```text
-usable entry height = viewport height
-  - fixed or sticky chrome
+first-screen budget = viewport height
   - safe-area allowance
+
+hero budget = first-screen budget
+  - header or chrome rendered above the hero
   - intended next-section reveal
 
 required stack = entry top/bottom spacing
@@ -115,7 +117,9 @@ required stack = entry top/bottom spacing
   + vertical gaps
 ```
 
-At default text size, the required stack must fit inside the usable entry height without clipping, overlap, transform scaling, or an `overflow: hidden` escape. Use the longest real title and action copy, not placeholder text. A heading that technically remains inside its own box still fails when its scale pushes required orientation, proof, or the primary action below a fixed hero boundary.
+Treat an integrated header and hero as one first-screen component. Prefer a `min-height: 100svh` wrapper with grid rows `auto minmax(0, 1fr)`, then allow the hero row to shrink with `min-height: 0`. If the header remains outside, subtract its measured rendered height from the hero budget. Never stack an external header above a child hero that independently uses `100vh` or `100svh`.
+
+At default text size, the required stack must fit inside the hero budget without clipping, overlap, transform scaling, or an `overflow: hidden` escape. Use the longest real title and action copy, not placeholder text. A heading that technically remains inside its own box still fails when its scale pushes required orientation, proof, or the primary action below a fixed hero boundary.
 
 Repair an over-budget entry in this order:
 
@@ -125,7 +129,7 @@ Repair an over-budget entry in this order:
 4. Recompose media and secondary proof rather than shrinking body text or controls.
 5. Let the entry grow and the document scroll naturally when the brief does not require a one-screen composition.
 
-Do not impose one global hero height or font-size ceiling. Editorial posters may spend more height on type, while commerce and product entries need earlier facts and actions. Fixed `100vh` or `100svh` heroes are especially fragile when combined with separate headers, mobile browser chrome, long copy, or `overflow: hidden`; account for chrome explicitly or use content-driven sizing.
+Do not impose one global hero height or font-size ceiling. Editorial posters may spend more height on type, while commerce and product entries need earlier facts and actions. Fixed `100vh` or `100svh` heroes are especially fragile when combined with separate headers, mobile browser chrome, long copy, or `overflow: hidden`; give the whole first screen one viewport budget or use content-driven sizing.
 
 ## Responsive recomposition
 

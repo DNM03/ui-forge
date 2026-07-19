@@ -12,7 +12,7 @@ Prioritize repeatable workflows, scan speed, stable navigation, predictable cont
 
 ### Commerce and product detail
 
-Make the actual product inspectable in the first viewport. Keep price, configuration, availability, fulfillment, returns, and primary action clear. Do not let atmospheric imagery hide product details.
+Make the actual product inspectable in the first viewport or first natural scroll. Preserve an early merchandising spine: product name, price or plan, meaningful variants or flavor details, availability, fulfillment, returns, and primary purchase or subscription action. An expressive image-led hero may create appetite, but it must lead into concrete products rather than an extended brand narrative. Do not let atmospheric or generated imagery replace SKU evidence, product comparison, or buying states.
 
 ### Editorial and portfolio
 

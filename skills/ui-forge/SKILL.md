@@ -81,7 +81,8 @@ Navigation posture: integrated, overlay, edge bar, split, compact floating, or o
 Motion system: one subject-specific signature plus zero to two supporting layers
 Section rhythm: job | layout family | type role | media/evidence | density
 Spacing: page gutter | section gap | panel inset | stack gap | control gap
-First viewport: identity, subject signal, action, and next-band cue at short heights
+First viewport: identity, subject signal, action, boundary intent, and short-height behavior
+Commerce spine: product, price, variant or flavor, availability, and purchase or subscription path
 Suppressed defaults: three tempting category cliches not supported by evidence
 Disclosure placement: quiet footer, metadata, or local sample label; never the hero narrative
 ```
@@ -116,6 +117,8 @@ Public websites and branded front doors need a real visual carrier. Choose it be
 - When the subject is visual and no suitable asset exists, use image search or image generation when available, then design around the resulting crop, light, palette, and negative space.
 - Generated media is illustrative, not evidence. Label it only where it could reasonably be mistaken for a real person, place, event, product, or result.
 - For product, object, venue, food, property, portfolio, and person-focused pages, reveal the actual subject clearly. Do not replace it with a gradient, blob, tiny icon-like SVG, generic dashboard, or decorative exploded parts.
+- Generate or select hero media with crop-safe space around must-inspect subjects. Test the actual `cover` crop at wide, short, and narrow aspect ratios; adjust the asset, focal position, or composition before allowing products, faces, text, or essential silhouettes to be cut.
+- For commerce, food, apparel, and other product-selling pages, use art direction to strengthen the merchandise rather than displace it. Keep concrete product names, prices, variants or flavor details, availability, and a purchase or subscription path visible early.
 - In a split hero, let the subject occupy a meaningful share of its media region. Avoid a small object floating inside multiple nested frames and large unused panel space.
 - For abstract or technical products, visualize the mechanism, flow, transformation, or output rather than using an unrelated atmospheric render. The carrier may be illustrative, but it must explain the product world at a glance.
 - Use code-native visuals only when they credibly communicate the real subject or interaction. A technically polished placeholder is not automatically premium media.
@@ -132,9 +135,10 @@ Choose the entry composition before components:
 2. Choose a hero strategy that fits the available carrier. Prefer immersive full-bleed media, a large unframed product stage, an editorial type composition interrupted by meaningful media, or a product-specific artifact tableau over a generic split card.
 3. Treat navigation as part of the page silhouette. Do not default to a floating pill. If a floating header is selected, make its geometry and behavior integral to the direction and keep its mobile form compact.
 4. Plan headline copy, subject scale, action, and vertical space together. Protect names and model tokens from awkward breaks.
-5. At short desktop and mobile heights, keep the identity, subject hook, and primary action reachable without clipping. Leave a meaningful cue that the page continues.
-6. On mobile, recompose the hook rather than shrinking the desktop layout or expanding the header into a large multi-row card.
-7. Give the hero one moment of controlled tension: a decisive crop, overlap, depth shift, lighting change, typographic interruption, live state, or product-specific motion. Do not fill the viewport with evenly weighted panels.
+5. Budget the complete first screen, including the header. For a full-viewport entry, put an integrated header and hero in one `min-height: 100svh` wrapper with `auto minmax(0, 1fr)` rows, or subtract the measured external header height from the hero. Never add an external header above a separate `100svh` hero.
+6. At short desktop and mobile heights, keep the identity, subject hook, and primary action reachable without clipping. Leave a meaningful cue that the page continues.
+7. On mobile, recompose the hook rather than shrinking the desktop layout or expanding the header into a large multi-row card.
+8. Give the hero one moment of controlled tension: a decisive crop, overlap, depth shift, lighting change, typographic interruption, live state, or product-specific motion. Do not fill the viewport with evenly weighted panels.
 
 Use [composition](references/02-composition.md) and [first-viewport height evaluation](examples/first-viewport-height-evaluation.md) for full hero-led pages.
 
@@ -151,12 +155,14 @@ Map major regions as `job | layout family | type role | media/evidence | density
 - Define two system-level constants and one flexible signature. Coherence should come from alignment, type roles, actions, crop, and behavior before repeated decoration.
 - Define page gutter, section gap, panel inset, stack gap, and control gap separately. Visible surfaces need inset; peers need explicit gaps unless an intentional seam is the design.
 - Balance split-region heights, bound sticky elements to their section, or recompose sequentially. Do not create accidental dead columns.
+- Remove large empty bands that create neither focus, anticipation, nor a deliberate transition. Premium pacing still needs visible compositional intent.
 
 ## Build typography, color, and material as one system
 
 - Choose type for brand character, width, weight range, readability, and loading constraints. Use a second family only when the content needs another voice.
 - Make one memorable typographic move, not giant type everywhere. Size display text from copy length and available height, not viewport width alone.
 - Keep product names and meaningful phrases intact. Avoid accidental one-word lines, brittle hard breaks, and compressed measures.
+- Preserve literal spaces, punctuation, and accessible reading order when splitting or animating display copy. Read the rendered phrase at every supported breakpoint; never ship merged words or altered brand and product names.
 - Choose one coherent color-deployment mode: accent punctuation, one full-bleed field, or a small supplied brand set.
 - Use contrast bands, borders, radii, shadows, blur, glow, grain, and grids only when they belong to the selected material logic.
 - Do not infer a dark neon technical style from technical words or a cream editorial style from premium, fashion, craft, or luxury words.
@@ -183,6 +189,7 @@ Avoid universal fade-up reveals, `transition: all`, cursor followers, endless pa
 - Add the reachable loading, empty, error, success, disabled, and recovery states the feature genuinely needs.
 - Keep stateful dimensions stable and preserve mobile hierarchy.
 - Use one coherent icon system when available; do not use emoji as product controls.
+- For commerce and subscription surfaces, keep the evaluation and buying path concrete: show what is sold, the price or plan, meaningful options, and the primary action early. Atmosphere may lead the hero, but it must not postpone merchandising beyond the first natural scroll.
 - Use real content or disclose the overall fictional surface once in a quiet footer note, metadata region, or adjacent sample label. Do not put `concept`, `demo`, `fictional`, or design-process language in the hero eyebrow, main heading, primary action, or section narrative merely to satisfy disclosure. Do not invent evidence such as testimonials, customer names, awards, logos, ratings, or usage metrics.
 - Keep user-facing copy inside the product world. Never expose design reasoning, prompt language, or sentences about the landing page, hero, layout, feature grid, generated result, or why the interface was composed a certain way.
 - A concept label should support honesty without turning the page into a compliance report. Desire, clarity, and brand voice still lead the experience.
@@ -199,6 +206,10 @@ After the first implementation, inspect it as a visual designer:
 - Does the thumbnail silhouette look authored rather than like a familiar template?
 - Is there one clear display apex and a controlled hierarchy afterward?
 - Are optical alignment, line breaks, spacing, panel inset, sibling gaps, and media crops resolved?
+- Does the combined header-plus-hero end at an intentional boundary, with either full coverage or a designed next-section reveal and no blank trailing strip?
+- At a short laptop height, are must-inspect subjects fully visible inside the actual media crop rather than cut by `object-fit: cover`?
+- Does every split or animated headline preserve exact words, spaces, punctuation, and reading order?
+- On a commerce page, can a viewer identify a product, price or plan, meaningful option, and purchase path without searching through brand narrative?
 - Does each region advance the visual rhythm instead of resetting into another hero or card grid?
 - Is the motion signature visible and specific to this page?
 - Does a representative scroll expose a meaningful scene change rather than repeating the same panel treatment?
@@ -217,7 +228,10 @@ For normal generation, verify only the blocking delivery conditions:
 - Supported widths have no unintended overflow, clipping, overlap, covered anchors, or unreadable controls.
 - Keyboard order, names, semantics, visible focus, and actual state contrast are usable.
 - First-viewport content remains reachable at representative short desktop and mobile heights.
+- The combined header and hero consume one declared first-screen height budget; no external header is stacked above an additional `100svh` hero.
+- Hero surfaces and media reach their intended boundary without an orphan page-background strip; any next-section reveal contains meaningful content and must-inspect subjects survive the crop.
 - Sticky chrome does not obscure content and split regions do not produce accidental dead space.
+- Visible copy preserves intended words, spacing, punctuation, and accessible reading order.
 - Nonessential motion respects reduced motion.
 - Media reserves stable dimensions and claims are honest.
 - Run the repository's available checks that match the work and report only checks actually executed.

@@ -191,6 +191,57 @@
       "level": "contextual"
     },
     {
+      "id": "orphan-hero-strip",
+      "title": "Orphan Hero Strip",
+      "summary": "An otherwise immersive hero stops just short of the viewport edge and exposes a thin, empty strip of the page background.",
+      "intent": "Make first-viewport coverage and the transition into the next section feel deliberately composed across viewport sizes.",
+      "appliesTo": ["marketing", "brand", "commerce", "portfolio", "event", "site"],
+      "tags": ["hero", "responsive", "media", "craft"],
+      "checks": [
+        "Choose full-viewport coverage, an intentional next-band reveal, or a content-led hero boundary.",
+        "Inspect the hero bottom edge at representative desktop, mobile, and short-height viewports.",
+        "Make a next-section reveal contain recognizable content or contrast rather than empty page canvas."
+      ],
+      "warnings": ["Arbitrary viewport-height values often create accidental strips when header height, browser chrome, or content changes."],
+      "exceptions": ["A deliberate framed-page composition may expose the outer canvas when the frame is consistent on every edge."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "header-plus-viewport-hero",
+      "title": "Header Plus Viewport Hero",
+      "summary": "An external header is stacked above a hero that independently consumes a full viewport height, pushing the hero bottom below the visible screen.",
+      "intent": "Keep immersive first screens complete on short laptops and mobile browsers by assigning one shared height budget to header and hero.",
+      "appliesTo": ["marketing", "brand", "commerce", "portfolio", "event", "site"],
+      "tags": ["hero", "header", "responsive", "layout"],
+      "checks": [
+        "Wrap an integrated header and hero in one `100svh` first-screen grid, or subtract the measured external header height from the hero.",
+        "Compare the computed header bottom, hero bottom, and viewport bottom at a short desktop height.",
+        "Let content grow and scroll when it exceeds the remaining hero budget instead of clipping it with hidden overflow."
+      ],
+      "warnings": ["Changing a child hero from `100svh` to an arbitrary smaller viewport percentage only moves the failure to another header or viewport height."],
+      "exceptions": ["A deliberately multi-viewport opening may exceed the first screen when the requested composition keeps content reachable and makes that continuation obvious."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
+      "id": "commerce-mood-without-merchandise",
+      "title": "Commerce Mood Without Merchandise",
+      "summary": "A product-selling page spends its early screens on atmosphere and brand narrative while hiding concrete products, prices, options, and buying actions.",
+      "intent": "Keep expressive commerce visually desirable without making the user search for what is sold or how to buy it.",
+      "appliesTo": ["commerce", "retail", "product", "food", "subscription"],
+      "tags": ["commerce", "conversion", "content", "media"],
+      "checks": [
+        "Reveal a concrete product and buying or subscription path by the first natural scroll.",
+        "Show product names, prices or plans, meaningful variants or flavor details, and availability when relevant.",
+        "Use generated atmosphere as support rather than a replacement for inspectable merchandise and buying states."
+      ],
+      "warnings": ["A cinematic page can be less useful than a generic storefront when it removes the merchandising spine."],
+      "exceptions": ["A pure brand campaign may delay commerce when selling is explicitly outside the requested outcome."],
+      "sourceRefs": ["ui-forge-synthesis"],
+      "level": "recommended"
+    },
+    {
       "id": "visible-design-rationale",
       "title": "Visible Design Rationale",
       "summary": "Public copy explains the prompt, landing page, hero, layout, feature grid, generated output, or why the interface was composed a certain way.",

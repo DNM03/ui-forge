@@ -84,6 +84,36 @@ Use these as strategy families, not templates:
 
 The strategy must fit the subject and asset quality. Do not choose a product stage when the only available subject is a tiny icon-like drawing, and do not force immersive photography when no credible image can be produced.
 
+## Resolve the hero boundary
+
+Choose one boundary behavior before styling the hero:
+
+- **Full viewport:** give the complete first-screen composition one viewport budget. When the header is visually part of the entry, use one wrapper:
+
+  ```css
+  .first-screen {
+    min-block-size: 100svh;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .hero {
+    min-block-size: 0;
+  }
+  ```
+
+  When the header is outside that wrapper, size the hero against the remaining space with `min-block-size: calc(100svh - var(--measured-header-height))`. Keep the variable synchronized with the rendered header, including breakpoint changes. Let content grow and scroll rather than clipping it on short screens.
+- **Intentional next-band reveal:** expose a meaningful slice of the next section, such as its label, subject, contrasting surface, or first content row. The reveal should make scrolling feel inevitable.
+- **Content-led entry:** let the hero size to content when neither full immersion nor a reveal serves the direction. End it on a clear compositional boundary.
+
+Never place an external header above a child hero that independently owns `100vh` or `100svh`; that creates a first screen taller than the viewport and cuts the hero at ordinary laptop heights. Do not use arbitrary `80vh` or `90vh` sizing to compensate, because it creates thin body-colored strips at other heights. Inspect the computed header bottom, hero bottom, and viewport bottom at representative desktop, mobile, and short-height viewports.
+
+## Protect the commerce spine
+
+For retail, food, apparel, product, and subscription pages, visual ambition must preserve the information that lets people evaluate and buy. Reveal concrete merchandise by the first natural scroll: product name, price or plan, meaningful variant or flavor details, availability when relevant, and an unambiguous purchase or subscription action.
+
+An atmospheric hero may create appetite, but it cannot be the only product evidence. Follow it with an inspectable product shelf, product-detail stage, bundle or plan chooser, or another commerce-specific structure. Generated imagery may establish the world, but it does not replace truthful SKU imagery, inventory details, or purchasing states.
+
 ## Build a complete theme
 
 Set theme axes together rather than swapping a single color:
@@ -164,6 +194,7 @@ Assign display, section, body, label, and data roles. Choose families by brand c
 - Reserve mono for code, data, or genuinely technical metadata; it is not a universal premium accent.
 - Keep body copy within a readable measure and prevent section copy from collapsing into narrow one- or two-word lines.
 - Plan hero copy, display scale, and focal media together. On a normal landing page, target no more than two intentional desktop headline lines unless a poster composition is explicitly chosen and the full entry still fits.
+- Preserve whitespace and punctuation in split or animated display copy. Prefer an intact accessible text node with decorative spans hidden from assistive technology; inspect the final rendered phrase for merged words and changed names.
 
 For self-authored landing-page copy, prefer a main heading at about seven words or 50 characters or fewer. From 51 to 90 characters, step down the display size and widen the safe measure as needed; beyond that, rewrite when editorially allowed or treat it as a page title rather than a display stunt. As default desktop bounds, keep normal landing-page display type at or below about `5.5rem` (`88px`), allow about `6rem` only when poster-scale typography is the central move, and reserve about `7rem` for a single short word or value around 12 characters or fewer. Existing brand systems and explicit editorial art direction may exceed these bounds only when the first-viewport budget still passes.
 
@@ -177,6 +208,8 @@ Prefer the strongest truthful subject signal available: real product state, auth
 
 For a visual subject, inspect the ratio between the subject and its media region. The item should normally dominate or deliberately tension the crop, not float at icon scale inside an empty frame. Avoid nested frames around a hero asset unless the frame itself carries product meaning. If the asset is weak, replace or regenerate it before polishing surrounding panels.
 
+For cover-cropped hero media, define the focal subject and its safe area before generation or selection. Keep products, faces, labels, and essential silhouettes away from vulnerable edges, then test the actual container at wide desktop, short laptop, and narrow mobile ratios. Use a deliberate `object-position`, art-directed alternate asset, or a different composition when `cover` cuts information users need to inspect. A dramatic crop may cut atmosphere; it must not accidentally cut the product proof.
+
 Motion should communicate state, hierarchy, causality, or story. On expressive public pages, make one motif clearly perceptible during ordinary use: reveal the subject, shift the crop, assemble an artifact, transition a selected state, move a typographic phrase, or progress a sequence. Support it with no more than two quieter layers, such as ambient depth and responsive pointer or scroll feedback, when they share the same visual logic. A faint ambient sweep inside a large panel is support, not a motion signature. Complete hover, active, focus-visible, loading, and success feedback where relevant. Avoid universal entrance animation, cursor followers, endless particles, bounce easing, and `transition: all`.
 
 ## Craft refinement
@@ -184,9 +217,14 @@ Motion should communicate state, hierarchy, causality, or story. On expressive p
 After implementation, make one visual refinement pass:
 
 - resolve optical alignment, crop, spacing, type fit, and responsive hierarchy;
+- verify that a full-viewport hero reaches its bottom edge or that its next-band reveal is visibly intentional;
+- verify that the header and hero share one viewport-height budget rather than stacking an external header above a `100svh` child;
+- inspect must-see subjects inside the actual `cover` crop at a short laptop height and narrow mobile width;
+- read display copy exactly as rendered and fix merged words, lost spaces, punctuation errors, and broken brand or product names;
 - inspect the first viewport as a grayscale thumbnail and at normal scale; strengthen the focal carrier if both views distribute attention evenly;
 - remove repeated display spectacle, decorative rules, and fake technical labels;
 - tighten empty space that creates no focus or tension;
+- on commerce pages, confirm that atmosphere has not displaced product, price, options, and the buying or subscription path;
 - preserve the subject signal, action, and identity on mobile;
 - inspect one representative scroll for scene change, sticky overlap, and visible motion payoff;
 - change the direction rather than adding effects if the page still resembles a category template.
